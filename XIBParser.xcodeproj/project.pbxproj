@@ -13,6 +13,91 @@
 		145DC35D1C5F3C73007659AF /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 145DC35B1C5F3C73007659AF /* MainMenu.xib */; };
 		145DC3681C5F3C73007659AF /* XIBParserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC3671C5F3C73007659AF /* XIBParserTests.m */; };
 		145DC3731C5F3C73007659AF /* XIBParserUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC3721C5F3C73007659AF /* XIBParserUITests.m */; };
+		145DC42E1C5F3DA8007659AF /* XIBAutoresizingMask.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC3851C5F3DA7007659AF /* XIBAutoresizingMask.m */; };
+		145DC42F1C5F3DA8007659AF /* XIBBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC3871C5F3DA7007659AF /* XIBBehavior.m */; };
+		145DC4301C5F3DA8007659AF /* XIBBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC3891C5F3DA7007659AF /* XIBBox.m */; };
+		145DC4311C5F3DA8007659AF /* XIBBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC38B1C5F3DA7007659AF /* XIBBrowser.m */; };
+		145DC4321C5F3DA8007659AF /* XIBButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC38D1C5F3DA7007659AF /* XIBButton.m */; };
+		145DC4331C5F3DA8007659AF /* XIBButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC38F1C5F3DA7007659AF /* XIBButtonCell.m */; };
+		145DC4341C5F3DA8007659AF /* XIBCalendarDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC3911C5F3DA7007659AF /* XIBCalendarDate.m */; };
+		145DC4351C5F3DA8007659AF /* XIBCapability.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC3931C5F3DA7007659AF /* XIBCapability.m */; };
+		145DC4361C5F3DA8007659AF /* XIBClipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC3951C5F3DA7007659AF /* XIBClipView.m */; };
+		145DC4371C5F3DA8007659AF /* XIBCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC3971C5F3DA7007659AF /* XIBCollectionView.m */; };
+		145DC4381C5F3DA8007659AF /* XIBCollectionViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC3991C5F3DA7007659AF /* XIBCollectionViewItem.m */; };
+		145DC4391C5F3DA8007659AF /* XIBColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC39B1C5F3DA7007659AF /* XIBColor.m */; };
+		145DC43A1C5F3DA8007659AF /* XIBColorWell.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC39D1C5F3DA7007659AF /* XIBColorWell.m */; };
+		145DC43B1C5F3DA8007659AF /* XIBComboBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC39F1C5F3DA7007659AF /* XIBComboBox.m */; };
+		145DC43C1C5F3DA8007659AF /* XIBComboBoxCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC3A11C5F3DA7007659AF /* XIBComboBoxCell.m */; };
+		145DC43D1C5F3DA8007659AF /* XIBCustomObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC3A31C5F3DA7007659AF /* XIBCustomObject.m */; };
+		145DC43E1C5F3DA8007659AF /* XIBCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC3A51C5F3DA7007659AF /* XIBCustomView.m */; };
+		145DC43F1C5F3DA8007659AF /* XIBDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC3A71C5F3DA7007659AF /* XIBDatePicker.m */; };
+		145DC4401C5F3DA8007659AF /* XIBDatePickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC3A91C5F3DA7007659AF /* XIBDatePickerCell.m */; };
+		145DC4411C5F3DA8007659AF /* XIBFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC3AB1C5F3DA7007659AF /* XIBFont.m */; };
+		145DC4421C5F3DA8007659AF /* XIBForm.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC3AD1C5F3DA7007659AF /* XIBForm.m */; };
+		145DC4431C5F3DA8007659AF /* XIBFormCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC3AF1C5F3DA7007659AF /* XIBFormCell.m */; };
+		145DC4441C5F3DA8007659AF /* XIBIBAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC3B11C5F3DA7007659AF /* XIBIBAction.m */; };
+		145DC4451C5F3DA8007659AF /* XIBIBDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC3B31C5F3DA7007659AF /* XIBIBDocument.m */; };
+		145DC4461C5F3DA8007659AF /* XIBIBOutlet.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC3B51C5F3DA7007659AF /* XIBIBOutlet.m */; };
+		145DC4471C5F3DA8007659AF /* XIBIBPlugIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC3B71C5F3DA7007659AF /* XIBIBPlugIn.m */; };
+		145DC4481C5F3DA8007659AF /* XIBImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC3B91C5F3DA7007659AF /* XIBImageCell.m */; };
+		145DC4491C5F3DA8007659AF /* XIBImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC3BB1C5F3DA7007659AF /* XIBImageView.m */; };
+		145DC44A1C5F3DA8007659AF /* XIBLevelIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC3BD1C5F3DA7007659AF /* XIBLevelIndicator.m */; };
+		145DC44B1C5F3DA8007659AF /* XIBLevelIndicatorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC3BF1C5F3DA7007659AF /* XIBLevelIndicatorCell.m */; };
+		145DC44C1C5F3DA8007659AF /* XIBMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC3C11C5F3DA7007659AF /* XIBMenu.m */; };
+		145DC44D1C5F3DA8007659AF /* XIBMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC3C31C5F3DA7007659AF /* XIBMenuItem.m */; };
+		145DC44E1C5F3DA8007659AF /* XIBModifierMask.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC3C51C5F3DA7007659AF /* XIBModifierMask.m */; };
+		145DC44F1C5F3DA8007659AF /* XIBNil.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC3C71C5F3DA7007659AF /* XIBNil.m */; };
+		145DC4501C5F3DA8007659AF /* XIBNumberFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC3C91C5F3DA7007659AF /* XIBNumberFormatter.m */; };
+		145DC4511C5F3DA8007659AF /* XIBOpenGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC3CB1C5F3DA7007659AF /* XIBOpenGLView.m */; };
+		145DC4521C5F3DA8007659AF /* XIBOutlineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC3CD1C5F3DA7007659AF /* XIBOutlineView.m */; };
+		145DC4531C5F3DA8007659AF /* XIBPathCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC3CF1C5F3DA7007659AF /* XIBPathCell.m */; };
+		145DC4541C5F3DA8007659AF /* XIBPathControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC3D11C5F3DA7007659AF /* XIBPathControl.m */; };
+		145DC4551C5F3DA8007659AF /* XIBPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC3D31C5F3DA7007659AF /* XIBPoint.m */; };
+		145DC4561C5F3DA8007659AF /* XIBPopUpButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC3D51C5F3DA7007659AF /* XIBPopUpButton.m */; };
+		145DC4571C5F3DA8007659AF /* XIBPopUpButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC3D71C5F3DA7007659AF /* XIBPopUpButtonCell.m */; };
+		145DC4581C5F3DA8007659AF /* XIBProgressIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC3D91C5F3DA7007659AF /* XIBProgressIndicator.m */; };
+		145DC4591C5F3DA8007659AF /* XIBReal.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC3DB1C5F3DA7007659AF /* XIBReal.m */; };
+		145DC45A1C5F3DA8007659AF /* XIBRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC3DD1C5F3DA7007659AF /* XIBRect.m */; };
+		145DC45B1C5F3DA8007659AF /* XIBSceneView.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC3DF1C5F3DA7007659AF /* XIBSceneView.m */; };
+		145DC45C1C5F3DA8007659AF /* XIBScroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC3E11C5F3DA7007659AF /* XIBScroller.m */; };
+		145DC45D1C5F3DA8007659AF /* XIBScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC3E31C5F3DA7007659AF /* XIBScrollView.m */; };
+		145DC45E1C5F3DA8007659AF /* XIBSearchField.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC3E51C5F3DA7007659AF /* XIBSearchField.m */; };
+		145DC45F1C5F3DA8007659AF /* XIBSearchFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC3E71C5F3DA7007659AF /* XIBSearchFieldCell.m */; };
+		145DC4601C5F3DA8007659AF /* XIBSecureTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC3E91C5F3DA7007659AF /* XIBSecureTextField.m */; };
+		145DC4611C5F3DA8007659AF /* XIBSecureTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC3EB1C5F3DA7007659AF /* XIBSecureTextFieldCell.m */; };
+		145DC4621C5F3DA8007659AF /* XIBSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC3ED1C5F3DA7007659AF /* XIBSegment.m */; };
+		145DC4631C5F3DA8007659AF /* XIBSegmentedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC3EF1C5F3DA8007659AF /* XIBSegmentedCell.m */; };
+		145DC4641C5F3DA8007659AF /* XIBSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC3F11C5F3DA8007659AF /* XIBSegmentedControl.m */; };
+		145DC4651C5F3DA8007659AF /* XIBSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC3F31C5F3DA8007659AF /* XIBSize.m */; };
+		145DC4661C5F3DA8007659AF /* XIBSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC3F51C5F3DA8007659AF /* XIBSlider.m */; };
+		145DC4671C5F3DA8007659AF /* XIBSliderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC3F71C5F3DA8007659AF /* XIBSliderCell.m */; };
+		145DC4681C5F3DA8007659AF /* XIBSplitView.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC3F91C5F3DA8007659AF /* XIBSplitView.m */; };
+		145DC4691C5F3DA8007659AF /* XIBStepper.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC3FB1C5F3DA8007659AF /* XIBStepper.m */; };
+		145DC46A1C5F3DA8007659AF /* XIBStepperCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC3FD1C5F3DA8007659AF /* XIBStepperCell.m */; };
+		145DC46B1C5F3DA8007659AF /* XIBString.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC3FF1C5F3DA8007659AF /* XIBString.m */; };
+		145DC46C1C5F3DA8007659AF /* XIBTableCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC4011C5F3DA8007659AF /* XIBTableCellView.m */; };
+		145DC46D1C5F3DA8007659AF /* XIBTableColumn.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC4031C5F3DA8007659AF /* XIBTableColumn.m */; };
+		145DC46E1C5F3DA8007659AF /* XIBTableColumnResizingMask.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC4051C5F3DA8007659AF /* XIBTableColumnResizingMask.m */; };
+		145DC46F1C5F3DA8007659AF /* XIBTableHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC4071C5F3DA8007659AF /* XIBTableHeaderCell.m */; };
+		145DC4701C5F3DA8007659AF /* XIBTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC4091C5F3DA8007659AF /* XIBTableHeaderView.m */; };
+		145DC4711C5F3DA8007659AF /* XIBTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC40B1C5F3DA8007659AF /* XIBTableView.m */; };
+		145DC4721C5F3DA8007659AF /* XIBTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC40D1C5F3DA8007659AF /* XIBTabView.m */; };
+		145DC4731C5F3DA8007659AF /* XIBTabViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC40F1C5F3DA8007659AF /* XIBTabViewItem.m */; };
+		145DC4741C5F3DA8007659AF /* XIBTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC4111C5F3DA8007659AF /* XIBTextField.m */; };
+		145DC4751C5F3DA8007659AF /* XIBTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC4131C5F3DA8007659AF /* XIBTextFieldCell.m */; };
+		145DC4761C5F3DA8007659AF /* XIBTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC4151C5F3DA8007659AF /* XIBTextView.m */; };
+		145DC4771C5F3DA8007659AF /* XIBTimeZone.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC4171C5F3DA8007659AF /* XIBTimeZone.m */; };
+		145DC4781C5F3DA8007659AF /* XIBTokenField.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC4191C5F3DA8007659AF /* XIBTokenField.m */; };
+		145DC4791C5F3DA8007659AF /* XIBTokenFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC41B1C5F3DA8007659AF /* XIBTokenFieldCell.m */; };
+		145DC47A1C5F3DA8007659AF /* XIBToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC41D1C5F3DA8007659AF /* XIBToolbar.m */; };
+		145DC47B1C5F3DA8007659AF /* XIBToolbarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC41F1C5F3DA8007659AF /* XIBToolbarItem.m */; };
+		145DC47C1C5F3DA8007659AF /* XIBUrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC4211C5F3DA8007659AF /* XIBUrl.m */; };
+		145DC47D1C5F3DA8007659AF /* XIBView.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC4231C5F3DA8007659AF /* XIBView.m */; };
+		145DC47E1C5F3DA8007659AF /* XIBWebPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC4251C5F3DA8007659AF /* XIBWebPreferences.m */; };
+		145DC47F1C5F3DA8007659AF /* XIBWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC4271C5F3DA8007659AF /* XIBWebView.m */; };
+		145DC4801C5F3DA8007659AF /* XIBWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC4291C5F3DA8007659AF /* XIBWindow.m */; };
+		145DC4811C5F3DA8007659AF /* XIBWindowPositionMask.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC42B1C5F3DA8007659AF /* XIBWindowPositionMask.m */; };
+		145DC4821C5F3DA8007659AF /* XIBWindowStyleMask.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC42D1C5F3DA8007659AF /* XIBWindowStyleMask.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +131,178 @@
 		145DC36E1C5F3C73007659AF /* XIBParserUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XIBParserUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		145DC3721C5F3C73007659AF /* XIBParserUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XIBParserUITests.m; sourceTree = "<group>"; };
 		145DC3741C5F3C73007659AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		145DC3841C5F3DA7007659AF /* XIBAutoresizingMask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBAutoresizingMask.h; path = Classes/XIBAutoresizingMask.h; sourceTree = "<group>"; };
+		145DC3851C5F3DA7007659AF /* XIBAutoresizingMask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBAutoresizingMask.m; path = Classes/XIBAutoresizingMask.m; sourceTree = "<group>"; };
+		145DC3861C5F3DA7007659AF /* XIBBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBBehavior.h; path = Classes/XIBBehavior.h; sourceTree = "<group>"; };
+		145DC3871C5F3DA7007659AF /* XIBBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBBehavior.m; path = Classes/XIBBehavior.m; sourceTree = "<group>"; };
+		145DC3881C5F3DA7007659AF /* XIBBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBBox.h; path = Classes/XIBBox.h; sourceTree = "<group>"; };
+		145DC3891C5F3DA7007659AF /* XIBBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBBox.m; path = Classes/XIBBox.m; sourceTree = "<group>"; };
+		145DC38A1C5F3DA7007659AF /* XIBBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBBrowser.h; path = Classes/XIBBrowser.h; sourceTree = "<group>"; };
+		145DC38B1C5F3DA7007659AF /* XIBBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBBrowser.m; path = Classes/XIBBrowser.m; sourceTree = "<group>"; };
+		145DC38C1C5F3DA7007659AF /* XIBButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBButton.h; path = Classes/XIBButton.h; sourceTree = "<group>"; };
+		145DC38D1C5F3DA7007659AF /* XIBButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBButton.m; path = Classes/XIBButton.m; sourceTree = "<group>"; };
+		145DC38E1C5F3DA7007659AF /* XIBButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBButtonCell.h; path = Classes/XIBButtonCell.h; sourceTree = "<group>"; };
+		145DC38F1C5F3DA7007659AF /* XIBButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBButtonCell.m; path = Classes/XIBButtonCell.m; sourceTree = "<group>"; };
+		145DC3901C5F3DA7007659AF /* XIBCalendarDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBCalendarDate.h; path = Classes/XIBCalendarDate.h; sourceTree = "<group>"; };
+		145DC3911C5F3DA7007659AF /* XIBCalendarDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBCalendarDate.m; path = Classes/XIBCalendarDate.m; sourceTree = "<group>"; };
+		145DC3921C5F3DA7007659AF /* XIBCapability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBCapability.h; path = Classes/XIBCapability.h; sourceTree = "<group>"; };
+		145DC3931C5F3DA7007659AF /* XIBCapability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBCapability.m; path = Classes/XIBCapability.m; sourceTree = "<group>"; };
+		145DC3941C5F3DA7007659AF /* XIBClipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBClipView.h; path = Classes/XIBClipView.h; sourceTree = "<group>"; };
+		145DC3951C5F3DA7007659AF /* XIBClipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBClipView.m; path = Classes/XIBClipView.m; sourceTree = "<group>"; };
+		145DC3961C5F3DA7007659AF /* XIBCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBCollectionView.h; path = Classes/XIBCollectionView.h; sourceTree = "<group>"; };
+		145DC3971C5F3DA7007659AF /* XIBCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBCollectionView.m; path = Classes/XIBCollectionView.m; sourceTree = "<group>"; };
+		145DC3981C5F3DA7007659AF /* XIBCollectionViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBCollectionViewItem.h; path = Classes/XIBCollectionViewItem.h; sourceTree = "<group>"; };
+		145DC3991C5F3DA7007659AF /* XIBCollectionViewItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBCollectionViewItem.m; path = Classes/XIBCollectionViewItem.m; sourceTree = "<group>"; };
+		145DC39A1C5F3DA7007659AF /* XIBColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBColor.h; path = Classes/XIBColor.h; sourceTree = "<group>"; };
+		145DC39B1C5F3DA7007659AF /* XIBColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBColor.m; path = Classes/XIBColor.m; sourceTree = "<group>"; };
+		145DC39C1C5F3DA7007659AF /* XIBColorWell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBColorWell.h; path = Classes/XIBColorWell.h; sourceTree = "<group>"; };
+		145DC39D1C5F3DA7007659AF /* XIBColorWell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBColorWell.m; path = Classes/XIBColorWell.m; sourceTree = "<group>"; };
+		145DC39E1C5F3DA7007659AF /* XIBComboBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBComboBox.h; path = Classes/XIBComboBox.h; sourceTree = "<group>"; };
+		145DC39F1C5F3DA7007659AF /* XIBComboBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBComboBox.m; path = Classes/XIBComboBox.m; sourceTree = "<group>"; };
+		145DC3A01C5F3DA7007659AF /* XIBComboBoxCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBComboBoxCell.h; path = Classes/XIBComboBoxCell.h; sourceTree = "<group>"; };
+		145DC3A11C5F3DA7007659AF /* XIBComboBoxCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBComboBoxCell.m; path = Classes/XIBComboBoxCell.m; sourceTree = "<group>"; };
+		145DC3A21C5F3DA7007659AF /* XIBCustomObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBCustomObject.h; path = Classes/XIBCustomObject.h; sourceTree = "<group>"; };
+		145DC3A31C5F3DA7007659AF /* XIBCustomObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBCustomObject.m; path = Classes/XIBCustomObject.m; sourceTree = "<group>"; };
+		145DC3A41C5F3DA7007659AF /* XIBCustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBCustomView.h; path = Classes/XIBCustomView.h; sourceTree = "<group>"; };
+		145DC3A51C5F3DA7007659AF /* XIBCustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBCustomView.m; path = Classes/XIBCustomView.m; sourceTree = "<group>"; };
+		145DC3A61C5F3DA7007659AF /* XIBDatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBDatePicker.h; path = Classes/XIBDatePicker.h; sourceTree = "<group>"; };
+		145DC3A71C5F3DA7007659AF /* XIBDatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBDatePicker.m; path = Classes/XIBDatePicker.m; sourceTree = "<group>"; };
+		145DC3A81C5F3DA7007659AF /* XIBDatePickerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBDatePickerCell.h; path = Classes/XIBDatePickerCell.h; sourceTree = "<group>"; };
+		145DC3A91C5F3DA7007659AF /* XIBDatePickerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBDatePickerCell.m; path = Classes/XIBDatePickerCell.m; sourceTree = "<group>"; };
+		145DC3AA1C5F3DA7007659AF /* XIBFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBFont.h; path = Classes/XIBFont.h; sourceTree = "<group>"; };
+		145DC3AB1C5F3DA7007659AF /* XIBFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBFont.m; path = Classes/XIBFont.m; sourceTree = "<group>"; };
+		145DC3AC1C5F3DA7007659AF /* XIBForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBForm.h; path = Classes/XIBForm.h; sourceTree = "<group>"; };
+		145DC3AD1C5F3DA7007659AF /* XIBForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBForm.m; path = Classes/XIBForm.m; sourceTree = "<group>"; };
+		145DC3AE1C5F3DA7007659AF /* XIBFormCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBFormCell.h; path = Classes/XIBFormCell.h; sourceTree = "<group>"; };
+		145DC3AF1C5F3DA7007659AF /* XIBFormCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBFormCell.m; path = Classes/XIBFormCell.m; sourceTree = "<group>"; };
+		145DC3B01C5F3DA7007659AF /* XIBIBAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBIBAction.h; path = Classes/XIBIBAction.h; sourceTree = "<group>"; };
+		145DC3B11C5F3DA7007659AF /* XIBIBAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBIBAction.m; path = Classes/XIBIBAction.m; sourceTree = "<group>"; };
+		145DC3B21C5F3DA7007659AF /* XIBIBDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBIBDocument.h; path = Classes/XIBIBDocument.h; sourceTree = "<group>"; };
+		145DC3B31C5F3DA7007659AF /* XIBIBDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBIBDocument.m; path = Classes/XIBIBDocument.m; sourceTree = "<group>"; };
+		145DC3B41C5F3DA7007659AF /* XIBIBOutlet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBIBOutlet.h; path = Classes/XIBIBOutlet.h; sourceTree = "<group>"; };
+		145DC3B51C5F3DA7007659AF /* XIBIBOutlet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBIBOutlet.m; path = Classes/XIBIBOutlet.m; sourceTree = "<group>"; };
+		145DC3B61C5F3DA7007659AF /* XIBIBPlugIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBIBPlugIn.h; path = Classes/XIBIBPlugIn.h; sourceTree = "<group>"; };
+		145DC3B71C5F3DA7007659AF /* XIBIBPlugIn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBIBPlugIn.m; path = Classes/XIBIBPlugIn.m; sourceTree = "<group>"; };
+		145DC3B81C5F3DA7007659AF /* XIBImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBImageCell.h; path = Classes/XIBImageCell.h; sourceTree = "<group>"; };
+		145DC3B91C5F3DA7007659AF /* XIBImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBImageCell.m; path = Classes/XIBImageCell.m; sourceTree = "<group>"; };
+		145DC3BA1C5F3DA7007659AF /* XIBImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBImageView.h; path = Classes/XIBImageView.h; sourceTree = "<group>"; };
+		145DC3BB1C5F3DA7007659AF /* XIBImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBImageView.m; path = Classes/XIBImageView.m; sourceTree = "<group>"; };
+		145DC3BC1C5F3DA7007659AF /* XIBLevelIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBLevelIndicator.h; path = Classes/XIBLevelIndicator.h; sourceTree = "<group>"; };
+		145DC3BD1C5F3DA7007659AF /* XIBLevelIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBLevelIndicator.m; path = Classes/XIBLevelIndicator.m; sourceTree = "<group>"; };
+		145DC3BE1C5F3DA7007659AF /* XIBLevelIndicatorCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBLevelIndicatorCell.h; path = Classes/XIBLevelIndicatorCell.h; sourceTree = "<group>"; };
+		145DC3BF1C5F3DA7007659AF /* XIBLevelIndicatorCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBLevelIndicatorCell.m; path = Classes/XIBLevelIndicatorCell.m; sourceTree = "<group>"; };
+		145DC3C01C5F3DA7007659AF /* XIBMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBMenu.h; path = Classes/XIBMenu.h; sourceTree = "<group>"; };
+		145DC3C11C5F3DA7007659AF /* XIBMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBMenu.m; path = Classes/XIBMenu.m; sourceTree = "<group>"; };
+		145DC3C21C5F3DA7007659AF /* XIBMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBMenuItem.h; path = Classes/XIBMenuItem.h; sourceTree = "<group>"; };
+		145DC3C31C5F3DA7007659AF /* XIBMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBMenuItem.m; path = Classes/XIBMenuItem.m; sourceTree = "<group>"; };
+		145DC3C41C5F3DA7007659AF /* XIBModifierMask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBModifierMask.h; path = Classes/XIBModifierMask.h; sourceTree = "<group>"; };
+		145DC3C51C5F3DA7007659AF /* XIBModifierMask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBModifierMask.m; path = Classes/XIBModifierMask.m; sourceTree = "<group>"; };
+		145DC3C61C5F3DA7007659AF /* XIBNil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBNil.h; path = Classes/XIBNil.h; sourceTree = "<group>"; };
+		145DC3C71C5F3DA7007659AF /* XIBNil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBNil.m; path = Classes/XIBNil.m; sourceTree = "<group>"; };
+		145DC3C81C5F3DA7007659AF /* XIBNumberFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBNumberFormatter.h; path = Classes/XIBNumberFormatter.h; sourceTree = "<group>"; };
+		145DC3C91C5F3DA7007659AF /* XIBNumberFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBNumberFormatter.m; path = Classes/XIBNumberFormatter.m; sourceTree = "<group>"; };
+		145DC3CA1C5F3DA7007659AF /* XIBOpenGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBOpenGLView.h; path = Classes/XIBOpenGLView.h; sourceTree = "<group>"; };
+		145DC3CB1C5F3DA7007659AF /* XIBOpenGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBOpenGLView.m; path = Classes/XIBOpenGLView.m; sourceTree = "<group>"; };
+		145DC3CC1C5F3DA7007659AF /* XIBOutlineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBOutlineView.h; path = Classes/XIBOutlineView.h; sourceTree = "<group>"; };
+		145DC3CD1C5F3DA7007659AF /* XIBOutlineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBOutlineView.m; path = Classes/XIBOutlineView.m; sourceTree = "<group>"; };
+		145DC3CE1C5F3DA7007659AF /* XIBPathCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBPathCell.h; path = Classes/XIBPathCell.h; sourceTree = "<group>"; };
+		145DC3CF1C5F3DA7007659AF /* XIBPathCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBPathCell.m; path = Classes/XIBPathCell.m; sourceTree = "<group>"; };
+		145DC3D01C5F3DA7007659AF /* XIBPathControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBPathControl.h; path = Classes/XIBPathControl.h; sourceTree = "<group>"; };
+		145DC3D11C5F3DA7007659AF /* XIBPathControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBPathControl.m; path = Classes/XIBPathControl.m; sourceTree = "<group>"; };
+		145DC3D21C5F3DA7007659AF /* XIBPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBPoint.h; path = Classes/XIBPoint.h; sourceTree = "<group>"; };
+		145DC3D31C5F3DA7007659AF /* XIBPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBPoint.m; path = Classes/XIBPoint.m; sourceTree = "<group>"; };
+		145DC3D41C5F3DA7007659AF /* XIBPopUpButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBPopUpButton.h; path = Classes/XIBPopUpButton.h; sourceTree = "<group>"; };
+		145DC3D51C5F3DA7007659AF /* XIBPopUpButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBPopUpButton.m; path = Classes/XIBPopUpButton.m; sourceTree = "<group>"; };
+		145DC3D61C5F3DA7007659AF /* XIBPopUpButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBPopUpButtonCell.h; path = Classes/XIBPopUpButtonCell.h; sourceTree = "<group>"; };
+		145DC3D71C5F3DA7007659AF /* XIBPopUpButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBPopUpButtonCell.m; path = Classes/XIBPopUpButtonCell.m; sourceTree = "<group>"; };
+		145DC3D81C5F3DA7007659AF /* XIBProgressIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBProgressIndicator.h; path = Classes/XIBProgressIndicator.h; sourceTree = "<group>"; };
+		145DC3D91C5F3DA7007659AF /* XIBProgressIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBProgressIndicator.m; path = Classes/XIBProgressIndicator.m; sourceTree = "<group>"; };
+		145DC3DA1C5F3DA7007659AF /* XIBReal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBReal.h; path = Classes/XIBReal.h; sourceTree = "<group>"; };
+		145DC3DB1C5F3DA7007659AF /* XIBReal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBReal.m; path = Classes/XIBReal.m; sourceTree = "<group>"; };
+		145DC3DC1C5F3DA7007659AF /* XIBRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBRect.h; path = Classes/XIBRect.h; sourceTree = "<group>"; };
+		145DC3DD1C5F3DA7007659AF /* XIBRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBRect.m; path = Classes/XIBRect.m; sourceTree = "<group>"; };
+		145DC3DE1C5F3DA7007659AF /* XIBSceneView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBSceneView.h; path = Classes/XIBSceneView.h; sourceTree = "<group>"; };
+		145DC3DF1C5F3DA7007659AF /* XIBSceneView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBSceneView.m; path = Classes/XIBSceneView.m; sourceTree = "<group>"; };
+		145DC3E01C5F3DA7007659AF /* XIBScroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBScroller.h; path = Classes/XIBScroller.h; sourceTree = "<group>"; };
+		145DC3E11C5F3DA7007659AF /* XIBScroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBScroller.m; path = Classes/XIBScroller.m; sourceTree = "<group>"; };
+		145DC3E21C5F3DA7007659AF /* XIBScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBScrollView.h; path = Classes/XIBScrollView.h; sourceTree = "<group>"; };
+		145DC3E31C5F3DA7007659AF /* XIBScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBScrollView.m; path = Classes/XIBScrollView.m; sourceTree = "<group>"; };
+		145DC3E41C5F3DA7007659AF /* XIBSearchField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBSearchField.h; path = Classes/XIBSearchField.h; sourceTree = "<group>"; };
+		145DC3E51C5F3DA7007659AF /* XIBSearchField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBSearchField.m; path = Classes/XIBSearchField.m; sourceTree = "<group>"; };
+		145DC3E61C5F3DA7007659AF /* XIBSearchFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBSearchFieldCell.h; path = Classes/XIBSearchFieldCell.h; sourceTree = "<group>"; };
+		145DC3E71C5F3DA7007659AF /* XIBSearchFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBSearchFieldCell.m; path = Classes/XIBSearchFieldCell.m; sourceTree = "<group>"; };
+		145DC3E81C5F3DA7007659AF /* XIBSecureTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBSecureTextField.h; path = Classes/XIBSecureTextField.h; sourceTree = "<group>"; };
+		145DC3E91C5F3DA7007659AF /* XIBSecureTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBSecureTextField.m; path = Classes/XIBSecureTextField.m; sourceTree = "<group>"; };
+		145DC3EA1C5F3DA7007659AF /* XIBSecureTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBSecureTextFieldCell.h; path = Classes/XIBSecureTextFieldCell.h; sourceTree = "<group>"; };
+		145DC3EB1C5F3DA7007659AF /* XIBSecureTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBSecureTextFieldCell.m; path = Classes/XIBSecureTextFieldCell.m; sourceTree = "<group>"; };
+		145DC3EC1C5F3DA7007659AF /* XIBSegment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBSegment.h; path = Classes/XIBSegment.h; sourceTree = "<group>"; };
+		145DC3ED1C5F3DA7007659AF /* XIBSegment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBSegment.m; path = Classes/XIBSegment.m; sourceTree = "<group>"; };
+		145DC3EE1C5F3DA8007659AF /* XIBSegmentedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBSegmentedCell.h; path = Classes/XIBSegmentedCell.h; sourceTree = "<group>"; };
+		145DC3EF1C5F3DA8007659AF /* XIBSegmentedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBSegmentedCell.m; path = Classes/XIBSegmentedCell.m; sourceTree = "<group>"; };
+		145DC3F01C5F3DA8007659AF /* XIBSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBSegmentedControl.h; path = Classes/XIBSegmentedControl.h; sourceTree = "<group>"; };
+		145DC3F11C5F3DA8007659AF /* XIBSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBSegmentedControl.m; path = Classes/XIBSegmentedControl.m; sourceTree = "<group>"; };
+		145DC3F21C5F3DA8007659AF /* XIBSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBSize.h; path = Classes/XIBSize.h; sourceTree = "<group>"; };
+		145DC3F31C5F3DA8007659AF /* XIBSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBSize.m; path = Classes/XIBSize.m; sourceTree = "<group>"; };
+		145DC3F41C5F3DA8007659AF /* XIBSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBSlider.h; path = Classes/XIBSlider.h; sourceTree = "<group>"; };
+		145DC3F51C5F3DA8007659AF /* XIBSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBSlider.m; path = Classes/XIBSlider.m; sourceTree = "<group>"; };
+		145DC3F61C5F3DA8007659AF /* XIBSliderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBSliderCell.h; path = Classes/XIBSliderCell.h; sourceTree = "<group>"; };
+		145DC3F71C5F3DA8007659AF /* XIBSliderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBSliderCell.m; path = Classes/XIBSliderCell.m; sourceTree = "<group>"; };
+		145DC3F81C5F3DA8007659AF /* XIBSplitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBSplitView.h; path = Classes/XIBSplitView.h; sourceTree = "<group>"; };
+		145DC3F91C5F3DA8007659AF /* XIBSplitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBSplitView.m; path = Classes/XIBSplitView.m; sourceTree = "<group>"; };
+		145DC3FA1C5F3DA8007659AF /* XIBStepper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBStepper.h; path = Classes/XIBStepper.h; sourceTree = "<group>"; };
+		145DC3FB1C5F3DA8007659AF /* XIBStepper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBStepper.m; path = Classes/XIBStepper.m; sourceTree = "<group>"; };
+		145DC3FC1C5F3DA8007659AF /* XIBStepperCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBStepperCell.h; path = Classes/XIBStepperCell.h; sourceTree = "<group>"; };
+		145DC3FD1C5F3DA8007659AF /* XIBStepperCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBStepperCell.m; path = Classes/XIBStepperCell.m; sourceTree = "<group>"; };
+		145DC3FE1C5F3DA8007659AF /* XIBString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBString.h; path = Classes/XIBString.h; sourceTree = "<group>"; };
+		145DC3FF1C5F3DA8007659AF /* XIBString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBString.m; path = Classes/XIBString.m; sourceTree = "<group>"; };
+		145DC4001C5F3DA8007659AF /* XIBTableCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBTableCellView.h; path = Classes/XIBTableCellView.h; sourceTree = "<group>"; };
+		145DC4011C5F3DA8007659AF /* XIBTableCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBTableCellView.m; path = Classes/XIBTableCellView.m; sourceTree = "<group>"; };
+		145DC4021C5F3DA8007659AF /* XIBTableColumn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBTableColumn.h; path = Classes/XIBTableColumn.h; sourceTree = "<group>"; };
+		145DC4031C5F3DA8007659AF /* XIBTableColumn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBTableColumn.m; path = Classes/XIBTableColumn.m; sourceTree = "<group>"; };
+		145DC4041C5F3DA8007659AF /* XIBTableColumnResizingMask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBTableColumnResizingMask.h; path = Classes/XIBTableColumnResizingMask.h; sourceTree = "<group>"; };
+		145DC4051C5F3DA8007659AF /* XIBTableColumnResizingMask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBTableColumnResizingMask.m; path = Classes/XIBTableColumnResizingMask.m; sourceTree = "<group>"; };
+		145DC4061C5F3DA8007659AF /* XIBTableHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBTableHeaderCell.h; path = Classes/XIBTableHeaderCell.h; sourceTree = "<group>"; };
+		145DC4071C5F3DA8007659AF /* XIBTableHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBTableHeaderCell.m; path = Classes/XIBTableHeaderCell.m; sourceTree = "<group>"; };
+		145DC4081C5F3DA8007659AF /* XIBTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBTableHeaderView.h; path = Classes/XIBTableHeaderView.h; sourceTree = "<group>"; };
+		145DC4091C5F3DA8007659AF /* XIBTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBTableHeaderView.m; path = Classes/XIBTableHeaderView.m; sourceTree = "<group>"; };
+		145DC40A1C5F3DA8007659AF /* XIBTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBTableView.h; path = Classes/XIBTableView.h; sourceTree = "<group>"; };
+		145DC40B1C5F3DA8007659AF /* XIBTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBTableView.m; path = Classes/XIBTableView.m; sourceTree = "<group>"; };
+		145DC40C1C5F3DA8007659AF /* XIBTabView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBTabView.h; path = Classes/XIBTabView.h; sourceTree = "<group>"; };
+		145DC40D1C5F3DA8007659AF /* XIBTabView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBTabView.m; path = Classes/XIBTabView.m; sourceTree = "<group>"; };
+		145DC40E1C5F3DA8007659AF /* XIBTabViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBTabViewItem.h; path = Classes/XIBTabViewItem.h; sourceTree = "<group>"; };
+		145DC40F1C5F3DA8007659AF /* XIBTabViewItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBTabViewItem.m; path = Classes/XIBTabViewItem.m; sourceTree = "<group>"; };
+		145DC4101C5F3DA8007659AF /* XIBTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBTextField.h; path = Classes/XIBTextField.h; sourceTree = "<group>"; };
+		145DC4111C5F3DA8007659AF /* XIBTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBTextField.m; path = Classes/XIBTextField.m; sourceTree = "<group>"; };
+		145DC4121C5F3DA8007659AF /* XIBTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBTextFieldCell.h; path = Classes/XIBTextFieldCell.h; sourceTree = "<group>"; };
+		145DC4131C5F3DA8007659AF /* XIBTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBTextFieldCell.m; path = Classes/XIBTextFieldCell.m; sourceTree = "<group>"; };
+		145DC4141C5F3DA8007659AF /* XIBTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBTextView.h; path = Classes/XIBTextView.h; sourceTree = "<group>"; };
+		145DC4151C5F3DA8007659AF /* XIBTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBTextView.m; path = Classes/XIBTextView.m; sourceTree = "<group>"; };
+		145DC4161C5F3DA8007659AF /* XIBTimeZone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBTimeZone.h; path = Classes/XIBTimeZone.h; sourceTree = "<group>"; };
+		145DC4171C5F3DA8007659AF /* XIBTimeZone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBTimeZone.m; path = Classes/XIBTimeZone.m; sourceTree = "<group>"; };
+		145DC4181C5F3DA8007659AF /* XIBTokenField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBTokenField.h; path = Classes/XIBTokenField.h; sourceTree = "<group>"; };
+		145DC4191C5F3DA8007659AF /* XIBTokenField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBTokenField.m; path = Classes/XIBTokenField.m; sourceTree = "<group>"; };
+		145DC41A1C5F3DA8007659AF /* XIBTokenFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBTokenFieldCell.h; path = Classes/XIBTokenFieldCell.h; sourceTree = "<group>"; };
+		145DC41B1C5F3DA8007659AF /* XIBTokenFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBTokenFieldCell.m; path = Classes/XIBTokenFieldCell.m; sourceTree = "<group>"; };
+		145DC41C1C5F3DA8007659AF /* XIBToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBToolbar.h; path = Classes/XIBToolbar.h; sourceTree = "<group>"; };
+		145DC41D1C5F3DA8007659AF /* XIBToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBToolbar.m; path = Classes/XIBToolbar.m; sourceTree = "<group>"; };
+		145DC41E1C5F3DA8007659AF /* XIBToolbarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBToolbarItem.h; path = Classes/XIBToolbarItem.h; sourceTree = "<group>"; };
+		145DC41F1C5F3DA8007659AF /* XIBToolbarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBToolbarItem.m; path = Classes/XIBToolbarItem.m; sourceTree = "<group>"; };
+		145DC4201C5F3DA8007659AF /* XIBUrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBUrl.h; path = Classes/XIBUrl.h; sourceTree = "<group>"; };
+		145DC4211C5F3DA8007659AF /* XIBUrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBUrl.m; path = Classes/XIBUrl.m; sourceTree = "<group>"; };
+		145DC4221C5F3DA8007659AF /* XIBView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBView.h; path = Classes/XIBView.h; sourceTree = "<group>"; };
+		145DC4231C5F3DA8007659AF /* XIBView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBView.m; path = Classes/XIBView.m; sourceTree = "<group>"; };
+		145DC4241C5F3DA8007659AF /* XIBWebPreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBWebPreferences.h; path = Classes/XIBWebPreferences.h; sourceTree = "<group>"; };
+		145DC4251C5F3DA8007659AF /* XIBWebPreferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBWebPreferences.m; path = Classes/XIBWebPreferences.m; sourceTree = "<group>"; };
+		145DC4261C5F3DA8007659AF /* XIBWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBWebView.h; path = Classes/XIBWebView.h; sourceTree = "<group>"; };
+		145DC4271C5F3DA8007659AF /* XIBWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBWebView.m; path = Classes/XIBWebView.m; sourceTree = "<group>"; };
+		145DC4281C5F3DA8007659AF /* XIBWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBWindow.h; path = Classes/XIBWindow.h; sourceTree = "<group>"; };
+		145DC4291C5F3DA8007659AF /* XIBWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBWindow.m; path = Classes/XIBWindow.m; sourceTree = "<group>"; };
+		145DC42A1C5F3DA8007659AF /* XIBWindowPositionMask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBWindowPositionMask.h; path = Classes/XIBWindowPositionMask.h; sourceTree = "<group>"; };
+		145DC42B1C5F3DA8007659AF /* XIBWindowPositionMask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBWindowPositionMask.m; path = Classes/XIBWindowPositionMask.m; sourceTree = "<group>"; };
+		145DC42C1C5F3DA8007659AF /* XIBWindowStyleMask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBWindowStyleMask.h; path = Classes/XIBWindowStyleMask.h; sourceTree = "<group>"; };
+		145DC42D1C5F3DA8007659AF /* XIBWindowStyleMask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBWindowStyleMask.m; path = Classes/XIBWindowStyleMask.m; sourceTree = "<group>"; };
+		145DC4831C5FBDEB007659AF /* XIBCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBCommon.h; path = Classes/XIBCommon.h; sourceTree = "<group>"; };
+		145DC4841C5FC3C6007659AF /* GNUstep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GNUstep.h; path = Classes/GNUstep.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +353,7 @@
 		145DC3521C5F3C73007659AF /* XIBParser */ = {
 			isa = PBXGroup;
 			children = (
+				145DC3831C5F3D98007659AF /* Classes */,
 				145DC3531C5F3C73007659AF /* AppDelegate.h */,
 				145DC3541C5F3C73007659AF /* AppDelegate.m */,
 				145DC3591C5F3C73007659AF /* Assets.xcassets */,
@@ -130,6 +388,185 @@
 				145DC3741C5F3C73007659AF /* Info.plist */,
 			);
 			path = XIBParserUITests;
+			sourceTree = "<group>";
+		};
+		145DC3831C5F3D98007659AF /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				145DC4841C5FC3C6007659AF /* GNUstep.h */,
+				145DC3841C5F3DA7007659AF /* XIBAutoresizingMask.h */,
+				145DC3851C5F3DA7007659AF /* XIBAutoresizingMask.m */,
+				145DC3861C5F3DA7007659AF /* XIBBehavior.h */,
+				145DC3871C5F3DA7007659AF /* XIBBehavior.m */,
+				145DC3881C5F3DA7007659AF /* XIBBox.h */,
+				145DC3891C5F3DA7007659AF /* XIBBox.m */,
+				145DC38A1C5F3DA7007659AF /* XIBBrowser.h */,
+				145DC38B1C5F3DA7007659AF /* XIBBrowser.m */,
+				145DC38C1C5F3DA7007659AF /* XIBButton.h */,
+				145DC38D1C5F3DA7007659AF /* XIBButton.m */,
+				145DC38E1C5F3DA7007659AF /* XIBButtonCell.h */,
+				145DC38F1C5F3DA7007659AF /* XIBButtonCell.m */,
+				145DC3901C5F3DA7007659AF /* XIBCalendarDate.h */,
+				145DC3911C5F3DA7007659AF /* XIBCalendarDate.m */,
+				145DC3921C5F3DA7007659AF /* XIBCapability.h */,
+				145DC3931C5F3DA7007659AF /* XIBCapability.m */,
+				145DC3941C5F3DA7007659AF /* XIBClipView.h */,
+				145DC3951C5F3DA7007659AF /* XIBClipView.m */,
+				145DC3961C5F3DA7007659AF /* XIBCollectionView.h */,
+				145DC3971C5F3DA7007659AF /* XIBCollectionView.m */,
+				145DC3981C5F3DA7007659AF /* XIBCollectionViewItem.h */,
+				145DC3991C5F3DA7007659AF /* XIBCollectionViewItem.m */,
+				145DC39A1C5F3DA7007659AF /* XIBColor.h */,
+				145DC39B1C5F3DA7007659AF /* XIBColor.m */,
+				145DC39C1C5F3DA7007659AF /* XIBColorWell.h */,
+				145DC39D1C5F3DA7007659AF /* XIBColorWell.m */,
+				145DC39E1C5F3DA7007659AF /* XIBComboBox.h */,
+				145DC39F1C5F3DA7007659AF /* XIBComboBox.m */,
+				145DC3A01C5F3DA7007659AF /* XIBComboBoxCell.h */,
+				145DC3A11C5F3DA7007659AF /* XIBComboBoxCell.m */,
+				145DC3A21C5F3DA7007659AF /* XIBCustomObject.h */,
+				145DC3A31C5F3DA7007659AF /* XIBCustomObject.m */,
+				145DC3A41C5F3DA7007659AF /* XIBCustomView.h */,
+				145DC3A51C5F3DA7007659AF /* XIBCustomView.m */,
+				145DC3A61C5F3DA7007659AF /* XIBDatePicker.h */,
+				145DC3A71C5F3DA7007659AF /* XIBDatePicker.m */,
+				145DC3A81C5F3DA7007659AF /* XIBDatePickerCell.h */,
+				145DC3A91C5F3DA7007659AF /* XIBDatePickerCell.m */,
+				145DC3AA1C5F3DA7007659AF /* XIBFont.h */,
+				145DC3AB1C5F3DA7007659AF /* XIBFont.m */,
+				145DC3AC1C5F3DA7007659AF /* XIBForm.h */,
+				145DC3AD1C5F3DA7007659AF /* XIBForm.m */,
+				145DC3AE1C5F3DA7007659AF /* XIBFormCell.h */,
+				145DC3AF1C5F3DA7007659AF /* XIBFormCell.m */,
+				145DC3B01C5F3DA7007659AF /* XIBIBAction.h */,
+				145DC3B11C5F3DA7007659AF /* XIBIBAction.m */,
+				145DC3B21C5F3DA7007659AF /* XIBIBDocument.h */,
+				145DC3B31C5F3DA7007659AF /* XIBIBDocument.m */,
+				145DC3B41C5F3DA7007659AF /* XIBIBOutlet.h */,
+				145DC3B51C5F3DA7007659AF /* XIBIBOutlet.m */,
+				145DC3B61C5F3DA7007659AF /* XIBIBPlugIn.h */,
+				145DC3B71C5F3DA7007659AF /* XIBIBPlugIn.m */,
+				145DC3B81C5F3DA7007659AF /* XIBImageCell.h */,
+				145DC3B91C5F3DA7007659AF /* XIBImageCell.m */,
+				145DC3BA1C5F3DA7007659AF /* XIBImageView.h */,
+				145DC3BB1C5F3DA7007659AF /* XIBImageView.m */,
+				145DC3BC1C5F3DA7007659AF /* XIBLevelIndicator.h */,
+				145DC3BD1C5F3DA7007659AF /* XIBLevelIndicator.m */,
+				145DC3BE1C5F3DA7007659AF /* XIBLevelIndicatorCell.h */,
+				145DC3BF1C5F3DA7007659AF /* XIBLevelIndicatorCell.m */,
+				145DC3C01C5F3DA7007659AF /* XIBMenu.h */,
+				145DC3C11C5F3DA7007659AF /* XIBMenu.m */,
+				145DC3C21C5F3DA7007659AF /* XIBMenuItem.h */,
+				145DC3C31C5F3DA7007659AF /* XIBMenuItem.m */,
+				145DC3C41C5F3DA7007659AF /* XIBModifierMask.h */,
+				145DC3C51C5F3DA7007659AF /* XIBModifierMask.m */,
+				145DC3C61C5F3DA7007659AF /* XIBNil.h */,
+				145DC3C71C5F3DA7007659AF /* XIBNil.m */,
+				145DC3C81C5F3DA7007659AF /* XIBNumberFormatter.h */,
+				145DC3C91C5F3DA7007659AF /* XIBNumberFormatter.m */,
+				145DC3CA1C5F3DA7007659AF /* XIBOpenGLView.h */,
+				145DC3CB1C5F3DA7007659AF /* XIBOpenGLView.m */,
+				145DC3CC1C5F3DA7007659AF /* XIBOutlineView.h */,
+				145DC3CD1C5F3DA7007659AF /* XIBOutlineView.m */,
+				145DC3CE1C5F3DA7007659AF /* XIBPathCell.h */,
+				145DC3CF1C5F3DA7007659AF /* XIBPathCell.m */,
+				145DC3D01C5F3DA7007659AF /* XIBPathControl.h */,
+				145DC3D11C5F3DA7007659AF /* XIBPathControl.m */,
+				145DC3D21C5F3DA7007659AF /* XIBPoint.h */,
+				145DC3D31C5F3DA7007659AF /* XIBPoint.m */,
+				145DC3D41C5F3DA7007659AF /* XIBPopUpButton.h */,
+				145DC3D51C5F3DA7007659AF /* XIBPopUpButton.m */,
+				145DC3D61C5F3DA7007659AF /* XIBPopUpButtonCell.h */,
+				145DC3D71C5F3DA7007659AF /* XIBPopUpButtonCell.m */,
+				145DC3D81C5F3DA7007659AF /* XIBProgressIndicator.h */,
+				145DC3D91C5F3DA7007659AF /* XIBProgressIndicator.m */,
+				145DC3DA1C5F3DA7007659AF /* XIBReal.h */,
+				145DC3DB1C5F3DA7007659AF /* XIBReal.m */,
+				145DC3DC1C5F3DA7007659AF /* XIBRect.h */,
+				145DC3DD1C5F3DA7007659AF /* XIBRect.m */,
+				145DC3DE1C5F3DA7007659AF /* XIBSceneView.h */,
+				145DC3DF1C5F3DA7007659AF /* XIBSceneView.m */,
+				145DC3E01C5F3DA7007659AF /* XIBScroller.h */,
+				145DC3E11C5F3DA7007659AF /* XIBScroller.m */,
+				145DC3E21C5F3DA7007659AF /* XIBScrollView.h */,
+				145DC3E31C5F3DA7007659AF /* XIBScrollView.m */,
+				145DC3E41C5F3DA7007659AF /* XIBSearchField.h */,
+				145DC3E51C5F3DA7007659AF /* XIBSearchField.m */,
+				145DC3E61C5F3DA7007659AF /* XIBSearchFieldCell.h */,
+				145DC3E71C5F3DA7007659AF /* XIBSearchFieldCell.m */,
+				145DC3E81C5F3DA7007659AF /* XIBSecureTextField.h */,
+				145DC3E91C5F3DA7007659AF /* XIBSecureTextField.m */,
+				145DC3EA1C5F3DA7007659AF /* XIBSecureTextFieldCell.h */,
+				145DC3EB1C5F3DA7007659AF /* XIBSecureTextFieldCell.m */,
+				145DC3EC1C5F3DA7007659AF /* XIBSegment.h */,
+				145DC3ED1C5F3DA7007659AF /* XIBSegment.m */,
+				145DC3EE1C5F3DA8007659AF /* XIBSegmentedCell.h */,
+				145DC3EF1C5F3DA8007659AF /* XIBSegmentedCell.m */,
+				145DC3F01C5F3DA8007659AF /* XIBSegmentedControl.h */,
+				145DC3F11C5F3DA8007659AF /* XIBSegmentedControl.m */,
+				145DC3F21C5F3DA8007659AF /* XIBSize.h */,
+				145DC3F31C5F3DA8007659AF /* XIBSize.m */,
+				145DC3F41C5F3DA8007659AF /* XIBSlider.h */,
+				145DC3F51C5F3DA8007659AF /* XIBSlider.m */,
+				145DC3F61C5F3DA8007659AF /* XIBSliderCell.h */,
+				145DC3F71C5F3DA8007659AF /* XIBSliderCell.m */,
+				145DC3F81C5F3DA8007659AF /* XIBSplitView.h */,
+				145DC3F91C5F3DA8007659AF /* XIBSplitView.m */,
+				145DC3FA1C5F3DA8007659AF /* XIBStepper.h */,
+				145DC3FB1C5F3DA8007659AF /* XIBStepper.m */,
+				145DC3FC1C5F3DA8007659AF /* XIBStepperCell.h */,
+				145DC3FD1C5F3DA8007659AF /* XIBStepperCell.m */,
+				145DC3FE1C5F3DA8007659AF /* XIBString.h */,
+				145DC3FF1C5F3DA8007659AF /* XIBString.m */,
+				145DC4001C5F3DA8007659AF /* XIBTableCellView.h */,
+				145DC4011C5F3DA8007659AF /* XIBTableCellView.m */,
+				145DC4021C5F3DA8007659AF /* XIBTableColumn.h */,
+				145DC4031C5F3DA8007659AF /* XIBTableColumn.m */,
+				145DC4041C5F3DA8007659AF /* XIBTableColumnResizingMask.h */,
+				145DC4051C5F3DA8007659AF /* XIBTableColumnResizingMask.m */,
+				145DC4061C5F3DA8007659AF /* XIBTableHeaderCell.h */,
+				145DC4071C5F3DA8007659AF /* XIBTableHeaderCell.m */,
+				145DC4081C5F3DA8007659AF /* XIBTableHeaderView.h */,
+				145DC4091C5F3DA8007659AF /* XIBTableHeaderView.m */,
+				145DC40A1C5F3DA8007659AF /* XIBTableView.h */,
+				145DC40B1C5F3DA8007659AF /* XIBTableView.m */,
+				145DC40C1C5F3DA8007659AF /* XIBTabView.h */,
+				145DC40D1C5F3DA8007659AF /* XIBTabView.m */,
+				145DC40E1C5F3DA8007659AF /* XIBTabViewItem.h */,
+				145DC40F1C5F3DA8007659AF /* XIBTabViewItem.m */,
+				145DC4101C5F3DA8007659AF /* XIBTextField.h */,
+				145DC4111C5F3DA8007659AF /* XIBTextField.m */,
+				145DC4121C5F3DA8007659AF /* XIBTextFieldCell.h */,
+				145DC4131C5F3DA8007659AF /* XIBTextFieldCell.m */,
+				145DC4141C5F3DA8007659AF /* XIBTextView.h */,
+				145DC4151C5F3DA8007659AF /* XIBTextView.m */,
+				145DC4161C5F3DA8007659AF /* XIBTimeZone.h */,
+				145DC4171C5F3DA8007659AF /* XIBTimeZone.m */,
+				145DC4181C5F3DA8007659AF /* XIBTokenField.h */,
+				145DC4191C5F3DA8007659AF /* XIBTokenField.m */,
+				145DC41A1C5F3DA8007659AF /* XIBTokenFieldCell.h */,
+				145DC41B1C5F3DA8007659AF /* XIBTokenFieldCell.m */,
+				145DC41C1C5F3DA8007659AF /* XIBToolbar.h */,
+				145DC41D1C5F3DA8007659AF /* XIBToolbar.m */,
+				145DC41E1C5F3DA8007659AF /* XIBToolbarItem.h */,
+				145DC41F1C5F3DA8007659AF /* XIBToolbarItem.m */,
+				145DC4201C5F3DA8007659AF /* XIBUrl.h */,
+				145DC4211C5F3DA8007659AF /* XIBUrl.m */,
+				145DC4221C5F3DA8007659AF /* XIBView.h */,
+				145DC4231C5F3DA8007659AF /* XIBView.m */,
+				145DC4241C5F3DA8007659AF /* XIBWebPreferences.h */,
+				145DC4251C5F3DA8007659AF /* XIBWebPreferences.m */,
+				145DC4261C5F3DA8007659AF /* XIBWebView.h */,
+				145DC4271C5F3DA8007659AF /* XIBWebView.m */,
+				145DC4281C5F3DA8007659AF /* XIBWindow.h */,
+				145DC4291C5F3DA8007659AF /* XIBWindow.m */,
+				145DC42A1C5F3DA8007659AF /* XIBWindowPositionMask.h */,
+				145DC42B1C5F3DA8007659AF /* XIBWindowPositionMask.m */,
+				145DC42C1C5F3DA8007659AF /* XIBWindowStyleMask.h */,
+				145DC42D1C5F3DA8007659AF /* XIBWindowStyleMask.m */,
+				145DC4831C5FBDEB007659AF /* XIBCommon.h */,
+			);
+			name = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,8 +698,93 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				145DC46B1C5F3DA8007659AF /* XIBString.m in Sources */,
+				145DC4821C5F3DA8007659AF /* XIBWindowStyleMask.m in Sources */,
+				145DC4491C5F3DA8007659AF /* XIBImageView.m in Sources */,
+				145DC4801C5F3DA8007659AF /* XIBWindow.m in Sources */,
+				145DC44D1C5F3DA8007659AF /* XIBMenuItem.m in Sources */,
+				145DC4371C5F3DA8007659AF /* XIBCollectionView.m in Sources */,
+				145DC45E1C5F3DA8007659AF /* XIBSearchField.m in Sources */,
+				145DC4451C5F3DA8007659AF /* XIBIBDocument.m in Sources */,
 				145DC3581C5F3C73007659AF /* main.m in Sources */,
+				145DC45B1C5F3DA8007659AF /* XIBSceneView.m in Sources */,
+				145DC4351C5F3DA8007659AF /* XIBCapability.m in Sources */,
+				145DC46E1C5F3DA8007659AF /* XIBTableColumnResizingMask.m in Sources */,
+				145DC44A1C5F3DA8007659AF /* XIBLevelIndicator.m in Sources */,
+				145DC43A1C5F3DA8007659AF /* XIBColorWell.m in Sources */,
+				145DC4401C5F3DA8007659AF /* XIBDatePickerCell.m in Sources */,
+				145DC43B1C5F3DA8007659AF /* XIBComboBox.m in Sources */,
+				145DC4651C5F3DA8007659AF /* XIBSize.m in Sources */,
+				145DC4611C5F3DA8007659AF /* XIBSecureTextFieldCell.m in Sources */,
+				145DC47B1C5F3DA8007659AF /* XIBToolbarItem.m in Sources */,
+				145DC4361C5F3DA8007659AF /* XIBClipView.m in Sources */,
+				145DC44B1C5F3DA8007659AF /* XIBLevelIndicatorCell.m in Sources */,
+				145DC43E1C5F3DA8007659AF /* XIBCustomView.m in Sources */,
+				145DC46F1C5F3DA8007659AF /* XIBTableHeaderCell.m in Sources */,
+				145DC45A1C5F3DA8007659AF /* XIBRect.m in Sources */,
+				145DC4331C5F3DA8007659AF /* XIBButtonCell.m in Sources */,
+				145DC4761C5F3DA8007659AF /* XIBTextView.m in Sources */,
+				145DC4741C5F3DA8007659AF /* XIBTextField.m in Sources */,
+				145DC4461C5F3DA8007659AF /* XIBIBOutlet.m in Sources */,
+				145DC4671C5F3DA8007659AF /* XIBSliderCell.m in Sources */,
 				145DC3551C5F3C73007659AF /* AppDelegate.m in Sources */,
+				145DC4721C5F3DA8007659AF /* XIBTabView.m in Sources */,
+				145DC4631C5F3DA8007659AF /* XIBSegmentedCell.m in Sources */,
+				145DC4521C5F3DA8007659AF /* XIBOutlineView.m in Sources */,
+				145DC4771C5F3DA8007659AF /* XIBTimeZone.m in Sources */,
+				145DC4421C5F3DA8007659AF /* XIBForm.m in Sources */,
+				145DC4571C5F3DA8007659AF /* XIBPopUpButtonCell.m in Sources */,
+				145DC4591C5F3DA8007659AF /* XIBReal.m in Sources */,
+				145DC4731C5F3DA8007659AF /* XIBTabViewItem.m in Sources */,
+				145DC46A1C5F3DA8007659AF /* XIBStepperCell.m in Sources */,
+				145DC4691C5F3DA8007659AF /* XIBStepper.m in Sources */,
+				145DC47C1C5F3DA8007659AF /* XIBUrl.m in Sources */,
+				145DC4441C5F3DA8007659AF /* XIBIBAction.m in Sources */,
+				145DC47D1C5F3DA8007659AF /* XIBView.m in Sources */,
+				145DC43F1C5F3DA8007659AF /* XIBDatePicker.m in Sources */,
+				145DC4341C5F3DA8007659AF /* XIBCalendarDate.m in Sources */,
+				145DC4541C5F3DA8007659AF /* XIBPathControl.m in Sources */,
+				145DC4781C5F3DA8007659AF /* XIBTokenField.m in Sources */,
+				145DC4321C5F3DA8007659AF /* XIBButton.m in Sources */,
+				145DC4661C5F3DA8007659AF /* XIBSlider.m in Sources */,
+				145DC4561C5F3DA8007659AF /* XIBPopUpButton.m in Sources */,
+				145DC47A1C5F3DA8007659AF /* XIBToolbar.m in Sources */,
+				145DC45C1C5F3DA8007659AF /* XIBScroller.m in Sources */,
+				145DC4751C5F3DA8007659AF /* XIBTextFieldCell.m in Sources */,
+				145DC4311C5F3DA8007659AF /* XIBBrowser.m in Sources */,
+				145DC4411C5F3DA8007659AF /* XIBFont.m in Sources */,
+				145DC4391C5F3DA8007659AF /* XIBColor.m in Sources */,
+				145DC4381C5F3DA8007659AF /* XIBCollectionViewItem.m in Sources */,
+				145DC4301C5F3DA8007659AF /* XIBBox.m in Sources */,
+				145DC4551C5F3DA8007659AF /* XIBPoint.m in Sources */,
+				145DC42E1C5F3DA8007659AF /* XIBAutoresizingMask.m in Sources */,
+				145DC4481C5F3DA8007659AF /* XIBImageCell.m in Sources */,
+				145DC43D1C5F3DA8007659AF /* XIBCustomObject.m in Sources */,
+				145DC4511C5F3DA8007659AF /* XIBOpenGLView.m in Sources */,
+				145DC45F1C5F3DA8007659AF /* XIBSearchFieldCell.m in Sources */,
+				145DC44F1C5F3DA8007659AF /* XIBNil.m in Sources */,
+				145DC4531C5F3DA8007659AF /* XIBPathCell.m in Sources */,
+				145DC4601C5F3DA8007659AF /* XIBSecureTextField.m in Sources */,
+				145DC45D1C5F3DA8007659AF /* XIBScrollView.m in Sources */,
+				145DC4711C5F3DA8007659AF /* XIBTableView.m in Sources */,
+				145DC4621C5F3DA8007659AF /* XIBSegment.m in Sources */,
+				145DC44C1C5F3DA8007659AF /* XIBMenu.m in Sources */,
+				145DC4501C5F3DA8007659AF /* XIBNumberFormatter.m in Sources */,
+				145DC4791C5F3DA8007659AF /* XIBTokenFieldCell.m in Sources */,
+				145DC4581C5F3DA8007659AF /* XIBProgressIndicator.m in Sources */,
+				145DC43C1C5F3DA8007659AF /* XIBComboBoxCell.m in Sources */,
+				145DC4811C5F3DA8007659AF /* XIBWindowPositionMask.m in Sources */,
+				145DC4471C5F3DA8007659AF /* XIBIBPlugIn.m in Sources */,
+				145DC44E1C5F3DA8007659AF /* XIBModifierMask.m in Sources */,
+				145DC47F1C5F3DA8007659AF /* XIBWebView.m in Sources */,
+				145DC46D1C5F3DA8007659AF /* XIBTableColumn.m in Sources */,
+				145DC4681C5F3DA8007659AF /* XIBSplitView.m in Sources */,
+				145DC46C1C5F3DA8007659AF /* XIBTableCellView.m in Sources */,
+				145DC4641C5F3DA8007659AF /* XIBSegmentedControl.m in Sources */,
+				145DC42F1C5F3DA8007659AF /* XIBBehavior.m in Sources */,
+				145DC4701C5F3DA8007659AF /* XIBTableHeaderView.m in Sources */,
+				145DC4431C5F3DA8007659AF /* XIBFormCell.m in Sources */,
+				145DC47E1C5F3DA8007659AF /* XIBWebPreferences.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,6 +914,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = XIBParser/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -404,6 +927,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = XIBParser/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
