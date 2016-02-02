@@ -99,6 +99,7 @@
 		145DC4811C5F3DA8007659AF /* XIBWindowPositionMask.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC42B1C5F3DA8007659AF /* XIBWindowPositionMask.m */; };
 		145DC4821C5F3DA8007659AF /* XIBWindowStyleMask.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC42D1C5F3DA8007659AF /* XIBWindowStyleMask.m */; };
 		145DC4871C603D0C007659AF /* XIBParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC4861C603D0C007659AF /* XIBParser.m */; };
+		145DC48B1C607625007659AF /* NSString+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC48A1C607625007659AF /* NSString+Extensions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -306,6 +307,8 @@
 		145DC4841C5FC3C6007659AF /* GNUstep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GNUstep.h; path = Classes/GNUstep.h; sourceTree = "<group>"; };
 		145DC4851C603D0C007659AF /* XIBParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBParser.h; path = Classes/XIBParser.h; sourceTree = "<group>"; };
 		145DC4861C603D0C007659AF /* XIBParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBParser.m; path = Classes/XIBParser.m; sourceTree = "<group>"; };
+		145DC4891C607625007659AF /* NSString+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Extensions.h"; path = "Extensions/NSString+Extensions.h"; sourceTree = "<group>"; };
+		145DC48A1C607625007659AF /* NSString+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Extensions.m"; path = "Extensions/NSString+Extensions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -356,6 +359,7 @@
 		145DC3521C5F3C73007659AF /* XIBParser */ = {
 			isa = PBXGroup;
 			children = (
+				145DC4881C607611007659AF /* Extensions */,
 				145DC3831C5F3D98007659AF /* Classes */,
 				145DC3531C5F3C73007659AF /* AppDelegate.h */,
 				145DC3541C5F3C73007659AF /* AppDelegate.m */,
@@ -574,6 +578,15 @@
 			name = Classes;
 			sourceTree = "<group>";
 		};
+		145DC4881C607611007659AF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				145DC4891C607625007659AF /* NSString+Extensions.h */,
+				145DC48A1C607625007659AF /* NSString+Extensions.m */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -734,6 +747,7 @@
 				145DC4671C5F3DA8007659AF /* XIBSliderCell.m in Sources */,
 				145DC3551C5F3C73007659AF /* AppDelegate.m in Sources */,
 				145DC4721C5F3DA8007659AF /* XIBTabView.m in Sources */,
+				145DC48B1C607625007659AF /* NSString+Extensions.m in Sources */,
 				145DC4631C5F3DA8007659AF /* XIBSegmentedCell.m in Sources */,
 				145DC4521C5F3DA8007659AF /* XIBOutlineView.m in Sources */,
 				145DC4771C5F3DA8007659AF /* XIBTimeZone.m in Sources */,
