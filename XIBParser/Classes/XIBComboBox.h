@@ -1,3 +1,7 @@
+/* Class Header:XIBComboBox */
+#ifndef __XIBComboBox_H_
+#define __XIBComboBox_H_
+
 #import <Foundation/Foundation.h>
 
 @class XIBComboBoxCell;
@@ -23,3 +27,5 @@
 - (NSString *) verticalHuggingPriority;
 
 @end
+
+#endif

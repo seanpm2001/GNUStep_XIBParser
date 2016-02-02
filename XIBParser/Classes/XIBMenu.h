@@ -1,3 +1,7 @@
+/* Class Header:XIBMenu */
+#ifndef __XIBMenu_H_
+#define __XIBMenu_H_
+
 #import <Foundation/Foundation.h>
 
 
@@ -19,3 +23,5 @@
 - (NSString *) title;
 
 @end
+
+#endif

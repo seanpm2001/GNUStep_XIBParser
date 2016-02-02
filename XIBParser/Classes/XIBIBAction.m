@@ -1,3 +1,5 @@
+/* Class Code:XIBIBAction */
+
 #import "XIBIBAction.h"
 
 #ifndef GNUSTEP

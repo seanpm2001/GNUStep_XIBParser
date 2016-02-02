@@ -1,3 +1,7 @@
+/* Class Header:XIBOpenGLView */
+#ifndef __XIBOpenGLView_H_
+#define __XIBOpenGLView_H_
+
 #import <Foundation/Foundation.h>
 
 @class XIBRect;
@@ -24,3 +28,5 @@
 - (BOOL) useAuxiliaryDepthBufferStencil;
 
 @end
+
+#endif

@@ -1,3 +1,5 @@
+/* Class Code:XIBSecureTextField */
+
 #import "XIBSecureTextField.h"
 
 #ifndef GNUSTEP

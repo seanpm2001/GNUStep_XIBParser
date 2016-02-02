@@ -1,3 +1,7 @@
+/* Class Header:XIBWebPreferences */
+#ifndef __XIBWebPreferences_H_
+#define __XIBWebPreferences_H_
+
 #import <Foundation/Foundation.h>
 
 @class XIBNil;
@@ -18,3 +22,5 @@
 - (void) setMinimumFontSize: (NSString *) minimumFontSize;
 
 @end
+
+#endif

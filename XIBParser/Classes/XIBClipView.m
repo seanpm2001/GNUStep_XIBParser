@@ -1,3 +1,5 @@
+/* Class Code:XIBClipView */
+
 #import "XIBClipView.h"
 
 #ifndef GNUSTEP

@@ -1,3 +1,5 @@
+/* Class Code:XIBSearchFieldCell */
+
 #import "XIBSearchFieldCell.h"
 
 #ifndef GNUSTEP

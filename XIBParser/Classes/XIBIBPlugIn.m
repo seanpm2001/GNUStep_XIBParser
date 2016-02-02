@@ -1,3 +1,5 @@
+/* Class Code:XIBIBPlugIn */
+
 #import "XIBIBPlugIn.h"
 
 #ifndef GNUSTEP

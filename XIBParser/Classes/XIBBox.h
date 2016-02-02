@@ -1,3 +1,7 @@
+/* Class Header:XIBBox */
+#ifndef __XIBBox_H_
+#define __XIBBox_H_
+
 #import <Foundation/Foundation.h>
 
 @class XIBColor;
@@ -30,3 +34,5 @@
 - (BOOL) translatesAutoresizingMaskIntoConstraints;
 
 @end
+
+#endif

@@ -1,3 +1,5 @@
+/* Class Code:XIBCustomView */
+
 #import "XIBCustomView.h"
 
 #ifndef GNUSTEP

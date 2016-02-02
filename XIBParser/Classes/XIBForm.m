@@ -1,3 +1,5 @@
+/* Class Code:XIBForm */
+
 #import "XIBForm.h"
 
 #ifndef GNUSTEP

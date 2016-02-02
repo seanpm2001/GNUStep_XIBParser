@@ -1,3 +1,5 @@
+/* Class Code:XIBButtonCell */
+
 #import "XIBButtonCell.h"
 
 #ifndef GNUSTEP

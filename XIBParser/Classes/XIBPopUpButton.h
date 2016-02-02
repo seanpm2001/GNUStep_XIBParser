@@ -1,3 +1,7 @@
+/* Class Header:XIBPopUpButton */
+#ifndef __XIBPopUpButton_H_
+#define __XIBPopUpButton_H_
+
 #import <Foundation/Foundation.h>
 
 @class XIBPopUpButtonCell;
@@ -23,3 +27,5 @@
 - (NSString *) verticalHuggingPriority;
 
 @end
+
+#endif

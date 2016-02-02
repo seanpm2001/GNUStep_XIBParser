@@ -1,3 +1,5 @@
+/* Class Code:XIBProgressIndicator */
+
 #import "XIBProgressIndicator.h"
 
 #ifndef GNUSTEP

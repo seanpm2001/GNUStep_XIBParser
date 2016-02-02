@@ -1,3 +1,7 @@
+/* Class Header:XIBTabView */
+#ifndef __XIBTabView_H_
+#define __XIBTabView_H_
+
 #import <Foundation/Foundation.h>
 
 @class XIBFont;
@@ -23,3 +27,5 @@
 - (BOOL) translatesAutoresizingMaskIntoConstraints;
 
 @end
+
+#endif

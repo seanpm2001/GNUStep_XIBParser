@@ -98,6 +98,7 @@
 		145DC4801C5F3DA8007659AF /* XIBWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC4291C5F3DA8007659AF /* XIBWindow.m */; };
 		145DC4811C5F3DA8007659AF /* XIBWindowPositionMask.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC42B1C5F3DA8007659AF /* XIBWindowPositionMask.m */; };
 		145DC4821C5F3DA8007659AF /* XIBWindowStyleMask.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC42D1C5F3DA8007659AF /* XIBWindowStyleMask.m */; };
+		145DC4871C603D0C007659AF /* XIBParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC4861C603D0C007659AF /* XIBParser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -303,6 +304,8 @@
 		145DC42D1C5F3DA8007659AF /* XIBWindowStyleMask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBWindowStyleMask.m; path = Classes/XIBWindowStyleMask.m; sourceTree = "<group>"; };
 		145DC4831C5FBDEB007659AF /* XIBCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBCommon.h; path = Classes/XIBCommon.h; sourceTree = "<group>"; };
 		145DC4841C5FC3C6007659AF /* GNUstep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GNUstep.h; path = Classes/GNUstep.h; sourceTree = "<group>"; };
+		145DC4851C603D0C007659AF /* XIBParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBParser.h; path = Classes/XIBParser.h; sourceTree = "<group>"; };
+		145DC4861C603D0C007659AF /* XIBParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBParser.m; path = Classes/XIBParser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -565,6 +568,8 @@
 				145DC42C1C5F3DA8007659AF /* XIBWindowStyleMask.h */,
 				145DC42D1C5F3DA8007659AF /* XIBWindowStyleMask.m */,
 				145DC4831C5FBDEB007659AF /* XIBCommon.h */,
+				145DC4851C603D0C007659AF /* XIBParser.h */,
+				145DC4861C603D0C007659AF /* XIBParser.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -736,6 +741,7 @@
 				145DC4571C5F3DA8007659AF /* XIBPopUpButtonCell.m in Sources */,
 				145DC4591C5F3DA8007659AF /* XIBReal.m in Sources */,
 				145DC4731C5F3DA8007659AF /* XIBTabViewItem.m in Sources */,
+				145DC4871C603D0C007659AF /* XIBParser.m in Sources */,
 				145DC46A1C5F3DA8007659AF /* XIBStepperCell.m in Sources */,
 				145DC4691C5F3DA8007659AF /* XIBStepper.m in Sources */,
 				145DC47C1C5F3DA8007659AF /* XIBUrl.m in Sources */,

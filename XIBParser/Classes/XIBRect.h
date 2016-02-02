@@ -1,3 +1,7 @@
+/* Class Header:XIBRect */
+#ifndef __XIBRect_H_
+#define __XIBRect_H_
+
 #import <Foundation/Foundation.h>
 
 
@@ -19,3 +23,5 @@
 - (NSString *) y;
 
 @end
+
+#endif

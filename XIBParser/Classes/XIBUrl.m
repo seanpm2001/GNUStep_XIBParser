@@ -1,3 +1,5 @@
+/* Class Code:XIBUrl */
+
 #import "XIBUrl.h"
 
 #ifndef GNUSTEP

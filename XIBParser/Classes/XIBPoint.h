@@ -1,3 +1,7 @@
+/* Class Header:XIBPoint */
+#ifndef __XIBPoint_H_
+#define __XIBPoint_H_
+
 #import <Foundation/Foundation.h>
 
 
@@ -13,3 +17,5 @@
 - (NSString *) y;
 
 @end
+
+#endif

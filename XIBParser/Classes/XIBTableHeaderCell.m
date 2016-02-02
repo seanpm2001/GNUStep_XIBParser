@@ -1,3 +1,5 @@
+/* Class Code:XIBTableHeaderCell */
+
 #import "XIBTableHeaderCell.h"
 
 #ifndef GNUSTEP

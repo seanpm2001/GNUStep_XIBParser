@@ -1,3 +1,7 @@
+/* Class Header:XIBIBOutlet */
+#ifndef __XIBIBOutlet_H_
+#define __XIBIBOutlet_H_
+
 #import <Foundation/Foundation.h>
 
 
@@ -16,3 +20,5 @@
 - (void) setProperty: (NSString *) property;
 
 @end
+
+#endif

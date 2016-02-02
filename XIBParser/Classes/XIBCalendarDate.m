@@ -1,3 +1,5 @@
+/* Class Code:XIBCalendarDate */
+
 #import "XIBCalendarDate.h"
 
 #ifndef GNUSTEP

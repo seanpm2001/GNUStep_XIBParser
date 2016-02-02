@@ -1,3 +1,7 @@
+/* Class Header:XIBToolbarItem */
+#ifndef __XIBToolbarItem_H_
+#define __XIBToolbarItem_H_
+
 #import <Foundation/Foundation.h>
 
 
@@ -16,3 +20,5 @@
 - (void) setReference: (NSString *) reference;
 
 @end
+
+#endif

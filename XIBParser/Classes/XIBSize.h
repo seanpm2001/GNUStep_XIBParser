@@ -1,3 +1,7 @@
+/* Class Header:XIBSize */
+#ifndef __XIBSize_H_
+#define __XIBSize_H_
+
 #import <Foundation/Foundation.h>
 
 
@@ -13,3 +17,5 @@
 - (NSString *) width;
 
 @end
+
+#endif

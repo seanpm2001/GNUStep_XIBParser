@@ -1,3 +1,7 @@
+/* Class Header:XIBLevelIndicatorCell */
+#ifndef __XIBLevelIndicatorCell_H_
+#define __XIBLevelIndicatorCell_H_
+
 #import <Foundation/Foundation.h>
 
 
@@ -25,3 +29,5 @@
 - (NSString *) warningValue;
 
 @end
+
+#endif

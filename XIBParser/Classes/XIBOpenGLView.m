@@ -1,3 +1,5 @@
+/* Class Code:XIBOpenGLView */
+
 #import "XIBOpenGLView.h"
 
 #ifndef GNUSTEP

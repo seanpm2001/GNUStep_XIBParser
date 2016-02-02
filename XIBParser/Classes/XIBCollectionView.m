@@ -1,3 +1,5 @@
+/* Class Code:XIBCollectionView */
+
 #import "XIBCollectionView.h"
 
 #ifndef GNUSTEP

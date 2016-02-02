@@ -1,3 +1,7 @@
+/* Class Header:XIBTableColumn */
+#ifndef __XIBTableColumn_H_
+#define __XIBTableColumn_H_
+
 #import <Foundation/Foundation.h>
 
 @class XIBTextFieldCell;
@@ -28,3 +32,5 @@
 - (NSString *) width;
 
 @end
+
+#endif

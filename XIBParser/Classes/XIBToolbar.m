@@ -1,3 +1,5 @@
+/* Class Code:XIBToolbar */
+
 #import "XIBToolbar.h"
 
 #ifndef GNUSTEP

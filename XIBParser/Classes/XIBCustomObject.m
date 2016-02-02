@@ -1,3 +1,5 @@
+/* Class Code:XIBCustomObject */
+
 #import "XIBCustomObject.h"
 
 #ifndef GNUSTEP

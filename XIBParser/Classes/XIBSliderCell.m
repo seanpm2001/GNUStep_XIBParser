@@ -1,3 +1,5 @@
+/* Class Code:XIBSliderCell */
+
 #import "XIBSliderCell.h"
 
 #ifndef GNUSTEP

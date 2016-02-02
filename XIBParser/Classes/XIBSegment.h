@@ -1,3 +1,7 @@
+/* Class Header:XIBSegment */
+#ifndef __XIBSegment_H_
+#define __XIBSegment_H_
+
 #import <Foundation/Foundation.h>
 
 @class XIBNil;
@@ -18,3 +22,5 @@
 - (NSString *) width;
 
 @end
+
+#endif

@@ -1,3 +1,5 @@
+/* Class Code:XIBOutlineView */
+
 #import "XIBOutlineView.h"
 
 #ifndef GNUSTEP

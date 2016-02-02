@@ -1,3 +1,7 @@
+/* Class Header:XIBTextFieldCell */
+#ifndef __XIBTextFieldCell_H_
+#define __XIBTextFieldCell_H_
+
 #import <Foundation/Foundation.h>
 
 @class XIBColor;
@@ -45,3 +49,5 @@
 - (NSString *) title;
 
 @end
+
+#endif

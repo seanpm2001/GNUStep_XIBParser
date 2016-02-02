@@ -1,3 +1,7 @@
+/* Class Header:XIBCollectionView */
+#ifndef __XIBCollectionView_H_
+#define __XIBCollectionView_H_
+
 #import <Foundation/Foundation.h>
 
 @class XIBAutoresizingMask;
@@ -22,3 +26,5 @@
 - (void) setId: (NSString *) id;
 
 @end
+
+#endif

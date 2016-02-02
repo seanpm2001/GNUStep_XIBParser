@@ -1,3 +1,5 @@
+/* Class Code:XIBMenu */
+
 #import "XIBMenu.h"
 
 #ifndef GNUSTEP

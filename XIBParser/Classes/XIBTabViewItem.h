@@ -1,3 +1,7 @@
+/* Class Header:XIBTabViewItem */
+#ifndef __XIBTabViewItem_H_
+#define __XIBTabViewItem_H_
+
 #import <Foundation/Foundation.h>
 
 @class XIBView;
@@ -18,3 +22,5 @@
 - (void) setLabel: (NSString *) label;
 
 @end
+
+#endif

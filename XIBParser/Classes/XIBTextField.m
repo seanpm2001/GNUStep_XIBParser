@@ -1,3 +1,5 @@
+/* Class Code:XIBTextField */
+
 #import "XIBTextField.h"
 
 #ifndef GNUSTEP

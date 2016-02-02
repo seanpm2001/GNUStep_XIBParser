@@ -1,3 +1,5 @@
+/* Class Code:XIBWindowPositionMask */
+
 #import "XIBWindowPositionMask.h"
 
 #ifndef GNUSTEP

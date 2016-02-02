@@ -1,3 +1,7 @@
+/* Class Header:XIBProgressIndicator */
+#ifndef __XIBProgressIndicator_H_
+#define __XIBProgressIndicator_H_
+
 #import <Foundation/Foundation.h>
 
 @class XIBRect;
@@ -27,3 +31,5 @@
 - (BOOL) wantsLayer;
 
 @end
+
+#endif

@@ -1,3 +1,7 @@
+/* Class Header:XIBScroller */
+#ifndef __XIBScroller_H_
+#define __XIBScroller_H_
+
 #import <Foundation/Foundation.h>
 
 @class XIBAutoresizingMask;
@@ -26,3 +30,5 @@
 - (NSString *) verticalHuggingPriority;
 
 @end
+
+#endif

@@ -1,3 +1,7 @@
+/* Class Header:XIBButtonCell */
+#ifndef __XIBButtonCell_H_
+#define __XIBButtonCell_H_
+
 #import <Foundation/Foundation.h>
 
 @class XIBBehavior;
@@ -41,3 +45,5 @@
 - (NSString *) type;
 
 @end
+
+#endif

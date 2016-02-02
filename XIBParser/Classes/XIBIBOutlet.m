@@ -1,3 +1,5 @@
+/* Class Code:XIBIBOutlet */
+
 #import "XIBIBOutlet.h"
 
 #ifndef GNUSTEP

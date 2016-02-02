@@ -1,3 +1,5 @@
+/* Class Code:XIBReal */
+
 #import "XIBReal.h"
 
 #ifndef GNUSTEP

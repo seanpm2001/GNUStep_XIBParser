@@ -1,3 +1,7 @@
+/* Class Header:XIBSearchField */
+#ifndef __XIBSearchField_H_
+#define __XIBSearchField_H_
+
 #import <Foundation/Foundation.h>
 
 @class XIBSearchFieldCell;
@@ -26,3 +30,5 @@
 - (BOOL) wantsLayer;
 
 @end
+
+#endif

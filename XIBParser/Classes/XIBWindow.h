@@ -1,3 +1,7 @@
+/* Class Header:XIBWindow */
+#ifndef __XIBWindow_H_
+#define __XIBWindow_H_
+
 #import <Foundation/Foundation.h>
 
 @class XIBPoint;
@@ -54,3 +58,5 @@
 - (NSString *) title;
 
 @end
+
+#endif

@@ -1,3 +1,5 @@
+/* Class Code:XIBTableColumn */
+
 #import "XIBTableColumn.h"
 
 #ifndef GNUSTEP

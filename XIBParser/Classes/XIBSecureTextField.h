@@ -1,3 +1,7 @@
+/* Class Header:XIBSecureTextField */
+#ifndef __XIBSecureTextField_H_
+#define __XIBSecureTextField_H_
+
 #import <Foundation/Foundation.h>
 
 @class XIBSecureTextFieldCell;
@@ -23,3 +27,5 @@
 - (NSString *) verticalHuggingPriority;
 
 @end
+
+#endif

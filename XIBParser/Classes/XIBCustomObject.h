@@ -1,3 +1,7 @@
+/* Class Header:XIBCustomObject */
+#ifndef __XIBCustomObject_H_
+#define __XIBCustomObject_H_
+
 #import <Foundation/Foundation.h>
 
 
@@ -19,3 +23,5 @@
 - (NSString *) userLabel;
 
 @end
+
+#endif

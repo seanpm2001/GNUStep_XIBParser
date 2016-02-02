@@ -1,3 +1,5 @@
+/* Class Code:XIBStepper */
+
 #import "XIBStepper.h"
 
 #ifndef GNUSTEP

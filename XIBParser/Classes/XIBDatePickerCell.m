@@ -1,3 +1,5 @@
+/* Class Code:XIBDatePickerCell */
+
 #import "XIBDatePickerCell.h"
 
 #ifndef GNUSTEP

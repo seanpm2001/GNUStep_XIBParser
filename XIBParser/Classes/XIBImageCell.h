@@ -1,3 +1,7 @@
+/* Class Header:XIBImageCell */
+#ifndef __XIBImageCell_H_
+#define __XIBImageCell_H_
+
 #import <Foundation/Foundation.h>
 
 
@@ -22,3 +26,5 @@
 - (void) setRefusesFirstResponder: (BOOL) refusesFirstResponder;
 
 @end
+
+#endif

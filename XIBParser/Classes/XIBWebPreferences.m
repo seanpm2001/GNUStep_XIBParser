@@ -1,3 +1,5 @@
+/* Class Code:XIBWebPreferences */
+
 #import "XIBWebPreferences.h"
 
 #ifndef GNUSTEP

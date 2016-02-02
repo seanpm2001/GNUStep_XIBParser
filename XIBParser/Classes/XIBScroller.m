@@ -1,3 +1,5 @@
+/* Class Code:XIBScroller */
+
 #import "XIBScroller.h"
 
 #ifndef GNUSTEP

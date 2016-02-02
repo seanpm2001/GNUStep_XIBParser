@@ -1,3 +1,7 @@
+/* Class Header:XIBColor */
+#ifndef __XIBColor_H_
+#define __XIBColor_H_
+
 #import <Foundation/Foundation.h>
 
 
@@ -31,3 +35,5 @@
 - (NSString *) white;
 
 @end
+
+#endif

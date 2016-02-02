@@ -1,3 +1,7 @@
+/* Class Header:XIBSearchFieldCell */
+#ifndef __XIBSearchFieldCell_H_
+#define __XIBSearchFieldCell_H_
+
 #import <Foundation/Foundation.h>
 
 @class XIBColor;
@@ -37,3 +41,5 @@
 - (BOOL) usesSingleLineMode;
 
 @end
+
+#endif

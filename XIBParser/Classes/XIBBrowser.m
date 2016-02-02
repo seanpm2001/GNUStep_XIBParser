@@ -1,3 +1,5 @@
+/* Class Code:XIBBrowser */
+
 #import "XIBBrowser.h"
 
 #ifndef GNUSTEP

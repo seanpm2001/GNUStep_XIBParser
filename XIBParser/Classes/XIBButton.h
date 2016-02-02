@@ -1,3 +1,7 @@
+/* Class Header:XIBButton */
+#ifndef __XIBButton_H_
+#define __XIBButton_H_
+
 #import <Foundation/Foundation.h>
 
 @class XIBButtonCell;
@@ -26,3 +30,5 @@
 - (NSString *) verticalHuggingPriority;
 
 @end
+
+#endif

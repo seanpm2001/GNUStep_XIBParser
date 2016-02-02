@@ -1,3 +1,7 @@
+/* Class Header:XIBBehavior */
+#ifndef __XIBBehavior_H_
+#define __XIBBehavior_H_
+
 #import <Foundation/Foundation.h>
 
 
@@ -22,3 +26,5 @@
 - (void) setPushIn: (BOOL) pushIn;
 
 @end
+
+#endif

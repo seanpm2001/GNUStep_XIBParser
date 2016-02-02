@@ -1,3 +1,5 @@
+/* Class Code:XIBWebView */
+
 #import "XIBWebView.h"
 
 #ifndef GNUSTEP

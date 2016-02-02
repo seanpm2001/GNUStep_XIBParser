@@ -1,3 +1,5 @@
+/* Class Code:XIBCapability */
+
 #import "XIBCapability.h"
 
 #ifndef GNUSTEP

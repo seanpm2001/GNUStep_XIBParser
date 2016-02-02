@@ -1,3 +1,7 @@
+/* Class Header:XIBFormCell */
+#ifndef __XIBFormCell_H_
+#define __XIBFormCell_H_
+
 #import <Foundation/Foundation.h>
 
 @class XIBFont;
@@ -41,3 +45,5 @@
 - (NSString *) title;
 
 @end
+
+#endif

@@ -1,3 +1,7 @@
+/* Class Header:XIBWindowPositionMask */
+#ifndef __XIBWindowPositionMask_H_
+#define __XIBWindowPositionMask_H_
+
 #import <Foundation/Foundation.h>
 
 
@@ -19,3 +23,5 @@
 - (BOOL) topStrut;
 
 @end
+
+#endif

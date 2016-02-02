@@ -1,3 +1,5 @@
+/* Class Code:XIBIBDocument */
+
 #import "XIBIBDocument.h"
 
 #ifndef GNUSTEP

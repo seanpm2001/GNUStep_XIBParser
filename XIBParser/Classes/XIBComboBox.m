@@ -1,3 +1,5 @@
+/* Class Code:XIBComboBox */
+
 #import "XIBComboBox.h"
 
 #ifndef GNUSTEP

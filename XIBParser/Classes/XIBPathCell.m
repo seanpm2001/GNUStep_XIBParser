@@ -1,3 +1,5 @@
+/* Class Code:XIBPathCell */
+
 #import "XIBPathCell.h"
 
 #ifndef GNUSTEP

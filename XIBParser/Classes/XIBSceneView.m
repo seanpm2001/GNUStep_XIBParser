@@ -1,3 +1,5 @@
+/* Class Code:XIBSceneView */
+
 #import "XIBSceneView.h"
 
 #ifndef GNUSTEP

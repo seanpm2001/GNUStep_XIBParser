@@ -1,3 +1,7 @@
+/* Class Header:XIBTextView */
+#ifndef __XIBTextView_H_
+#define __XIBTextView_H_
+
 #import <Foundation/Foundation.h>
 
 @class XIBAutoresizingMask;
@@ -61,3 +65,5 @@
 - (BOOL) verticallyResizable;
 
 @end
+
+#endif

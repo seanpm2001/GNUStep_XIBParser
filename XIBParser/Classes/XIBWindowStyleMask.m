@@ -1,3 +1,5 @@
+/* Class Code:XIBWindowStyleMask */
+
 #import "XIBWindowStyleMask.h"
 
 #ifndef GNUSTEP

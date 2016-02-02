@@ -1,3 +1,7 @@
+/* Class Header:XIBTokenField */
+#ifndef __XIBTokenField_H_
+#define __XIBTokenField_H_
+
 #import <Foundation/Foundation.h>
 
 @class XIBTokenFieldCell;
@@ -23,3 +27,5 @@
 - (NSString *) verticalHuggingPriority;
 
 @end
+
+#endif

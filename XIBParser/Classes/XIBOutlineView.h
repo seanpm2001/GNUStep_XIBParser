@@ -1,3 +1,7 @@
+/* Class Header:XIBOutlineView */
+#ifndef __XIBOutlineView_H_
+#define __XIBOutlineView_H_
+
 #import <Foundation/Foundation.h>
 
 @class XIBAutoresizingMask;
@@ -53,3 +57,5 @@
 - (BOOL) viewBased;
 
 @end
+
+#endif

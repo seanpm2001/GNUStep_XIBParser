@@ -1,3 +1,7 @@
+/* Class Header:XIBScrollView */
+#ifndef __XIBScrollView_H_
+#define __XIBScrollView_H_
+
 #import <Foundation/Foundation.h>
 
 @class XIBClipView;
@@ -47,3 +51,5 @@
 - (NSString *) verticalPageScroll;
 
 @end
+
+#endif

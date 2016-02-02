@@ -1,3 +1,5 @@
+/* Class Code:XIBPoint */
+
 #import "XIBPoint.h"
 
 #ifndef GNUSTEP

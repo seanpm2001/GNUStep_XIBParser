@@ -1,3 +1,7 @@
+/* Class Header:XIBBrowser */
+#ifndef __XIBBrowser_H_
+#define __XIBBrowser_H_
+
 #import <Foundation/Foundation.h>
 
 @class XIBRect;
@@ -51,3 +55,5 @@
 - (NSString *) verticalHuggingPriority;
 
 @end
+
+#endif

@@ -1,3 +1,5 @@
+/* Class Code:XIBSegmentedControl */
+
 #import "XIBSegmentedControl.h"
 
 #ifndef GNUSTEP

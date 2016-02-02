@@ -1,3 +1,7 @@
+/* Class Header:XIBTokenFieldCell */
+#ifndef __XIBTokenFieldCell_H_
+#define __XIBTokenFieldCell_H_
+
 #import <Foundation/Foundation.h>
 
 @class XIBColor;
@@ -34,3 +38,5 @@
 - (void) setSelectable: (BOOL) selectable;
 
 @end
+
+#endif

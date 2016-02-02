@@ -1,3 +1,5 @@
+/* Class Code:XIBButton */
+
 #import "XIBButton.h"
 
 #ifndef GNUSTEP

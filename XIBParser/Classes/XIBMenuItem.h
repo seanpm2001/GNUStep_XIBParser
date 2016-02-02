@@ -1,3 +1,7 @@
+/* Class Header:XIBMenuItem */
+#ifndef __XIBMenuItem_H_
+#define __XIBMenuItem_H_
+
 #import <Foundation/Foundation.h>
 
 @class XIBModifierMask;
@@ -35,3 +39,5 @@
 - (NSString *) title;
 
 @end
+
+#endif

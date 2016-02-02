@@ -1,3 +1,7 @@
+/* Class Header:XIBSliderCell */
+#ifndef __XIBSliderCell_H_
+#define __XIBSliderCell_H_
+
 #import <Foundation/Foundation.h>
 
 
@@ -28,3 +32,5 @@
 - (NSString *) tickMarkPosition;
 
 @end
+
+#endif

@@ -1,3 +1,7 @@
+/* Class Header:XIBLevelIndicator */
+#ifndef __XIBLevelIndicator_H_
+#define __XIBLevelIndicator_H_
+
 #import <Foundation/Foundation.h>
 
 @class XIBLevelIndicatorCell;
@@ -23,3 +27,5 @@
 - (NSString *) verticalHuggingPriority;
 
 @end
+
+#endif

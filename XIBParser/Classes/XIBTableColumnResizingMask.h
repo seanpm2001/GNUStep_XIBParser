@@ -1,3 +1,7 @@
+/* Class Header:XIBTableColumnResizingMask */
+#ifndef __XIBTableColumnResizingMask_H_
+#define __XIBTableColumnResizingMask_H_
+
 #import <Foundation/Foundation.h>
 
 
@@ -13,3 +17,5 @@
 - (BOOL) userResizable;
 
 @end
+
+#endif

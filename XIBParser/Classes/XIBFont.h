@@ -1,3 +1,7 @@
+/* Class Header:XIBFont */
+#ifndef __XIBFont_H_
+#define __XIBFont_H_
+
 #import <Foundation/Foundation.h>
 
 
@@ -10,3 +14,5 @@
 - (void) setMetaFont: (NSString *) metaFont;
 
 @end
+
+#endif

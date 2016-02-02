@@ -1,3 +1,5 @@
+/* Class Code:XIBAutoresizingMask */
+
 #import "XIBAutoresizingMask.h"
 
 #ifndef GNUSTEP

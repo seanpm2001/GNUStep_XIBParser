@@ -1,3 +1,7 @@
+/* Class Header:XIBPathControl */
+#ifndef __XIBPathControl_H_
+#define __XIBPathControl_H_
+
 #import <Foundation/Foundation.h>
 
 @class XIBPathCell;
@@ -26,3 +30,5 @@
 - (NSString *) verticalHuggingPriority;
 
 @end
+
+#endif

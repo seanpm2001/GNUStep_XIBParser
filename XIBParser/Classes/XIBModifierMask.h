@@ -1,3 +1,7 @@
+/* Class Header:XIBModifierMask */
+#ifndef __XIBModifierMask_H_
+#define __XIBModifierMask_H_
+
 #import <Foundation/Foundation.h>
 
 
@@ -19,3 +23,5 @@
 - (BOOL) shift;
 
 @end
+
+#endif

@@ -1,3 +1,7 @@
+/* Class Header:XIBStepper */
+#ifndef __XIBStepper_H_
+#define __XIBStepper_H_
+
 #import <Foundation/Foundation.h>
 
 @class XIBStepperCell;
@@ -26,3 +30,5 @@
 - (NSString *) verticalHuggingPriority;
 
 @end
+
+#endif

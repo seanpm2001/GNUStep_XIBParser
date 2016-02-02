@@ -1,3 +1,7 @@
+/* Class Header:XIBCollectionViewItem */
+#ifndef __XIBCollectionViewItem_H_
+#define __XIBCollectionViewItem_H_
+
 #import <Foundation/Foundation.h>
 
 
@@ -13,3 +17,5 @@
 - (void) setId: (NSString *) id;
 
 @end
+
+#endif

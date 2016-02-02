@@ -1,3 +1,7 @@
+/* Class Header:XIBDatePickerCell */
+#ifndef __XIBDatePickerCell_H_
+#define __XIBDatePickerCell_H_
+
 #import <Foundation/Foundation.h>
 
 @class XIBColor;
@@ -24,3 +28,5 @@
 - (void) setId: (NSString *) id;
 
 @end
+
+#endif

@@ -1,3 +1,7 @@
+/* Class Header:XIBWebView */
+#ifndef __XIBWebView_H_
+#define __XIBWebView_H_
+
 #import <Foundation/Foundation.h>
 
 @class XIBRect;
@@ -20,3 +24,5 @@
 - (BOOL) translatesAutoresizingMaskIntoConstraints;
 
 @end
+
+#endif

@@ -1,3 +1,5 @@
+/* Class Code:XIBSplitView */
+
 #import "XIBSplitView.h"
 
 #ifndef GNUSTEP

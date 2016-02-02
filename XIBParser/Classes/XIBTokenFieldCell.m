@@ -1,3 +1,5 @@
+/* Class Code:XIBTokenFieldCell */
+
 #import "XIBTokenFieldCell.h"
 
 #ifndef GNUSTEP

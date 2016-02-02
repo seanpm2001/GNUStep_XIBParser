@@ -1,3 +1,7 @@
+/* Class Header:XIBDatePicker */
+#ifndef __XIBDatePicker_H_
+#define __XIBDatePicker_H_
+
 #import <Foundation/Foundation.h>
 
 @class XIBDatePickerCell;
@@ -23,3 +27,5 @@
 - (NSString *) verticalHuggingPriority;
 
 @end
+
+#endif

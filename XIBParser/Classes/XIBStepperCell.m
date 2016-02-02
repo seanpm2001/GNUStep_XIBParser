@@ -1,3 +1,5 @@
+/* Class Code:XIBStepperCell */
+
 #import "XIBStepperCell.h"
 
 #ifndef GNUSTEP

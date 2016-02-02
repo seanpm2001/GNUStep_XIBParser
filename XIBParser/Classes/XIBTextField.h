@@ -1,3 +1,7 @@
+/* Class Header:XIBTextField */
+#ifndef __XIBTextField_H_
+#define __XIBTextField_H_
+
 #import <Foundation/Foundation.h>
 
 @class XIBTextFieldCell;
@@ -29,3 +33,5 @@
 - (NSString *) verticalHuggingPriority;
 
 @end
+
+#endif

@@ -1,3 +1,5 @@
+/* Class Code:XIBImageCell */
+
 #import "XIBImageCell.h"
 
 #ifndef GNUSTEP

@@ -1,3 +1,5 @@
+/* Class Code:XIBTabViewItem */
+
 #import "XIBTabViewItem.h"
 
 #ifndef GNUSTEP

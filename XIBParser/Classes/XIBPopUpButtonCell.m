@@ -1,3 +1,5 @@
+/* Class Code:XIBPopUpButtonCell */
+
 #import "XIBPopUpButtonCell.h"
 
 #ifndef GNUSTEP

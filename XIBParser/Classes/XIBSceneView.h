@@ -1,3 +1,7 @@
+/* Class Header:XIBSceneView */
+#ifndef __XIBSceneView_H_
+#define __XIBSceneView_H_
+
 #import <Foundation/Foundation.h>
 
 @class XIBRect;
@@ -18,3 +22,5 @@
 - (BOOL) translatesAutoresizingMaskIntoConstraints;
 
 @end
+
+#endif

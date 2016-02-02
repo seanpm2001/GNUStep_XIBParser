@@ -1,3 +1,7 @@
+/* Class Header:XIBSecureTextFieldCell */
+#ifndef __XIBSecureTextFieldCell_H_
+#define __XIBSecureTextFieldCell_H_
+
 #import <Foundation/Foundation.h>
 
 @class XIBColor;
@@ -46,3 +50,5 @@
 - (BOOL) usesSingleLineMode;
 
 @end
+
+#endif

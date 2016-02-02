@@ -1,3 +1,5 @@
+/* Class Code:XIBTimeZone */
+
 #import "XIBTimeZone.h"
 
 #ifndef GNUSTEP

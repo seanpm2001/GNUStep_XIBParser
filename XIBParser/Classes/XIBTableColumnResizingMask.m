@@ -1,3 +1,5 @@
+/* Class Code:XIBTableColumnResizingMask */
+
 #import "XIBTableColumnResizingMask.h"
 
 #ifndef GNUSTEP

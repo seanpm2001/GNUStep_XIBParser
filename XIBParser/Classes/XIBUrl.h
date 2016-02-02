@@ -1,3 +1,7 @@
+/* Class Header:XIBUrl */
+#ifndef __XIBUrl_H_
+#define __XIBUrl_H_
+
 #import <Foundation/Foundation.h>
 
 
@@ -10,3 +14,5 @@
 - (NSString *) string;
 
 @end
+
+#endif

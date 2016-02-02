@@ -1,3 +1,7 @@
+/* Class Header:XIBWindowStyleMask */
+#ifndef __XIBWindowStyleMask_H_
+#define __XIBWindowStyleMask_H_
+
 #import <Foundation/Foundation.h>
 
 
@@ -22,3 +26,5 @@
 - (BOOL) utility;
 
 @end
+
+#endif

@@ -1,3 +1,7 @@
+/* Class Header:XIBImageView */
+#ifndef __XIBImageView_H_
+#define __XIBImageView_H_
+
 #import <Foundation/Foundation.h>
 
 @class XIBImageCell;
@@ -26,3 +30,5 @@
 - (NSString *) verticalHuggingPriority;
 
 @end
+
+#endif

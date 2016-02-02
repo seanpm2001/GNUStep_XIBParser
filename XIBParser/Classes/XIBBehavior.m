@@ -1,3 +1,5 @@
+/* Class Code:XIBBehavior */
+
 #import "XIBBehavior.h"
 
 #ifndef GNUSTEP

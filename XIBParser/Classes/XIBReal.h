@@ -1,3 +1,7 @@
+/* Class Header:XIBReal */
+#ifndef __XIBReal_H_
+#define __XIBReal_H_
+
 #import <Foundation/Foundation.h>
 
 
@@ -10,3 +14,5 @@
 - (NSString *) value;
 
 @end
+
+#endif

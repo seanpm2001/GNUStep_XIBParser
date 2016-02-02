@@ -1,3 +1,7 @@
+/* Class Header:XIBView */
+#ifndef __XIBView_H_
+#define __XIBView_H_
+
 #import <Foundation/Foundation.h>
 
 @class XIBAutoresizingMask;
@@ -26,3 +30,5 @@
 - (BOOL) translatesAutoresizingMaskIntoConstraints;
 
 @end
+
+#endif

@@ -1,3 +1,7 @@
+/* Class Header:XIBSegmentedCell */
+#ifndef __XIBSegmentedCell_H_
+#define __XIBSegmentedCell_H_
+
 #import <Foundation/Foundation.h>
 
 @class XIBFont;
@@ -27,3 +31,5 @@
 - (NSString *) trackingMode;
 
 @end
+
+#endif

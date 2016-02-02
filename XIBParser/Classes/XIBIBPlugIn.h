@@ -1,3 +1,7 @@
+/* Class Header:XIBIBPlugIn */
+#ifndef __XIBIBPlugIn_H_
+#define __XIBIBPlugIn_H_
+
 #import <Foundation/Foundation.h>
 
 
@@ -13,3 +17,5 @@
 - (NSString *) version;
 
 @end
+
+#endif

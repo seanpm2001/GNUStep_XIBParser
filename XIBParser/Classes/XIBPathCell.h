@@ -1,3 +1,7 @@
+/* Class Header:XIBPathCell */
+#ifndef __XIBPathCell_H_
+#define __XIBPathCell_H_
+
 #import <Foundation/Foundation.h>
 
 @class XIBColor;
@@ -25,3 +29,5 @@
 - (void) setSelectable: (BOOL) selectable;
 
 @end
+
+#endif

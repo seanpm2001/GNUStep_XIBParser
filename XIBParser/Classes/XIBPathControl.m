@@ -1,3 +1,5 @@
+/* Class Code:XIBPathControl */
+
 #import "XIBPathControl.h"
 
 #ifndef GNUSTEP

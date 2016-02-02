@@ -1,3 +1,7 @@
+/* Class Header:XIBToolbar */
+#ifndef __XIBToolbar_H_
+#define __XIBToolbar_H_
+
 #import <Foundation/Foundation.h>
 
 
@@ -28,3 +32,5 @@
 - (NSString *) sizeMode;
 
 @end
+
+#endif

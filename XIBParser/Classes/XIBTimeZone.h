@@ -1,3 +1,7 @@
+/* Class Header:XIBTimeZone */
+#ifndef __XIBTimeZone_H_
+#define __XIBTimeZone_H_
+
 #import <Foundation/Foundation.h>
 
 
@@ -10,3 +14,5 @@
 - (void) setName: (NSString *) name;
 
 @end
+
+#endif

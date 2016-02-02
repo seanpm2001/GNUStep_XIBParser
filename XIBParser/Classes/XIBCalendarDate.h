@@ -1,3 +1,7 @@
+/* Class Header:XIBCalendarDate */
+#ifndef __XIBCalendarDate_H_
+#define __XIBCalendarDate_H_
+
 #import <Foundation/Foundation.h>
 
 @class XIBTimeZone;
@@ -15,3 +19,5 @@
 - (NSString *) timeIntervalSinceReferenceDate;
 
 @end
+
+#endif

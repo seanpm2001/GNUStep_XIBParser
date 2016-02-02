@@ -1,3 +1,7 @@
+/* Class Header:XIBTableCellView */
+#ifndef __XIBTableCellView_H_
+#define __XIBTableCellView_H_
+
 #import <Foundation/Foundation.h>
 
 @class XIBAutoresizingMask;
@@ -20,3 +24,5 @@
 - (NSMutableArray *) subviews;
 
 @end
+
+#endif

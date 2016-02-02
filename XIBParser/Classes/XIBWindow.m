@@ -1,3 +1,5 @@
+/* Class Code:XIBWindow */
+
 #import "XIBWindow.h"
 
 #ifndef GNUSTEP

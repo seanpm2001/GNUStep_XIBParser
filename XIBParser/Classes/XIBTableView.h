@@ -1,3 +1,7 @@
+/* Class Header:XIBTableView */
+#ifndef __XIBTableView_H_
+#define __XIBTableView_H_
+
 #import <Foundation/Foundation.h>
 
 @class XIBAutoresizingMask;
@@ -50,3 +54,5 @@
 - (BOOL) viewBased;
 
 @end
+
+#endif

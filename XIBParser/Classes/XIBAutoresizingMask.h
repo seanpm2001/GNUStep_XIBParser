@@ -1,3 +1,7 @@
+/* Class Header:XIBAutoresizingMask */
+#ifndef __XIBAutoresizingMask_H_
+#define __XIBAutoresizingMask_H_
+
 #import <Foundation/Foundation.h>
 
 
@@ -13,3 +17,5 @@
 - (BOOL) widthSizable;
 
 @end
+
+#endif

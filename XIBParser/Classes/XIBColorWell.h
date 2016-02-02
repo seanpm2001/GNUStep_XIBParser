@@ -1,3 +1,7 @@
+/* Class Header:XIBColorWell */
+#ifndef __XIBColorWell_H_
+#define __XIBColorWell_H_
+
 #import <Foundation/Foundation.h>
 
 @class XIBColor;
@@ -20,3 +24,5 @@
 - (BOOL) translatesAutoresizingMaskIntoConstraints;
 
 @end
+
+#endif

@@ -1,3 +1,7 @@
+/* Class Header:XIBTableHeaderCell */
+#ifndef __XIBTableHeaderCell_H_
+#define __XIBTableHeaderCell_H_
+
 #import <Foundation/Foundation.h>
 
 @class XIBColor;
@@ -19,3 +23,5 @@
 - (void) setLineBreakMode: (NSString *) lineBreakMode;
 
 @end
+
+#endif

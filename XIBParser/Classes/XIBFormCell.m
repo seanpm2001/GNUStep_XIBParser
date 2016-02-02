@@ -1,3 +1,5 @@
+/* Class Code:XIBFormCell */
+
 #import "XIBFormCell.h"
 
 #ifndef GNUSTEP

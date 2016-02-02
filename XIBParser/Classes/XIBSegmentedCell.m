@@ -1,3 +1,5 @@
+/* Class Code:XIBSegmentedCell */
+
 #import "XIBSegmentedCell.h"
 
 #ifndef GNUSTEP

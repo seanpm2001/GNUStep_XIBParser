@@ -1,3 +1,7 @@
+/* Class Header:XIBSegmentedControl */
+#ifndef __XIBSegmentedControl_H_
+#define __XIBSegmentedControl_H_
+
 #import <Foundation/Foundation.h>
 
 @class XIBSegmentedCell;
@@ -23,3 +27,5 @@
 - (NSString *) verticalHuggingPriority;
 
 @end
+
+#endif

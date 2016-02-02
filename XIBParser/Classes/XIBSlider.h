@@ -1,3 +1,7 @@
+/* Class Header:XIBSlider */
+#ifndef __XIBSlider_H_
+#define __XIBSlider_H_
+
 #import <Foundation/Foundation.h>
 
 @class XIBSliderCell;
@@ -26,3 +30,5 @@
 - (NSString *) verticalHuggingPriority;
 
 @end
+
+#endif

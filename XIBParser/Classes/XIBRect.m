@@ -1,3 +1,5 @@
+/* Class Code:XIBRect */
+
 #import "XIBRect.h"
 
 #ifndef GNUSTEP

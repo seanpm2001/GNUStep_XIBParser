@@ -1,3 +1,5 @@
+/* Class Code:XIBString */
+
 #import "XIBString.h"
 
 #ifndef GNUSTEP

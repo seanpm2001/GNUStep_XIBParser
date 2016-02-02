@@ -1,3 +1,5 @@
+/* Class Code:XIBTextFieldCell */
+
 #import "XIBTextFieldCell.h"
 
 #ifndef GNUSTEP

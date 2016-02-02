@@ -1,3 +1,7 @@
+/* Class Header:XIBStepperCell */
+#ifndef __XIBStepperCell_H_
+#define __XIBStepperCell_H_
+
 #import <Foundation/Foundation.h>
 
 
@@ -19,3 +23,5 @@
 - (void) setMaxValue: (NSString *) maxValue;
 
 @end
+
+#endif

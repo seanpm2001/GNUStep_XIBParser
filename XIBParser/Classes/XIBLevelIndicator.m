@@ -1,3 +1,5 @@
+/* Class Code:XIBLevelIndicator */
+
 #import "XIBLevelIndicator.h"
 
 #ifndef GNUSTEP

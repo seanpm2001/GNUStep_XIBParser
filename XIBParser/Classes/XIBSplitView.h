@@ -1,3 +1,7 @@
+/* Class Header:XIBSplitView */
+#ifndef __XIBSplitView_H_
+#define __XIBSplitView_H_
+
 #import <Foundation/Foundation.h>
 
 @class XIBRect;
@@ -33,3 +37,5 @@
 - (BOOL) vertical;
 
 @end
+
+#endif

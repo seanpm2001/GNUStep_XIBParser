@@ -1,3 +1,5 @@
+/* Class Code:XIBImageView */
+
 #import "XIBImageView.h"
 
 #ifndef GNUSTEP

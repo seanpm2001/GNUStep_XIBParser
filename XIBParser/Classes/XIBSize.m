@@ -1,3 +1,5 @@
+/* Class Code:XIBSize */
+
 #import "XIBSize.h"
 
 #ifndef GNUSTEP

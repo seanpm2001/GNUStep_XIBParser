@@ -1,3 +1,7 @@
+/* Class Header:XIBIBAction */
+#ifndef __XIBIBAction_H_
+#define __XIBIBAction_H_
+
 #import <Foundation/Foundation.h>
 
 
@@ -16,3 +20,5 @@
 - (NSString *) target;
 
 @end
+
+#endif

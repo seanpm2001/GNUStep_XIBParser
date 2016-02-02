@@ -1,3 +1,5 @@
+/* Class Code:XIBColorWell */
+
 #import "XIBColorWell.h"
 
 #ifndef GNUSTEP

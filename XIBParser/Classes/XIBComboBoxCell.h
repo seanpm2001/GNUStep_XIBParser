@@ -1,3 +1,7 @@
+/* Class Header:XIBComboBoxCell */
+#ifndef __XIBComboBoxCell_H_
+#define __XIBComboBoxCell_H_
+
 #import <Foundation/Foundation.h>
 
 @class XIBColor;
@@ -49,3 +53,5 @@
 - (NSMutableArray *) string;
 
 @end
+
+#endif

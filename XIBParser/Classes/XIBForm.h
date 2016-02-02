@@ -1,3 +1,7 @@
+/* Class Header:XIBForm */
+#ifndef __XIBForm_H_
+#define __XIBForm_H_
+
 #import <Foundation/Foundation.h>
 
 @class XIBColor;
@@ -44,3 +48,5 @@
 - (NSString *) verticalHuggingPriority;
 
 @end
+
+#endif

@@ -1,3 +1,5 @@
+/* Class Code:XIBNumberFormatter */
+
 #import "XIBNumberFormatter.h"
 
 #ifndef GNUSTEP

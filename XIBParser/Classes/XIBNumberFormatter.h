@@ -1,3 +1,7 @@
+/* Class Header:XIBNumberFormatter */
+#ifndef __XIBNumberFormatter_H_
+#define __XIBNumberFormatter_H_
+
 #import <Foundation/Foundation.h>
 
 
@@ -25,3 +29,5 @@
 - (void) setNumberStyle: (NSString *) numberStyle;
 
 @end
+
+#endif

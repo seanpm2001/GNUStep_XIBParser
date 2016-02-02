@@ -1,3 +1,7 @@
+/* Class Header:XIBClipView */
+#ifndef __XIBClipView_H_
+#define __XIBClipView_H_
+
 #import <Foundation/Foundation.h>
 
 @class XIBAutoresizingMask;
@@ -22,3 +26,5 @@
 - (NSMutableArray *) subviews;
 
 @end
+
+#endif

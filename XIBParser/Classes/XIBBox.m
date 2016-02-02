@@ -1,3 +1,5 @@
+/* Class Code:XIBBox */
+
 #import "XIBBox.h"
 
 #ifndef GNUSTEP

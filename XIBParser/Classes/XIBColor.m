@@ -1,3 +1,5 @@
+/* Class Code:XIBColor */
+
 #import "XIBColor.h"
 
 #ifndef GNUSTEP

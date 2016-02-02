@@ -1,3 +1,5 @@
+/* Class Code:XIBFont */
+
 #import "XIBFont.h"
 
 #ifndef GNUSTEP

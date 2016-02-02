@@ -1,3 +1,7 @@
+/* Class Header:XIBIBDocument */
+#ifndef __XIBIBDocument_H_
+#define __XIBIBDocument_H_
+
 #import <Foundation/Foundation.h>
 
 
@@ -37,3 +41,5 @@
 - (NSString *) version;
 
 @end
+
+#endif

@@ -1,3 +1,5 @@
+/* Class Code:XIBTextView */
+
 #import "XIBTextView.h"
 
 #ifndef GNUSTEP

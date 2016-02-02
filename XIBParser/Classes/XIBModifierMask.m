@@ -1,3 +1,5 @@
+/* Class Code:XIBModifierMask */
+
 #import "XIBModifierMask.h"
 
 #ifndef GNUSTEP

@@ -1,3 +1,7 @@
+/* Class Header:XIBPopUpButtonCell */
+#ifndef __XIBPopUpButtonCell_H_
+#define __XIBPopUpButtonCell_H_
+
 #import <Foundation/Foundation.h>
 
 @class XIBBehavior;
@@ -46,3 +50,5 @@
 - (NSString *) type;
 
 @end
+
+#endif

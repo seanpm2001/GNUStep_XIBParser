@@ -1,3 +1,5 @@
+/* Class Code:XIBTableView */
+
 #import "XIBTableView.h"
 
 #ifndef GNUSTEP

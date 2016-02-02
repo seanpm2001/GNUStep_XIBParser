@@ -1,3 +1,7 @@
+/* Class Header:XIBCustomView */
+#ifndef __XIBCustomView_H_
+#define __XIBCustomView_H_
+
 #import <Foundation/Foundation.h>
 
 @class XIBAutoresizingMask;
@@ -17,3 +21,5 @@
 - (void) setId: (NSString *) id;
 
 @end
+
+#endif
