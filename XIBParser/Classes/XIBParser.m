@@ -7,10 +7,11 @@
 //
 
 #import "XIBParser.h"
+#import "NSString+Extensions.h"
 
 @implementation XIBParser
 
-+ (instancetype) xibClassGeneratorWithContentsOfFile: (NSString *)fileName
++ (instancetype) xibParserWithContentsOfFile: (NSString *)fileName
 {
     if(fileName == nil)
     {
@@ -28,10 +29,10 @@
         return nil;
     }
     
-    return [self xibClassGeneratorWithString:xmlString];
+    return [self xibParserWithString:xmlString];
 }
 
-+ (instancetype) xibClassGeneratorWithString: (NSString *)string
++ (instancetype) xibParserWithString: (NSString *)string
 {
     if(string == nil)
     {
@@ -41,10 +42,10 @@
     NSData *data = [NSData dataWithBytes:[string cStringUsingEncoding:NSUTF8StringEncoding]
                                   length:[string lengthOfBytesUsingEncoding:NSUTF8StringEncoding]];
     
-    return [self xibClassGeneratorWithData:data];
+    return [self xibParserWithData:data];
 }
 
-+ (instancetype) xibClassGeneratorWithData: (NSData *)data
++ (instancetype) xibParserWithData: (NSData *)data
 {
     return [[self alloc] initWithData: data];
 }
@@ -114,14 +115,11 @@
     return @"NSString"; // for now.
 }
 
-- (XIBClass *)classForName: (NSString *)name
+- (Class)classForName: (NSString *)name
 {
-    XIBClass *xibClass = [classesToNames objectForKey:name];
+    Class xibClass = [classesToNames objectForKey:name];
     if(xibClass == nil)
     {
-        xibClass = [[XIBClass alloc] init];
-        xibClass.name = name;
-        [classesToNames setObject:xibClass forKey:name];
     }
     return xibClass;
 }
@@ -148,111 +146,6 @@
       attributes:(NSDictionary *)attributeDict
 #endif
 {
-    NSString *className = nil;
-    XIBClass *xibClass = nil;
-    NSArray *allKeys = [attributeDict allKeys];
-    if([allKeys count] > 0)
-    {
-        if([allKeys containsObject:@"key"])
-        {
-            XIBClass *currentClass = (XIBClass *)[stack lastObject];
-            className = [self classNameForElementName:elementName];
-            xibClass = [self classForName:className];
-            NSString *keyName = [attributeDict objectForKey:@"key"];
-            XIBProperty *property = [[XIBProperty alloc] init];
-            property.name = keyName;
-            property.type = className;
-            [currentClass addAttribute:property];
-            
-            // Push onto the stack...
-            [stack addObject:xibClass];
-            
-            for(NSString *key in allKeys)
-            {
-                if([key isEqualToString: @"key"])
-                {
-                    continue;
-                }
-                NSString *value = [attributeDict objectForKey:key];
-                NSString *type = [self inferType: value];
-                XIBProperty *property = [[XIBProperty alloc] init];
-                property.name = key;
-                property.type = type;
-                [xibClass addAttribute: property];
-                
-                // Getter
-                XIBMethod *getter = [[XIBMethod alloc] init];
-                getter.returnType = type;
-                getter.name = key;
-                [xibClass addMethod: getter];
-                
-                
-                // Setter
-                XIBMethod *setter = [[XIBMethod alloc] init];
-                setter.name = [@"set_" stringByAppendingString: key];
-                [setter addParameter:property];
-                [xibClass addMethod: setter];
-            }
-        }
-        else
-        {
-            className = [self classNameForElementName:elementName];
-            xibClass = [self classForName:className];
-            
-            // Push onto the stack...
-            [stack addObject:xibClass];
-            
-            for(NSString *key in allKeys)
-            {
-                NSString *value = [attributeDict objectForKey:key];
-                NSString *type = [self inferType: value];
-                XIBProperty *property = [[XIBProperty alloc] init];
-                property.name = key;
-                property.type = type;
-                [xibClass addAttribute: property];
-                
-                // Getter
-                XIBMethod *getter = [[XIBMethod alloc] init];
-                getter.returnType = type;
-                getter.name = key;
-                [xibClass addMethod: getter];
-                
-                
-                // Setter
-                XIBMethod *setter = [[XIBMethod alloc] init];
-                setter.name = [@"set_" stringByAppendingString: key];
-                [setter addParameter:property];
-                [xibClass addMethod: setter];
-            }
-        }
-    }
-    else
-    {
-        XIBElement *elem = (XIBElement *)[stack lastObject];
-        className = elem.name;
-        xibClass = (XIBClass *)[classesToNames objectForKey:className];
-        XIBProperty *property = [[XIBProperty alloc] init];
-        property.name = elementName;
-        property.type = @"NSMutableArray";
-        [xibClass addAttribute: property];
-        if([elementName isEqualToString:@"objects"])
-        {
-            inObjects = YES;
-        }
-        
-        // Getter
-        XIBMethod *getter = [[XIBMethod alloc] init];
-        getter.returnType = property.type;
-        getter.name = property.name;
-        [xibClass addMethod: getter];
-        
-        
-        // Setter
-        XIBMethod *setter = [[XIBMethod alloc] init];
-        setter.name = [@"set_" stringByAppendingString: property.name];
-        [setter addParameter:property];
-        [xibClass addMethod: setter];
-    }
 }
 
 - (void)  parser:(NSXMLParser *)parser
@@ -260,18 +153,6 @@
     namespaceURI:(NSString *)namespaceURI
    qualifiedName:(NSString *)qName
 {
-    if([elementName isEqualToString:@"objects"])
-    {
-        inObjects = NO;
-    }
-    
-    // Pop off the stack...
-    XIBClass *obj = (XIBClass *)[stack lastObject];
-    NSString *className = [self classNameForElementName:elementName];
-    if([[obj name] isEqualToString:className] == YES)
-    {
-        [stack removeLastObject];
-    }
 }
 
 - (void)parserDidEndDocument:(NSXMLParser *)parser

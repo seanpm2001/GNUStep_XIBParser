@@ -8,7 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@interface XIBParser : NSObject
+@class XIBIBDocument;
+
+@interface XIBParser : NSObject <NSXMLParserDelegate>
 {
     NSXMLParser *parser;
     NSMutableArray *stack;
@@ -24,6 +26,6 @@
 
 - (instancetype) initWithData: (NSData *)data;
 - (NSString *)classNameForElementName: (NSString *)elementName;
-- (XIBDocument *) parse;
+- (XIBIBDocument *) parse;
 
 @end
