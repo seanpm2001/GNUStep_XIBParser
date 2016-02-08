@@ -120,6 +120,8 @@
     Class xibClass = [classesToNames objectForKey:name];
     if(xibClass == nil)
     {
+        Class clz = NSClassFromString(name);
+        [classesToNames setObject:clz forKey:name];
     }
     return xibClass;
 }
@@ -128,7 +130,7 @@
 - (void)parserDidStartDocument:(NSXMLParser *)parser
 {
     // Currently do nothing....
-    NSLog(@"Started parsing");
+    puts("Started parsing");
     
 }
 
@@ -157,7 +159,7 @@
 
 - (void)parserDidEndDocument:(NSXMLParser *)parser
 {
-    NSLog(@"Done parsing");
+    puts("Done parsing");
 }
 
 @end
