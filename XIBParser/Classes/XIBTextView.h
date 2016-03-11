@@ -13,6 +13,7 @@
 
 @interface XIBTextView : NSObject
 {
+  NSString* _ID;
   BOOL _allowsNonContiguousLayout;
   BOOL _allowsUndo;
   BOOL _ambiguous;
@@ -22,7 +23,6 @@
   BOOL _dashSubstitution;
   NSString* _findStyle;
   XIBRect* _frame;
-  NSString* _id;
   BOOL _importsGraphics;
   XIBColor* _insertionPointColor;
   XIBSize* _maxSize;
@@ -35,13 +35,13 @@
   BOOL _verticallyResizable;
 }
 
+- (NSString *) ID;
 - (BOOL) allowsNonContiguousLayout;
 - (BOOL) allowsUndo;
 - (BOOL) ambiguous;
 - (BOOL) continuousSpellChecking;
 - (BOOL) dashSubstitution;
 - (NSString *) findStyle;
-- (NSString *) id;
 - (BOOL) importsGraphics;
 - (BOOL) quoteSubstitution;
 - (void) setAllowsNonContiguousLayout: (BOOL) allowsNonContiguousLayout;
@@ -50,7 +50,7 @@
 - (void) setContinuousSpellChecking: (BOOL) continuousSpellChecking;
 - (void) setDashSubstitution: (BOOL) dashSubstitution;
 - (void) setFindStyle: (NSString *) findStyle;
-- (void) setId: (NSString *) id;
+- (void) setID: (NSString *) ID;
 - (void) setImportsGraphics: (BOOL) importsGraphics;
 - (void) setQuoteSubstitution: (BOOL) quoteSubstitution;
 - (void) setSmartInsertDelete: (BOOL) smartInsertDelete;

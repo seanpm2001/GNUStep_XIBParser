@@ -9,13 +9,13 @@
 
 @interface XIBTableHeaderView : NSObject
 {
+  NSString* _ID;
   XIBAutoresizingMask* _autoresizingMask;
   XIBRect* _frame;
-  NSString* _id;
 }
 
-- (NSString *) id;
-- (void) setId: (NSString *) id;
+- (NSString *) ID;
+- (void) setID: (NSString *) ID;
 
 @end
 

@@ -9,9 +9,21 @@
 
 @implementation XIBToolbarItem 
 
-- (NSString *) id
+
+- (instancetype) init
 {
-  return _id;
+   self = [super init];
+   if(self != nil) {
+      ID = nil;
+      implicitItemIdentifier = nil;
+      reference = nil;
+   }
+   return self;
+}
+
+- (NSString *) ID
+{
+  return _ID;
 }
 
 - (NSString *) implicitItemIdentifier
@@ -24,9 +36,9 @@
   return _reference;
 }
 
-- (void) setId: (NSString *) id
+- (void) setID: (NSString *) ID
 {
-  ASSIGN(_id, id);
+  ASSIGN(_ID, ID);
 }
 
 - (void) setImplicitItemIdentifier: (NSString *) implicitItemIdentifier
@@ -39,4 +51,14 @@
   ASSIGN(_reference, reference);
 }
 
+- (instancetype) copyWithZone: (NSZone *)zone 
+{
+   XIBToolbarItem* acopy = [[XIBToolbarItem allocWithZone: zone] init];
+
+
+   [acopy setID: [self ID]];
+   [acopy setImplicitItemIdentifier: [self implicitItemIdentifier]];
+   [acopy setReference: [self reference]];
+   return acopy;
+}
 @end

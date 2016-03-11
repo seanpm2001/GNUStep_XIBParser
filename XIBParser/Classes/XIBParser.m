@@ -7,6 +7,7 @@
 //
 
 #import "XIBParser.h"
+#import "XIBClasses.h"
 #import "NSString+Extensions.h"
 
 @implementation XIBParser
@@ -76,7 +77,7 @@
 {
     if([parser parse])
     {
-        NSArray *sortedArray = [[classesToNames allValues] sortedArrayUsingSelector:@selector(compare:)];
+        NSArray *sortedArray = [[classesToNames sortedArrayUsingSelector:@selector(compare:)];
         return sortedArray;
     }
     

@@ -7,22 +7,22 @@
 
 @interface XIBNumberFormatter : NSObject
 {
+  NSString* _ID;
   NSString* _formatterBehavior;
-  NSString* _id;
   NSString* _maximumFractionDigits;
   NSString* _maximumIntegerDigits;
   NSString* _minimumIntegerDigits;
   NSString* _numberStyle;
 }
 
+- (NSString *) ID;
 - (NSString *) formatterBehavior;
-- (NSString *) id;
 - (NSString *) maximumFractionDigits;
 - (NSString *) maximumIntegerDigits;
 - (NSString *) minimumIntegerDigits;
 - (NSString *) numberStyle;
 - (void) setFormatterBehavior: (NSString *) formatterBehavior;
-- (void) setId: (NSString *) id;
+- (void) setID: (NSString *) ID;
 - (void) setMaximumFractionDigits: (NSString *) maximumFractionDigits;
 - (void) setMaximumIntegerDigits: (NSString *) maximumIntegerDigits;
 - (void) setMinimumIntegerDigits: (NSString *) minimumIntegerDigits;

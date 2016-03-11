@@ -8,22 +8,22 @@
 
 @interface XIBSegmentedCell : NSObject
 {
+  NSString* _ID;
   NSString* _alignment;
   NSString* _borderStyle;
   XIBFont* _font;
-  NSString* _id;
   NSMutableArray* _segments;
   NSString* _style;
   NSString* _trackingMode;
 }
 
+- (NSString *) ID;
 - (NSString *) alignment;
 - (NSString *) borderStyle;
-- (NSString *) id;
 - (NSMutableArray *) segments;
 - (void) setAlignment: (NSString *) alignment;
 - (void) setBorderStyle: (NSString *) borderStyle;
-- (void) setId: (NSString *) id;
+- (void) setID: (NSString *) ID;
 - (void) setSegments: (NSMutableArray *) segments;
 - (void) setStyle: (NSString *) style;
 - (void) setTrackingMode: (NSString *) trackingMode;

@@ -9,14 +9,26 @@
 
 @implementation XIBIBOutlet 
 
+
+- (instancetype) init
+{
+   self = [super init];
+   if(self != nil) {
+      ID = nil;
+      destination = nil;
+      property = nil;
+   }
+   return self;
+}
+
+- (NSString *) ID
+{
+  return _ID;
+}
+
 - (NSString *) destination
 {
   return _destination;
-}
-
-- (NSString *) id
-{
-  return _id;
 }
 
 - (NSString *) property
@@ -29,9 +41,9 @@
   ASSIGN(_destination, destination);
 }
 
-- (void) setId: (NSString *) id
+- (void) setID: (NSString *) ID
 {
-  ASSIGN(_id, id);
+  ASSIGN(_ID, ID);
 }
 
 - (void) setProperty: (NSString *) property
@@ -39,4 +51,14 @@
   ASSIGN(_property, property);
 }
 
+- (instancetype) copyWithZone: (NSZone *)zone 
+{
+   XIBIBOutlet* acopy = [[XIBIBOutlet allocWithZone: zone] init];
+
+
+   [acopy setDestination: [self destination]];
+   [acopy setID: [self ID]];
+   [acopy setProperty: [self property]];
+   return acopy;
+}
 @end

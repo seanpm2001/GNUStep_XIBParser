@@ -11,14 +11,32 @@
 
 @implementation XIBTableHeaderView 
 
-- (NSString *) id
+
+- (instancetype) init
 {
-  return _id;
+   self = [super init];
+   if(self != nil) {
+      ID = nil;
+      autoresizingMask = nil;
+      frame = nil;
+   }
+   return self;
 }
 
-- (void) setId: (NSString *) id
+- (NSString *) ID
 {
-  ASSIGN(_id, id);
+  return _ID;
 }
 
+- (void) setID: (NSString *) ID
+{
+  ASSIGN(_ID, ID);
+}
+
+- (instancetype) copyWithZone: (NSZone *)zone 
+{
+   XIBTableHeaderView* acopy = [[XIBTableHeaderView allocWithZone: zone] init];
+   [acopy setID: [self ID]];
+   return acopy;
+}
 @end

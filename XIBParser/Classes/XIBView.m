@@ -11,6 +11,27 @@
 
 @implementation XIBView 
 
+
+- (instancetype) init
+{
+   self = [super init];
+   if(self != nil) {
+      ID = nil;
+      ambiguous = NO;
+      autoresizingMask = nil;
+      fixedFrame = NO;
+      frame = nil;
+      subviews = nil;
+      translatesAutoresizingMaskIntoConstraints = NO;
+   }
+   return self;
+}
+
+- (NSString *) ID
+{
+  return _ID;
+}
+
 - (BOOL) ambiguous
 {
   return _ambiguous;
@@ -19,11 +40,6 @@
 - (BOOL) fixedFrame
 {
   return _fixedFrame;
-}
-
-- (NSString *) id
-{
-  return _id;
 }
 
 - (void) setAmbiguous: (BOOL) ambiguous
@@ -36,9 +52,9 @@
   _fixedFrame = fixedFrame;
 }
 
-- (void) setId: (NSString *) id
+- (void) setID: (NSString *) ID
 {
-  ASSIGN(_id, id);
+  ASSIGN(_ID, ID);
 }
 
 - (void) setSubviews: (NSMutableArray *) subviews
@@ -61,4 +77,18 @@
   return _translatesAutoresizingMaskIntoConstraints;
 }
 
+- (instancetype) copyWithZone: (NSZone *)zone 
+{
+   XIBView* acopy = [[XIBView allocWithZone: zone] init];
+
+
+   [acopy setAmbiguous: [self ambiguous]];
+   [acopy setFixedFrame: [self fixedFrame]];
+   [acopy setID: [self ID]];
+   [acopy setSubviews: [self subviews]];
+   [acopy setTranslatesAutoresizingMaskIntoConstraints: [self translatesAutoresizingMaskIntoConstraints]];
+
+
+   return acopy;
+}
 @end

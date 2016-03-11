@@ -11,14 +11,29 @@
 
 @implementation XIBTabView 
 
+
+- (instancetype) init
+{
+   self = [super init];
+   if(self != nil) {
+      ID = nil;
+      fixedFrame = NO;
+      font = nil;
+      frame = nil;
+      tabViewItems = nil;
+      translatesAutoresizingMaskIntoConstraints = NO;
+   }
+   return self;
+}
+
+- (NSString *) ID
+{
+  return _ID;
+}
+
 - (BOOL) fixedFrame
 {
   return _fixedFrame;
-}
-
-- (NSString *) id
-{
-  return _id;
 }
 
 - (void) setFixedFrame: (BOOL) fixedFrame
@@ -26,9 +41,9 @@
   _fixedFrame = fixedFrame;
 }
 
-- (void) setId: (NSString *) id
+- (void) setID: (NSString *) ID
 {
-  ASSIGN(_id, id);
+  ASSIGN(_ID, ID);
 }
 
 - (void) setTabViewItems: (NSMutableArray *) tabViewItems
@@ -51,4 +66,16 @@
   return _translatesAutoresizingMaskIntoConstraints;
 }
 
+- (instancetype) copyWithZone: (NSZone *)zone 
+{
+   XIBTabView* acopy = [[XIBTabView allocWithZone: zone] init];
+
+   [acopy setFixedFrame: [self fixedFrame]];
+   [acopy setID: [self ID]];
+   [acopy setTabViewItems: [self tabViewItems]];
+   [acopy setTranslatesAutoresizingMaskIntoConstraints: [self translatesAutoresizingMaskIntoConstraints]];
+
+
+   return acopy;
+}
 @end

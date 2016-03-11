@@ -11,6 +11,27 @@
 
 @implementation XIBPathControl 
 
+
+- (instancetype) init
+{
+   self = [super init];
+   if(self != nil) {
+      ID = nil;
+      allowsExpansionToolTips = NO;
+      cell = nil;
+      fixedFrame = NO;
+      frame = nil;
+      translatesAutoresizingMaskIntoConstraints = NO;
+      verticalHuggingPriority = nil;
+   }
+   return self;
+}
+
+- (NSString *) ID
+{
+  return _ID;
+}
+
 - (BOOL) allowsExpansionToolTips
 {
   return _allowsExpansionToolTips;
@@ -19,11 +40,6 @@
 - (BOOL) fixedFrame
 {
   return _fixedFrame;
-}
-
-- (NSString *) id
-{
-  return _id;
 }
 
 - (void) setAllowsExpansionToolTips: (BOOL) allowsExpansionToolTips
@@ -36,9 +52,9 @@
   _fixedFrame = fixedFrame;
 }
 
-- (void) setId: (NSString *) id
+- (void) setID: (NSString *) ID
 {
-  ASSIGN(_id, id);
+  ASSIGN(_ID, ID);
 }
 
 - (void) setTranslatesAutoresizingMaskIntoConstraints: (BOOL) translatesAutoresizingMaskIntoConstraints
@@ -61,4 +77,18 @@
   return _verticalHuggingPriority;
 }
 
+- (instancetype) copyWithZone: (NSZone *)zone 
+{
+   XIBPathControl* acopy = [[XIBPathControl allocWithZone: zone] init];
+
+
+   [acopy setAllowsExpansionToolTips: [self allowsExpansionToolTips]];
+   [acopy setFixedFrame: [self fixedFrame]];
+   [acopy setID: [self ID]];
+   [acopy setTranslatesAutoresizingMaskIntoConstraints: [self translatesAutoresizingMaskIntoConstraints]];
+   [acopy setVerticalHuggingPriority: [self verticalHuggingPriority]];
+
+
+   return acopy;
+}
 @end

@@ -13,6 +13,34 @@
 
 @implementation XIBTextFieldCell 
 
+
+- (instancetype) init
+{
+   self = [super init];
+   if(self != nil) {
+      ID = nil;
+      backgroundColor = nil;
+      borderStyle = nil;
+      drawsBackground = NO;
+      editable = NO;
+      font = nil;
+      formatter = nil;
+      lineBreakMode = nil;
+      scrollable = NO;
+      selectable = NO;
+      sendsActionOnEndEditing = NO;
+      state = nil;
+      textColor = nil;
+      title = nil;
+   }
+   return self;
+}
+
+- (NSString *) ID
+{
+  return _ID;
+}
+
 - (NSString *) borderStyle
 {
   return _borderStyle;
@@ -26,11 +54,6 @@
 - (BOOL) editable
 {
   return _editable;
-}
-
-- (NSString *) id
-{
-  return _id;
 }
 
 - (NSString *) lineBreakMode
@@ -68,9 +91,9 @@
   _editable = editable;
 }
 
-- (void) setId: (NSString *) id
+- (void) setID: (NSString *) ID
 {
-  ASSIGN(_id, id);
+  ASSIGN(_ID, ID);
 }
 
 - (void) setLineBreakMode: (NSString *) lineBreakMode
@@ -113,4 +136,28 @@
   return _title;
 }
 
+- (instancetype) copyWithZone: (NSZone *)zone 
+{
+   XIBTextFieldCell* acopy = [[XIBTextFieldCell allocWithZone: zone] init];
+
+
+
+
+
+
+
+   [acopy setBorderStyle: [self borderStyle]];
+   [acopy setDrawsBackground: [self drawsBackground]];
+   [acopy setEditable: [self editable]];
+   [acopy setID: [self ID]];
+   [acopy setLineBreakMode: [self lineBreakMode]];
+   [acopy setScrollable: [self scrollable]];
+   [acopy setSelectable: [self selectable]];
+   [acopy setSendsActionOnEndEditing: [self sendsActionOnEndEditing]];
+   [acopy setState: [self state]];
+   [acopy setTitle: [self title]];
+
+
+   return acopy;
+}
 @end

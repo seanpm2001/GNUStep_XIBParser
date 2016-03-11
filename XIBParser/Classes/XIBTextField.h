@@ -9,24 +9,24 @@
 
 @interface XIBTextField : NSObject
 {
+  NSString* _ID;
   XIBTextFieldCell* _cell;
   BOOL _fixedFrame;
   XIBRect* _frame;
   NSString* _horizontalCompressionResistancePriority;
   NSString* _horizontalHuggingPriority;
-  NSString* _id;
   BOOL _translatesAutoresizingMaskIntoConstraints;
   NSString* _verticalHuggingPriority;
 }
 
+- (NSString *) ID;
 - (BOOL) fixedFrame;
 - (NSString *) horizontalCompressionResistancePriority;
 - (NSString *) horizontalHuggingPriority;
-- (NSString *) id;
 - (void) setFixedFrame: (BOOL) fixedFrame;
 - (void) setHorizontalCompressionResistancePriority: (NSString *) horizontalCompressionResistancePriority;
 - (void) setHorizontalHuggingPriority: (NSString *) horizontalHuggingPriority;
-- (void) setId: (NSString *) id;
+- (void) setID: (NSString *) ID;
 - (void) setTranslatesAutoresizingMaskIntoConstraints: (BOOL) translatesAutoresizingMaskIntoConstraints;
 - (void) setVerticalHuggingPriority: (NSString *) verticalHuggingPriority;
 - (BOOL) translatesAutoresizingMaskIntoConstraints;

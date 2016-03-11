@@ -12,6 +12,31 @@
 
 @implementation XIBSearchFieldCell 
 
+
+- (instancetype) init
+{
+   self = [super init];
+   if(self != nil) {
+      ID = nil;
+      backgroundColor = nil;
+      bezelStyle = nil;
+      borderStyle = nil;
+      editable = NO;
+      font = nil;
+      lineBreakMode = nil;
+      scrollable = NO;
+      selectable = NO;
+      textColor = nil;
+      usesSingleLineMode = NO;
+   }
+   return self;
+}
+
+- (NSString *) ID
+{
+  return _ID;
+}
+
 - (NSString *) bezelStyle
 {
   return _bezelStyle;
@@ -25,11 +50,6 @@
 - (BOOL) editable
 {
   return _editable;
-}
-
-- (NSString *) id
-{
-  return _id;
 }
 
 - (NSString *) lineBreakMode
@@ -62,9 +82,9 @@
   _editable = editable;
 }
 
-- (void) setId: (NSString *) id
+- (void) setID: (NSString *) ID
 {
-  ASSIGN(_id, id);
+  ASSIGN(_ID, ID);
 }
 
 - (void) setLineBreakMode: (NSString *) lineBreakMode
@@ -92,4 +112,24 @@
   return _usesSingleLineMode;
 }
 
+- (instancetype) copyWithZone: (NSZone *)zone 
+{
+   XIBSearchFieldCell* acopy = [[XIBSearchFieldCell allocWithZone: zone] init];
+
+
+
+
+
+
+   [acopy setBezelStyle: [self bezelStyle]];
+   [acopy setBorderStyle: [self borderStyle]];
+   [acopy setEditable: [self editable]];
+   [acopy setID: [self ID]];
+   [acopy setLineBreakMode: [self lineBreakMode]];
+   [acopy setScrollable: [self scrollable]];
+   [acopy setSelectable: [self selectable]];
+   [acopy setUsesSingleLineMode: [self usesSingleLineMode]];
+
+   return acopy;
+}
 @end

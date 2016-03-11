@@ -7,11 +7,14 @@
 
 @interface XIBAutoresizingMask : NSObject
 {
+  BOOL _flexibleMaxY;
   BOOL _heightSizable;
   BOOL _widthSizable;
 }
 
+- (BOOL) flexibleMaxY;
 - (BOOL) heightSizable;
+- (void) setFlexibleMaxY: (BOOL) flexibleMaxY;
 - (void) setHeightSizable: (BOOL) heightSizable;
 - (void) setWidthSizable: (BOOL) widthSizable;
 - (BOOL) widthSizable;

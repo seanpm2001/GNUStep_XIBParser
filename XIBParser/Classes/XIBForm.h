@@ -12,6 +12,7 @@
 
 @interface XIBForm : NSObject
 {
+  NSString* _ID;
   BOOL _allowsEmptySelection;
   BOOL _autorecalculatesCellSize;
   XIBColor* _backgroundColor;
@@ -20,7 +21,6 @@
   NSMutableArray* _column;
   BOOL _fixedFrame;
   XIBRect* _frame;
-  NSString* _id;
   XIBSize* _intercellSpacing;
   NSString* _mode;
   XIBFormCell* _prototype;
@@ -28,19 +28,19 @@
   NSString* _verticalHuggingPriority;
 }
 
+- (NSString *) ID;
 - (BOOL) allowsEmptySelection;
 - (BOOL) autorecalculatesCellSize;
 - (NSMutableArray *) cells;
 - (NSMutableArray *) column;
 - (BOOL) fixedFrame;
-- (NSString *) id;
 - (NSString *) mode;
 - (void) setAllowsEmptySelection: (BOOL) allowsEmptySelection;
 - (void) setAutorecalculatesCellSize: (BOOL) autorecalculatesCellSize;
 - (void) setCells: (NSMutableArray *) cells;
 - (void) setColumn: (NSMutableArray *) column;
 - (void) setFixedFrame: (BOOL) fixedFrame;
-- (void) setId: (NSString *) id;
+- (void) setID: (NSString *) ID;
 - (void) setMode: (NSString *) mode;
 - (void) setTranslatesAutoresizingMaskIntoConstraints: (BOOL) translatesAutoresizingMaskIntoConstraints;
 - (void) setVerticalHuggingPriority: (NSString *) verticalHuggingPriority;

@@ -11,13 +11,13 @@
 
 @interface XIBTextFieldCell : NSObject
 {
+  NSString* _ID;
   XIBColor* _backgroundColor;
   NSString* _borderStyle;
   BOOL _drawsBackground;
   BOOL _editable;
   XIBFont* _font;
   XIBNumberFormatter* _formatter;
-  NSString* _id;
   NSString* _lineBreakMode;
   BOOL _scrollable;
   BOOL _selectable;
@@ -27,10 +27,10 @@
   NSString* _title;
 }
 
+- (NSString *) ID;
 - (NSString *) borderStyle;
 - (BOOL) drawsBackground;
 - (BOOL) editable;
-- (NSString *) id;
 - (NSString *) lineBreakMode;
 - (BOOL) scrollable;
 - (BOOL) selectable;
@@ -38,7 +38,7 @@
 - (void) setBorderStyle: (NSString *) borderStyle;
 - (void) setDrawsBackground: (BOOL) drawsBackground;
 - (void) setEditable: (BOOL) editable;
-- (void) setId: (NSString *) id;
+- (void) setID: (NSString *) ID;
 - (void) setLineBreakMode: (NSString *) lineBreakMode;
 - (void) setScrollable: (BOOL) scrollable;
 - (void) setSelectable: (BOOL) selectable;

@@ -8,16 +8,16 @@
 
 @interface XIBTabViewItem : NSObject
 {
-  NSString* _id;
+  NSString* _ID;
   NSString* _identifier;
   NSString* _label;
   XIBView* _view;
 }
 
-- (NSString *) id;
+- (NSString *) ID;
 - (NSString *) identifier;
 - (NSString *) label;
-- (void) setId: (NSString *) id;
+- (void) setID: (NSString *) ID;
 - (void) setIdentifier: (NSString *) identifier;
 - (void) setLabel: (NSString *) label;
 

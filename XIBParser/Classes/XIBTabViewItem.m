@@ -10,9 +10,22 @@
 
 @implementation XIBTabViewItem 
 
-- (NSString *) id
+
+- (instancetype) init
 {
-  return _id;
+   self = [super init];
+   if(self != nil) {
+      ID = nil;
+      identifier = nil;
+      label = nil;
+      view = nil;
+   }
+   return self;
+}
+
+- (NSString *) ID
+{
+  return _ID;
 }
 
 - (NSString *) identifier
@@ -25,9 +38,9 @@
   return _label;
 }
 
-- (void) setId: (NSString *) id
+- (void) setID: (NSString *) ID
 {
-  ASSIGN(_id, id);
+  ASSIGN(_ID, ID);
 }
 
 - (void) setIdentifier: (NSString *) identifier
@@ -40,4 +53,14 @@
   ASSIGN(_label, label);
 }
 
+- (instancetype) copyWithZone: (NSZone *)zone 
+{
+   XIBTabViewItem* acopy = [[XIBTabViewItem allocWithZone: zone] init];
+
+
+   [acopy setID: [self ID]];
+   [acopy setIdentifier: [self identifier]];
+   [acopy setLabel: [self label]];
+   return acopy;
+}
 @end

@@ -9,14 +9,25 @@
 
 @implementation XIBCollectionViewItem 
 
+
+- (instancetype) init
+{
+   self = [super init];
+   if(self != nil) {
+      ID = nil;
+      connections = nil;
+   }
+   return self;
+}
+
+- (NSString *) ID
+{
+  return _ID;
+}
+
 - (NSMutableArray *) connections
 {
   return _connections;
-}
-
-- (NSString *) id
-{
-  return _id;
 }
 
 - (void) setConnections: (NSMutableArray *) connections
@@ -24,9 +35,17 @@
   ASSIGN(_connections, connections);
 }
 
-- (void) setId: (NSString *) id
+- (void) setID: (NSString *) ID
 {
-  ASSIGN(_id, id);
+  ASSIGN(_ID, ID);
 }
 
+- (instancetype) copyWithZone: (NSZone *)zone 
+{
+   XIBCollectionViewItem* acopy = [[XIBCollectionViewItem allocWithZone: zone] init];
+
+   [acopy setConnections: [self connections]];
+   [acopy setID: [self ID]];
+   return acopy;
+}
 @end

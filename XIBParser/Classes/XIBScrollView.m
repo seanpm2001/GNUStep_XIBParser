@@ -14,6 +14,35 @@
 
 @implementation XIBScrollView 
 
+
+- (instancetype) init
+{
+   self = [super init];
+   if(self != nil) {
+      ID = nil;
+      autohidesScrollers = NO;
+      contentView = nil;
+      fixedFrame = NO;
+      frame = nil;
+      hasHorizontalScroller = NO;
+      headerView = nil;
+      horizontalLineScroll = nil;
+      horizontalPageScroll = nil;
+      horizontalScroller = nil;
+      translatesAutoresizingMaskIntoConstraints = NO;
+      usesPredominantAxisScrolling = NO;
+      verticalLineScroll = nil;
+      verticalPageScroll = nil;
+      verticalScroller = nil;
+   }
+   return self;
+}
+
+- (NSString *) ID
+{
+  return _ID;
+}
+
 - (BOOL) autohidesScrollers
 {
   return _autohidesScrollers;
@@ -37,11 +66,6 @@
 - (NSString *) horizontalPageScroll
 {
   return _horizontalPageScroll;
-}
-
-- (NSString *) id
-{
-  return _id;
 }
 
 - (void) setAutohidesScrollers: (BOOL) autohidesScrollers
@@ -69,9 +93,9 @@
   ASSIGN(_horizontalPageScroll, horizontalPageScroll);
 }
 
-- (void) setId: (NSString *) id
+- (void) setID: (NSString *) ID
 {
-  ASSIGN(_id, id);
+  ASSIGN(_ID, ID);
 }
 
 - (void) setTranslatesAutoresizingMaskIntoConstraints: (BOOL) translatesAutoresizingMaskIntoConstraints
@@ -114,4 +138,28 @@
   return _verticalPageScroll;
 }
 
+- (instancetype) copyWithZone: (NSZone *)zone 
+{
+   XIBScrollView* acopy = [[XIBScrollView allocWithZone: zone] init];
+
+
+
+
+
+   [acopy setAutohidesScrollers: [self autohidesScrollers]];
+   [acopy setFixedFrame: [self fixedFrame]];
+   [acopy setHasHorizontalScroller: [self hasHorizontalScroller]];
+   [acopy setHorizontalLineScroll: [self horizontalLineScroll]];
+   [acopy setHorizontalPageScroll: [self horizontalPageScroll]];
+   [acopy setID: [self ID]];
+   [acopy setTranslatesAutoresizingMaskIntoConstraints: [self translatesAutoresizingMaskIntoConstraints]];
+   [acopy setUsesPredominantAxisScrolling: [self usesPredominantAxisScrolling]];
+   [acopy setVerticalLineScroll: [self verticalLineScroll]];
+   [acopy setVerticalPageScroll: [self verticalPageScroll]];
+
+
+
+
+   return acopy;
+}
 @end

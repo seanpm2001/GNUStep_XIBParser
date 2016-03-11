@@ -7,20 +7,23 @@
 
 @interface XIBImageCell : NSObject
 {
+  NSString* _ID;
   NSString* _alignment;
-  NSString* _id;
+  NSString* _image;
   NSString* _imageFrameStyle;
   NSString* _imageScaling;
   BOOL _refusesFirstResponder;
 }
 
+- (NSString *) ID;
 - (NSString *) alignment;
-- (NSString *) id;
+- (NSString *) image;
 - (NSString *) imageFrameStyle;
 - (NSString *) imageScaling;
 - (BOOL) refusesFirstResponder;
 - (void) setAlignment: (NSString *) alignment;
-- (void) setId: (NSString *) id;
+- (void) setID: (NSString *) ID;
+- (void) setImage: (NSString *) image;
 - (void) setImageFrameStyle: (NSString *) imageFrameStyle;
 - (void) setImageScaling: (NSString *) imageScaling;
 - (void) setRefusesFirstResponder: (BOOL) refusesFirstResponder;

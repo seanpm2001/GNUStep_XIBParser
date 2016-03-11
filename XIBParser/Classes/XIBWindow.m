@@ -16,6 +16,38 @@
 
 @implementation XIBWindow 
 
+
+- (instancetype) init
+{
+   self = [super init];
+   if(self != nil) {
+      ID = nil;
+      allowsToolTipsWhenApplicationIsInactive = NO;
+      animationBehavior = nil;
+      autorecalculatesKeyViewLoop = NO;
+      canvasLocation = nil;
+      contentRect = nil;
+      contentView = nil;
+      customClass = nil;
+      frameAutosaveName = nil;
+      hidesOnDeactivate = NO;
+      initialPositionMask = nil;
+      oneShot = NO;
+      releasedWhenClosed = NO;
+      screenRect = nil;
+      showsToolbarButton = NO;
+      styleMask = nil;
+      title = nil;
+      toolbar = nil;
+   }
+   return self;
+}
+
+- (NSString *) ID
+{
+  return _ID;
+}
+
 - (BOOL) allowsToolTipsWhenApplicationIsInactive
 {
   return _allowsToolTipsWhenApplicationIsInactive;
@@ -44,11 +76,6 @@
 - (BOOL) hidesOnDeactivate
 {
   return _hidesOnDeactivate;
-}
-
-- (NSString *) id
-{
-  return _id;
 }
 
 - (BOOL) oneShot
@@ -91,9 +118,9 @@
   _hidesOnDeactivate = hidesOnDeactivate;
 }
 
-- (void) setId: (NSString *) id
+- (void) setID: (NSString *) ID
 {
-  ASSIGN(_id, id);
+  ASSIGN(_ID, ID);
 }
 
 - (void) setOneShot: (BOOL) oneShot
@@ -126,4 +153,30 @@
   return _title;
 }
 
+- (instancetype) copyWithZone: (NSZone *)zone 
+{
+   XIBWindow* acopy = [[XIBWindow allocWithZone: zone] init];
+
+
+
+
+
+
+
+
+   [acopy setAllowsToolTipsWhenApplicationIsInactive: [self allowsToolTipsWhenApplicationIsInactive]];
+   [acopy setAnimationBehavior: [self animationBehavior]];
+   [acopy setAutorecalculatesKeyViewLoop: [self autorecalculatesKeyViewLoop]];
+   [acopy setCustomClass: [self customClass]];
+   [acopy setFrameAutosaveName: [self frameAutosaveName]];
+   [acopy setHidesOnDeactivate: [self hidesOnDeactivate]];
+   [acopy setID: [self ID]];
+   [acopy setOneShot: [self oneShot]];
+   [acopy setReleasedWhenClosed: [self releasedWhenClosed]];
+   [acopy setShowsToolbarButton: [self showsToolbarButton]];
+   [acopy setTitle: [self title]];
+
+
+   return acopy;
+}
 @end

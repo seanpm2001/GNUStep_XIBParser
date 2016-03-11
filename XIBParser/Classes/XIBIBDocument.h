@@ -11,6 +11,7 @@
   NSMutableArray* _dependencies;
   NSMutableArray* _objects;
   NSString* _propertyAccessControl;
+  NSMutableArray* _resources;
   NSString* _systemVersion;
   NSString* _targetRuntime;
   NSString* _toolsVersion;
@@ -23,10 +24,12 @@
 - (NSMutableArray *) dependencies;
 - (NSMutableArray *) objects;
 - (NSString *) propertyAccessControl;
+- (NSMutableArray *) resources;
 - (void) setCustomObjectInstantitationMethod: (NSString *) customObjectInstantitationMethod;
 - (void) setDependencies: (NSMutableArray *) dependencies;
 - (void) setObjects: (NSMutableArray *) objects;
 - (void) setPropertyAccessControl: (NSString *) propertyAccessControl;
+- (void) setResources: (NSMutableArray *) resources;
 - (void) setSystemVersion: (NSString *) systemVersion;
 - (void) setTargetRuntime: (NSString *) targetRuntime;
 - (void) setToolsVersion: (NSString *) toolsVersion;

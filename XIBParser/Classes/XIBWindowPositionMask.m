@@ -9,6 +9,19 @@
 
 @implementation XIBWindowPositionMask 
 
+
+- (instancetype) init
+{
+   self = [super init];
+   if(self != nil) {
+      bottomStrut = NO;
+      leftStrut = NO;
+      rightStrut = NO;
+      topStrut = NO;
+   }
+   return self;
+}
+
 - (BOOL) bottomStrut
 {
   return _bottomStrut;
@@ -49,4 +62,16 @@
   return _topStrut;
 }
 
+- (instancetype) copyWithZone: (NSZone *)zone 
+{
+   XIBWindowPositionMask* acopy = [[XIBWindowPositionMask allocWithZone: zone] init];
+
+
+   [acopy setBottomStrut: [self bottomStrut]];
+   [acopy setLeftStrut: [self leftStrut]];
+   [acopy setRightStrut: [self rightStrut]];
+   [acopy setTopStrut: [self topStrut]];
+
+   return acopy;
+}
 @end

@@ -12,6 +12,34 @@
 
 @implementation XIBSecureTextFieldCell 
 
+
+- (instancetype) init
+{
+   self = [super init];
+   if(self != nil) {
+      ID = nil;
+      allowedInputSourceLocales = nil;
+      backgroundColor = nil;
+      borderStyle = nil;
+      drawsBackground = NO;
+      editable = NO;
+      font = nil;
+      lineBreakMode = nil;
+      scrollable = NO;
+      selectable = NO;
+      sendsActionOnEndEditing = NO;
+      string = nil;
+      textColor = nil;
+      usesSingleLineMode = NO;
+   }
+   return self;
+}
+
+- (NSString *) ID
+{
+  return _ID;
+}
+
 - (NSMutableArray *) allowedInputSourceLocales
 {
   return _allowedInputSourceLocales;
@@ -30,11 +58,6 @@
 - (BOOL) editable
 {
   return _editable;
-}
-
-- (NSString *) id
-{
-  return _id;
 }
 
 - (NSString *) lineBreakMode
@@ -77,9 +100,9 @@
   _editable = editable;
 }
 
-- (void) setId: (NSString *) id
+- (void) setID: (NSString *) ID
 {
-  ASSIGN(_id, id);
+  ASSIGN(_ID, ID);
 }
 
 - (void) setLineBreakMode: (NSString *) lineBreakMode
@@ -122,4 +145,30 @@
   return _usesSingleLineMode;
 }
 
+- (instancetype) copyWithZone: (NSZone *)zone 
+{
+   XIBSecureTextFieldCell* acopy = [[XIBSecureTextFieldCell allocWithZone: zone] init];
+
+
+
+
+
+
+
+
+   [acopy setAllowedInputSourceLocales: [self allowedInputSourceLocales]];
+   [acopy setBorderStyle: [self borderStyle]];
+   [acopy setDrawsBackground: [self drawsBackground]];
+   [acopy setEditable: [self editable]];
+   [acopy setID: [self ID]];
+   [acopy setLineBreakMode: [self lineBreakMode]];
+   [acopy setScrollable: [self scrollable]];
+   [acopy setSelectable: [self selectable]];
+   [acopy setSendsActionOnEndEditing: [self sendsActionOnEndEditing]];
+   [acopy setString: [self string]];
+   [acopy setUsesSingleLineMode: [self usesSingleLineMode]];
+
+
+   return acopy;
+}
 @end

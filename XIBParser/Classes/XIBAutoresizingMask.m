@@ -9,9 +9,31 @@
 
 @implementation XIBAutoresizingMask 
 
+
+- (instancetype) init
+{
+   self = [super init];
+   if(self != nil) {
+      flexibleMaxY = NO;
+      heightSizable = NO;
+      widthSizable = NO;
+   }
+   return self;
+}
+
+- (BOOL) flexibleMaxY
+{
+  return _flexibleMaxY;
+}
+
 - (BOOL) heightSizable
 {
   return _heightSizable;
+}
+
+- (void) setFlexibleMaxY: (BOOL) flexibleMaxY
+{
+  _flexibleMaxY = flexibleMaxY;
 }
 
 - (void) setHeightSizable: (BOOL) heightSizable
@@ -29,4 +51,14 @@
   return _widthSizable;
 }
 
+- (instancetype) copyWithZone: (NSZone *)zone 
+{
+   XIBAutoresizingMask* acopy = [[XIBAutoresizingMask allocWithZone: zone] init];
+
+   [acopy setFlexibleMaxY: [self flexibleMaxY]];
+   [acopy setHeightSizable: [self heightSizable]];
+   [acopy setWidthSizable: [self widthSizable]];
+
+   return acopy;
+}
 @end

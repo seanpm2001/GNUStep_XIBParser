@@ -14,6 +14,7 @@
 
 @interface XIBWindow : NSObject
 {
+  NSString* _ID;
   BOOL _allowsToolTipsWhenApplicationIsInactive;
   NSString* _animationBehavior;
   BOOL _autorecalculatesKeyViewLoop;
@@ -23,7 +24,6 @@
   NSString* _customClass;
   NSString* _frameAutosaveName;
   BOOL _hidesOnDeactivate;
-  NSString* _id;
   XIBWindowPositionMask* _initialPositionMask;
   BOOL _oneShot;
   BOOL _releasedWhenClosed;
@@ -34,13 +34,13 @@
   XIBToolbar* _toolbar;
 }
 
+- (NSString *) ID;
 - (BOOL) allowsToolTipsWhenApplicationIsInactive;
 - (NSString *) animationBehavior;
 - (BOOL) autorecalculatesKeyViewLoop;
 - (NSString *) customClass;
 - (NSString *) frameAutosaveName;
 - (BOOL) hidesOnDeactivate;
-- (NSString *) id;
 - (BOOL) oneShot;
 - (BOOL) releasedWhenClosed;
 - (void) setAllowsToolTipsWhenApplicationIsInactive: (BOOL) allowsToolTipsWhenApplicationIsInactive;
@@ -49,7 +49,7 @@
 - (void) setCustomClass: (NSString *) customClass;
 - (void) setFrameAutosaveName: (NSString *) frameAutosaveName;
 - (void) setHidesOnDeactivate: (BOOL) hidesOnDeactivate;
-- (void) setId: (NSString *) id;
+- (void) setID: (NSString *) ID;
 - (void) setOneShot: (BOOL) oneShot;
 - (void) setReleasedWhenClosed: (BOOL) releasedWhenClosed;
 - (void) setShowsToolbarButton: (BOOL) showsToolbarButton;

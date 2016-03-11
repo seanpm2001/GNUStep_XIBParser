@@ -9,18 +9,18 @@
 
 @interface XIBSecureTextField : NSObject
 {
+  NSString* _ID;
   XIBSecureTextFieldCell* _cell;
   BOOL _fixedFrame;
   XIBRect* _frame;
-  NSString* _id;
   BOOL _translatesAutoresizingMaskIntoConstraints;
   NSString* _verticalHuggingPriority;
 }
 
+- (NSString *) ID;
 - (BOOL) fixedFrame;
-- (NSString *) id;
 - (void) setFixedFrame: (BOOL) fixedFrame;
-- (void) setId: (NSString *) id;
+- (void) setID: (NSString *) ID;
 - (void) setTranslatesAutoresizingMaskIntoConstraints: (BOOL) translatesAutoresizingMaskIntoConstraints;
 - (void) setVerticalHuggingPriority: (NSString *) verticalHuggingPriority;
 - (BOOL) translatesAutoresizingMaskIntoConstraints;

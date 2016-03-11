@@ -12,6 +12,30 @@
 
 @implementation XIBTokenFieldCell 
 
+
+- (instancetype) init
+{
+   self = [super init];
+   if(self != nil) {
+      ID = nil;
+      alignment = nil;
+      allowsEditingTextAttributes = NO;
+      backgroundColor = nil;
+      borderStyle = nil;
+      drawsBackground = NO;
+      editable = NO;
+      font = nil;
+      selectable = NO;
+      textColor = nil;
+   }
+   return self;
+}
+
+- (NSString *) ID
+{
+  return _ID;
+}
+
 - (NSString *) alignment
 {
   return _alignment;
@@ -35,11 +59,6 @@
 - (BOOL) editable
 {
   return _editable;
-}
-
-- (NSString *) id
-{
-  return _id;
 }
 
 - (BOOL) selectable
@@ -72,9 +91,9 @@
   _editable = editable;
 }
 
-- (void) setId: (NSString *) id
+- (void) setID: (NSString *) ID
 {
-  ASSIGN(_id, id);
+  ASSIGN(_ID, ID);
 }
 
 - (void) setSelectable: (BOOL) selectable
@@ -82,4 +101,22 @@
   _selectable = selectable;
 }
 
+- (instancetype) copyWithZone: (NSZone *)zone 
+{
+   XIBTokenFieldCell* acopy = [[XIBTokenFieldCell allocWithZone: zone] init];
+
+
+
+
+
+
+   [acopy setAlignment: [self alignment]];
+   [acopy setAllowsEditingTextAttributes: [self allowsEditingTextAttributes]];
+   [acopy setBorderStyle: [self borderStyle]];
+   [acopy setDrawsBackground: [self drawsBackground]];
+   [acopy setEditable: [self editable]];
+   [acopy setID: [self ID]];
+   [acopy setSelectable: [self selectable]];
+   return acopy;
+}
 @end

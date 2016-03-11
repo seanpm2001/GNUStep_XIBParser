@@ -9,6 +9,26 @@
 
 @implementation XIBIBDocument 
 
+
+- (instancetype) init
+{
+   self = [super init];
+   if(self != nil) {
+      customObjectInstantitationMethod = nil;
+      dependencies = nil;
+      objects = nil;
+      propertyAccessControl = nil;
+      resources = nil;
+      systemVersion = nil;
+      targetRuntime = nil;
+      toolsVersion = nil;
+      type = nil;
+      useAutolayout = NO;
+      version = nil;
+   }
+   return self;
+}
+
 - (NSString *) customObjectInstantitationMethod
 {
   return _customObjectInstantitationMethod;
@@ -29,6 +49,11 @@
   return _propertyAccessControl;
 }
 
+- (NSMutableArray *) resources
+{
+  return _resources;
+}
+
 - (void) setCustomObjectInstantitationMethod: (NSString *) customObjectInstantitationMethod
 {
   ASSIGN(_customObjectInstantitationMethod, customObjectInstantitationMethod);
@@ -47,6 +72,11 @@
 - (void) setPropertyAccessControl: (NSString *) propertyAccessControl
 {
   ASSIGN(_propertyAccessControl, propertyAccessControl);
+}
+
+- (void) setResources: (NSMutableArray *) resources
+{
+  ASSIGN(_resources, resources);
 }
 
 - (void) setSystemVersion: (NSString *) systemVersion
@@ -109,4 +139,30 @@
   return _version;
 }
 
+- (instancetype) copyWithZone: (NSZone *)zone 
+{
+   XIBIBDocument* acopy = [[XIBIBDocument allocWithZone: zone] init];
+
+
+
+
+   [acopy setCustomObjectInstantitationMethod: [self customObjectInstantitationMethod]];
+   [acopy setDependencies: [self dependencies]];
+   [acopy setObjects: [self objects]];
+   [acopy setPropertyAccessControl: [self propertyAccessControl]];
+   [acopy setResources: [self resources]];
+   [acopy setSystemVersion: [self systemVersion]];
+   [acopy setTargetRuntime: [self targetRuntime]];
+   [acopy setToolsVersion: [self toolsVersion]];
+   [acopy setType: [self type]];
+   [acopy setUseAutolayout: [self useAutolayout]];
+   [acopy setVersion: [self version]];
+
+
+
+
+
+
+   return acopy;
+}
 @end

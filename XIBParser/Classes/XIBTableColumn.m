@@ -12,9 +12,26 @@
 
 @implementation XIBTableColumn 
 
-- (NSString *) id
+
+- (instancetype) init
 {
-  return _id;
+   self = [super init];
+   if(self != nil) {
+      ID = nil;
+      dataCell = nil;
+      headerCell = nil;
+      maxWidth = nil;
+      minWidth = nil;
+      prototypeCellViews = nil;
+      resizingMask = nil;
+      width = nil;
+   }
+   return self;
+}
+
+- (NSString *) ID
+{
+  return _ID;
 }
 
 - (NSString *) maxWidth
@@ -32,9 +49,9 @@
   return _prototypeCellViews;
 }
 
-- (void) setId: (NSString *) id
+- (void) setID: (NSString *) ID
 {
-  ASSIGN(_id, id);
+  ASSIGN(_ID, ID);
 }
 
 - (void) setMaxWidth: (NSString *) maxWidth
@@ -62,4 +79,18 @@
   return _width;
 }
 
+- (instancetype) copyWithZone: (NSZone *)zone 
+{
+   XIBTableColumn* acopy = [[XIBTableColumn allocWithZone: zone] init];
+
+
+
+   [acopy setID: [self ID]];
+   [acopy setMaxWidth: [self maxWidth]];
+   [acopy setMinWidth: [self minWidth]];
+   [acopy setPrototypeCellViews: [self prototypeCellViews]];
+   [acopy setWidth: [self width]];
+
+   return acopy;
+}
 @end

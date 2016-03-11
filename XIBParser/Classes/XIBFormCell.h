@@ -9,11 +9,12 @@
 
 @interface XIBFormCell : NSObject
 {
+  NSString* _ID;
   NSString* _alignment;
   NSString* _borderStyle;
+  NSString* _controlSize;
   BOOL _editable;
   XIBFont* _font;
-  NSString* _id;
   NSString* _lineBreakMode;
   BOOL _scrollable;
   BOOL _selectable;
@@ -23,18 +24,20 @@
   XIBFont* _titleFont;
 }
 
+- (NSString *) ID;
 - (NSString *) alignment;
 - (NSString *) borderStyle;
+- (NSString *) controlSize;
 - (BOOL) editable;
-- (NSString *) id;
 - (NSString *) lineBreakMode;
 - (BOOL) scrollable;
 - (BOOL) selectable;
 - (BOOL) sendsActionOnEndEditing;
 - (void) setAlignment: (NSString *) alignment;
 - (void) setBorderStyle: (NSString *) borderStyle;
+- (void) setControlSize: (NSString *) controlSize;
 - (void) setEditable: (BOOL) editable;
-- (void) setId: (NSString *) id;
+- (void) setID: (NSString *) ID;
 - (void) setLineBreakMode: (NSString *) lineBreakMode;
 - (void) setScrollable: (BOOL) scrollable;
 - (void) setSelectable: (BOOL) selectable;

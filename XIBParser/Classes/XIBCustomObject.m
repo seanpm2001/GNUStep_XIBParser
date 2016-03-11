@@ -9,6 +9,24 @@
 
 @implementation XIBCustomObject 
 
+
+- (instancetype) init
+{
+   self = [super init];
+   if(self != nil) {
+      ID = nil;
+      connections = nil;
+      customClass = nil;
+      userLabel = nil;
+   }
+   return self;
+}
+
+- (NSString *) ID
+{
+  return _ID;
+}
+
 - (NSMutableArray *) connections
 {
   return _connections;
@@ -17,11 +35,6 @@
 - (NSString *) customClass
 {
   return _customClass;
-}
-
-- (NSString *) id
-{
-  return _id;
 }
 
 - (void) setConnections: (NSMutableArray *) connections
@@ -34,9 +47,9 @@
   ASSIGN(_customClass, customClass);
 }
 
-- (void) setId: (NSString *) id
+- (void) setID: (NSString *) ID
 {
-  ASSIGN(_id, id);
+  ASSIGN(_ID, ID);
 }
 
 - (void) setUserLabel: (NSString *) userLabel
@@ -49,4 +62,16 @@
   return _userLabel;
 }
 
+- (instancetype) copyWithZone: (NSZone *)zone 
+{
+   XIBCustomObject* acopy = [[XIBCustomObject allocWithZone: zone] init];
+
+
+   [acopy setConnections: [self connections]];
+   [acopy setCustomClass: [self customClass]];
+   [acopy setID: [self ID]];
+   [acopy setUserLabel: [self userLabel]];
+
+   return acopy;
+}
 @end

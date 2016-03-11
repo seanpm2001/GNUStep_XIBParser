@@ -9,14 +9,29 @@
 
 @implementation XIBNumberFormatter 
 
+
+- (instancetype) init
+{
+   self = [super init];
+   if(self != nil) {
+      ID = nil;
+      formatterBehavior = nil;
+      maximumFractionDigits = nil;
+      maximumIntegerDigits = nil;
+      minimumIntegerDigits = nil;
+      numberStyle = nil;
+   }
+   return self;
+}
+
+- (NSString *) ID
+{
+  return _ID;
+}
+
 - (NSString *) formatterBehavior
 {
   return _formatterBehavior;
-}
-
-- (NSString *) id
-{
-  return _id;
 }
 
 - (NSString *) maximumFractionDigits
@@ -44,9 +59,9 @@
   ASSIGN(_formatterBehavior, formatterBehavior);
 }
 
-- (void) setId: (NSString *) id
+- (void) setID: (NSString *) ID
 {
-  ASSIGN(_id, id);
+  ASSIGN(_ID, ID);
 }
 
 - (void) setMaximumFractionDigits: (NSString *) maximumFractionDigits
@@ -69,4 +84,20 @@
   ASSIGN(_numberStyle, numberStyle);
 }
 
+- (instancetype) copyWithZone: (NSZone *)zone 
+{
+   XIBNumberFormatter* acopy = [[XIBNumberFormatter allocWithZone: zone] init];
+
+
+
+
+
+   [acopy setFormatterBehavior: [self formatterBehavior]];
+   [acopy setID: [self ID]];
+   [acopy setMaximumFractionDigits: [self maximumFractionDigits]];
+   [acopy setMaximumIntegerDigits: [self maximumIntegerDigits]];
+   [acopy setMinimumIntegerDigits: [self minimumIntegerDigits]];
+   [acopy setNumberStyle: [self numberStyle]];
+   return acopy;
+}
 @end

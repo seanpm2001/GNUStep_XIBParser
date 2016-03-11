@@ -12,6 +12,35 @@
 
 @implementation XIBComboBoxCell 
 
+
+- (instancetype) init
+{
+   self = [super init];
+   if(self != nil) {
+      ID = nil;
+      backgroundColor = nil;
+      borderStyle = nil;
+      completes = NO;
+      drawsBackground = NO;
+      editable = NO;
+      font = nil;
+      lineBreakMode = nil;
+      numberOfVisibleItems = nil;
+      objectValues = nil;
+      scrollable = NO;
+      selectable = NO;
+      sendsActionOnEndEditing = NO;
+      string = nil;
+      textColor = nil;
+   }
+   return self;
+}
+
+- (NSString *) ID
+{
+  return _ID;
+}
+
 - (NSString *) borderStyle
 {
   return _borderStyle;
@@ -30,11 +59,6 @@
 - (BOOL) editable
 {
   return _editable;
-}
-
-- (NSString *) id
-{
-  return _id;
 }
 
 - (NSString *) lineBreakMode
@@ -87,9 +111,9 @@
   _editable = editable;
 }
 
-- (void) setId: (NSString *) id
+- (void) setID: (NSString *) ID
 {
-  ASSIGN(_id, id);
+  ASSIGN(_ID, ID);
 }
 
 - (void) setLineBreakMode: (NSString *) lineBreakMode
@@ -132,4 +156,32 @@
   return _string;
 }
 
+- (instancetype) copyWithZone: (NSZone *)zone 
+{
+   XIBComboBoxCell* acopy = [[XIBComboBoxCell allocWithZone: zone] init];
+
+
+
+
+
+
+
+
+
+
+   [acopy setBorderStyle: [self borderStyle]];
+   [acopy setCompletes: [self completes]];
+   [acopy setDrawsBackground: [self drawsBackground]];
+   [acopy setEditable: [self editable]];
+   [acopy setID: [self ID]];
+   [acopy setLineBreakMode: [self lineBreakMode]];
+   [acopy setNumberOfVisibleItems: [self numberOfVisibleItems]];
+   [acopy setObjectValues: [self objectValues]];
+   [acopy setScrollable: [self scrollable]];
+   [acopy setSelectable: [self selectable]];
+   [acopy setSendsActionOnEndEditing: [self sendsActionOnEndEditing]];
+   [acopy setString: [self string]];
+
+   return acopy;
+}
 @end

@@ -10,6 +10,7 @@
 
 @interface XIBTokenFieldCell : NSObject
 {
+  NSString* _ID;
   NSString* _alignment;
   BOOL _allowsEditingTextAttributes;
   XIBColor* _backgroundColor;
@@ -17,24 +18,23 @@
   BOOL _drawsBackground;
   BOOL _editable;
   XIBFont* _font;
-  NSString* _id;
   BOOL _selectable;
   XIBColor* _textColor;
 }
 
+- (NSString *) ID;
 - (NSString *) alignment;
 - (BOOL) allowsEditingTextAttributes;
 - (NSString *) borderStyle;
 - (BOOL) drawsBackground;
 - (BOOL) editable;
-- (NSString *) id;
 - (BOOL) selectable;
 - (void) setAlignment: (NSString *) alignment;
 - (void) setAllowsEditingTextAttributes: (BOOL) allowsEditingTextAttributes;
 - (void) setBorderStyle: (NSString *) borderStyle;
 - (void) setDrawsBackground: (BOOL) drawsBackground;
 - (void) setEditable: (BOOL) editable;
-- (void) setId: (NSString *) id;
+- (void) setID: (NSString *) ID;
 - (void) setSelectable: (BOOL) selectable;
 
 @end

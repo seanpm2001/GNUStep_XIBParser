@@ -10,13 +10,13 @@
 
 @interface XIBSecureTextFieldCell : NSObject
 {
+  NSString* _ID;
   NSMutableArray* _allowedInputSourceLocales;
   XIBColor* _backgroundColor;
   NSString* _borderStyle;
   BOOL _drawsBackground;
   BOOL _editable;
   XIBFont* _font;
-  NSString* _id;
   NSString* _lineBreakMode;
   BOOL _scrollable;
   BOOL _selectable;
@@ -26,11 +26,11 @@
   BOOL _usesSingleLineMode;
 }
 
+- (NSString *) ID;
 - (NSMutableArray *) allowedInputSourceLocales;
 - (NSString *) borderStyle;
 - (BOOL) drawsBackground;
 - (BOOL) editable;
-- (NSString *) id;
 - (NSString *) lineBreakMode;
 - (BOOL) scrollable;
 - (BOOL) selectable;
@@ -39,7 +39,7 @@
 - (void) setBorderStyle: (NSString *) borderStyle;
 - (void) setDrawsBackground: (BOOL) drawsBackground;
 - (void) setEditable: (BOOL) editable;
-- (void) setId: (NSString *) id;
+- (void) setID: (NSString *) ID;
 - (void) setLineBreakMode: (NSString *) lineBreakMode;
 - (void) setScrollable: (BOOL) scrollable;
 - (void) setSelectable: (BOOL) selectable;

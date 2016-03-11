@@ -9,17 +9,17 @@
 
 @interface XIBColorWell : NSObject
 {
+  NSString* _ID;
   XIBColor* _color;
   BOOL _fixedFrame;
   XIBRect* _frame;
-  NSString* _id;
   BOOL _translatesAutoresizingMaskIntoConstraints;
 }
 
+- (NSString *) ID;
 - (BOOL) fixedFrame;
-- (NSString *) id;
 - (void) setFixedFrame: (BOOL) fixedFrame;
-- (void) setId: (NSString *) id;
+- (void) setID: (NSString *) ID;
 - (void) setTranslatesAutoresizingMaskIntoConstraints: (BOOL) translatesAutoresizingMaskIntoConstraints;
 - (BOOL) translatesAutoresizingMaskIntoConstraints;
 

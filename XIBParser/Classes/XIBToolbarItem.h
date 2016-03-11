@@ -7,15 +7,15 @@
 
 @interface XIBToolbarItem : NSObject
 {
-  NSString* _id;
+  NSString* _ID;
   NSString* _implicitItemIdentifier;
   NSString* _reference;
 }
 
-- (NSString *) id;
+- (NSString *) ID;
 - (NSString *) implicitItemIdentifier;
 - (NSString *) reference;
-- (void) setId: (NSString *) id;
+- (void) setID: (NSString *) ID;
 - (void) setImplicitItemIdentifier: (NSString *) implicitItemIdentifier;
 - (void) setReference: (NSString *) reference;
 

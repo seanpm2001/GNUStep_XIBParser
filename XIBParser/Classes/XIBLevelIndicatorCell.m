@@ -9,6 +9,26 @@
 
 @implementation XIBLevelIndicatorCell 
 
+
+- (instancetype) init
+{
+   self = [super init];
+   if(self != nil) {
+      ID = nil;
+      alignment = nil;
+      criticalValue = nil;
+      doubleValue = nil;
+      maxValue = nil;
+      warningValue = nil;
+   }
+   return self;
+}
+
+- (NSString *) ID
+{
+  return _ID;
+}
+
 - (NSString *) alignment
 {
   return _alignment;
@@ -22,11 +42,6 @@
 - (NSString *) doubleValue
 {
   return _doubleValue;
-}
-
-- (NSString *) id
-{
-  return _id;
 }
 
 - (NSString *) maxValue
@@ -49,9 +64,9 @@
   ASSIGN(_doubleValue, doubleValue);
 }
 
-- (void) setId: (NSString *) id
+- (void) setID: (NSString *) ID
 {
-  ASSIGN(_id, id);
+  ASSIGN(_ID, ID);
 }
 
 - (void) setMaxValue: (NSString *) maxValue
@@ -69,4 +84,20 @@
   return _warningValue;
 }
 
+- (instancetype) copyWithZone: (NSZone *)zone 
+{
+   XIBLevelIndicatorCell* acopy = [[XIBLevelIndicatorCell allocWithZone: zone] init];
+
+
+
+
+   [acopy setAlignment: [self alignment]];
+   [acopy setCriticalValue: [self criticalValue]];
+   [acopy setDoubleValue: [self doubleValue]];
+   [acopy setID: [self ID]];
+   [acopy setMaxValue: [self maxValue]];
+   [acopy setWarningValue: [self warningValue]];
+
+   return acopy;
+}
 @end

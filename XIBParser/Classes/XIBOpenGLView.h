@@ -8,20 +8,20 @@
 
 @interface XIBOpenGLView : NSObject
 {
+  NSString* _ID;
   BOOL _allowOffline;
   BOOL _fixedFrame;
   XIBRect* _frame;
-  NSString* _id;
   BOOL _translatesAutoresizingMaskIntoConstraints;
   BOOL _useAuxiliaryDepthBufferStencil;
 }
 
+- (NSString *) ID;
 - (BOOL) allowOffline;
 - (BOOL) fixedFrame;
-- (NSString *) id;
 - (void) setAllowOffline: (BOOL) allowOffline;
 - (void) setFixedFrame: (BOOL) fixedFrame;
-- (void) setId: (NSString *) id;
+- (void) setID: (NSString *) ID;
 - (void) setTranslatesAutoresizingMaskIntoConstraints: (BOOL) translatesAutoresizingMaskIntoConstraints;
 - (void) setUseAuxiliaryDepthBufferStencil: (BOOL) useAuxiliaryDepthBufferStencil;
 - (BOOL) translatesAutoresizingMaskIntoConstraints;

@@ -7,26 +7,26 @@
 
 @interface XIBToolbar : NSObject
 {
+  NSString* _ID;
   NSMutableArray* _allowedToolbarItems;
   BOOL _autosavesConfiguration;
   NSMutableArray* _defaultToolbarItems;
   NSString* _displayMode;
-  NSString* _id;
   NSString* _implicitIdentifier;
   NSString* _sizeMode;
 }
 
+- (NSString *) ID;
 - (NSMutableArray *) allowedToolbarItems;
 - (BOOL) autosavesConfiguration;
 - (NSMutableArray *) defaultToolbarItems;
 - (NSString *) displayMode;
-- (NSString *) id;
 - (NSString *) implicitIdentifier;
 - (void) setAllowedToolbarItems: (NSMutableArray *) allowedToolbarItems;
 - (void) setAutosavesConfiguration: (BOOL) autosavesConfiguration;
 - (void) setDefaultToolbarItems: (NSMutableArray *) defaultToolbarItems;
 - (void) setDisplayMode: (NSString *) displayMode;
-- (void) setId: (NSString *) id;
+- (void) setID: (NSString *) ID;
 - (void) setImplicitIdentifier: (NSString *) implicitIdentifier;
 - (void) setSizeMode: (NSString *) sizeMode;
 - (NSString *) sizeMode;

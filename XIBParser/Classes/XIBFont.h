@@ -8,10 +8,13 @@
 @interface XIBFont : NSObject
 {
   NSString* _metaFont;
+  NSString* _size;
 }
 
 - (NSString *) metaFont;
 - (void) setMetaFont: (NSString *) metaFont;
+- (void) setSize: (NSString *) size;
+- (NSString *) size;
 
 @end
 

@@ -7,9 +7,35 @@
 #endif
 
 #import "XIBModifierMask.h"
+#import "XIBInteger.h"
 #import "XIBMenu.h"
 
 @implementation XIBMenuItem 
+
+
+- (instancetype) init
+{
+   self = [super init];
+   if(self != nil) {
+      ID = nil;
+      connections = nil;
+      enabled = NO;
+      isSeparatorItem = NO;
+      keyEquivalent = nil;
+      keyEquivalentModifierMask = nil;
+      representedObject = nil;
+      state = nil;
+      submenu = nil;
+      tag = nil;
+      title = nil;
+   }
+   return self;
+}
+
+- (NSString *) ID
+{
+  return _ID;
+}
 
 - (NSMutableArray *) connections
 {
@@ -19,11 +45,6 @@
 - (BOOL) enabled
 {
   return _enabled;
-}
-
-- (NSString *) id
-{
-  return _id;
 }
 
 - (BOOL) isSeparatorItem
@@ -46,9 +67,9 @@
   _enabled = enabled;
 }
 
-- (void) setId: (NSString *) id
+- (void) setID: (NSString *) ID
 {
-  ASSIGN(_id, id);
+  ASSIGN(_ID, ID);
 }
 
 - (void) setIsSeparatorItem: (BOOL) isSeparatorItem
@@ -91,4 +112,24 @@
   return _title;
 }
 
+- (instancetype) copyWithZone: (NSZone *)zone 
+{
+   XIBMenuItem* acopy = [[XIBMenuItem allocWithZone: zone] init];
+
+
+
+
+   [acopy setConnections: [self connections]];
+   [acopy setEnabled: [self enabled]];
+   [acopy setID: [self ID]];
+   [acopy setIsSeparatorItem: [self isSeparatorItem]];
+   [acopy setKeyEquivalent: [self keyEquivalent]];
+   [acopy setState: [self state]];
+   [acopy setTag: [self tag]];
+   [acopy setTitle: [self title]];
+
+
+
+   return acopy;
+}
 @end

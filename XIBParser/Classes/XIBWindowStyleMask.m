@@ -9,6 +9,21 @@
 
 @implementation XIBWindowStyleMask 
 
+
+- (instancetype) init
+{
+   self = [super init];
+   if(self != nil) {
+      closable = NO;
+      miniaturizable = NO;
+      resizable = NO;
+      texturedBackground = NO;
+      titled = NO;
+      utility = NO;
+   }
+   return self;
+}
+
 - (BOOL) closable
 {
   return _closable;
@@ -39,6 +54,11 @@
   _resizable = resizable;
 }
 
+- (void) setTexturedBackground: (BOOL) texturedBackground
+{
+  _texturedBackground = texturedBackground;
+}
+
 - (void) setTitled: (BOOL) titled
 {
   _titled = titled;
@@ -47,6 +67,11 @@
 - (void) setUtility: (BOOL) utility
 {
   _utility = utility;
+}
+
+- (BOOL) texturedBackground
+{
+  return _texturedBackground;
 }
 
 - (BOOL) titled
@@ -59,4 +84,20 @@
   return _utility;
 }
 
+- (instancetype) copyWithZone: (NSZone *)zone 
+{
+   XIBWindowStyleMask* acopy = [[XIBWindowStyleMask allocWithZone: zone] init];
+
+
+   [acopy setClosable: [self closable]];
+   [acopy setMiniaturizable: [self miniaturizable]];
+   [acopy setResizable: [self resizable]];
+   [acopy setTexturedBackground: [self texturedBackground]];
+   [acopy setTitled: [self titled]];
+   [acopy setUtility: [self utility]];
+
+
+
+   return acopy;
+}
 @end

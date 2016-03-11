@@ -9,19 +9,47 @@
 
 @implementation XIBSliderCell 
 
+
+- (instancetype) init
+{
+   self = [super init];
+   if(self != nil) {
+      ID = nil;
+      alignment = nil;
+      allowsTickMarkValuesOnly = NO;
+      controlSize = nil;
+      doubleValue = nil;
+      maxValue = nil;
+      sliderType = nil;
+      state = nil;
+      tickMarkPosition = nil;
+   }
+   return self;
+}
+
+- (NSString *) ID
+{
+  return _ID;
+}
+
 - (NSString *) alignment
 {
   return _alignment;
 }
 
+- (BOOL) allowsTickMarkValuesOnly
+{
+  return _allowsTickMarkValuesOnly;
+}
+
+- (NSString *) controlSize
+{
+  return _controlSize;
+}
+
 - (NSString *) doubleValue
 {
   return _doubleValue;
-}
-
-- (NSString *) id
-{
-  return _id;
 }
 
 - (NSString *) maxValue
@@ -34,14 +62,24 @@
   ASSIGN(_alignment, alignment);
 }
 
+- (void) setAllowsTickMarkValuesOnly: (BOOL) allowsTickMarkValuesOnly
+{
+  _allowsTickMarkValuesOnly = allowsTickMarkValuesOnly;
+}
+
+- (void) setControlSize: (NSString *) controlSize
+{
+  ASSIGN(_controlSize, controlSize);
+}
+
 - (void) setDoubleValue: (NSString *) doubleValue
 {
   ASSIGN(_doubleValue, doubleValue);
 }
 
-- (void) setId: (NSString *) id
+- (void) setID: (NSString *) ID
 {
-  ASSIGN(_id, id);
+  ASSIGN(_ID, ID);
 }
 
 - (void) setMaxValue: (NSString *) maxValue
@@ -79,4 +117,26 @@
   return _tickMarkPosition;
 }
 
+- (instancetype) copyWithZone: (NSZone *)zone 
+{
+   XIBSliderCell* acopy = [[XIBSliderCell allocWithZone: zone] init];
+
+
+
+
+
+   [acopy setAlignment: [self alignment]];
+   [acopy setAllowsTickMarkValuesOnly: [self allowsTickMarkValuesOnly]];
+   [acopy setControlSize: [self controlSize]];
+   [acopy setDoubleValue: [self doubleValue]];
+   [acopy setID: [self ID]];
+   [acopy setMaxValue: [self maxValue]];
+   [acopy setSliderType: [self sliderType]];
+   [acopy setState: [self state]];
+   [acopy setTickMarkPosition: [self tickMarkPosition]];
+
+
+
+   return acopy;
+}
 @end

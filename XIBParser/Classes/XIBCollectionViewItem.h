@@ -7,14 +7,14 @@
 
 @interface XIBCollectionViewItem : NSObject
 {
+  NSString* _ID;
   NSMutableArray* _connections;
-  NSString* _id;
 }
 
+- (NSString *) ID;
 - (NSMutableArray *) connections;
-- (NSString *) id;
 - (void) setConnections: (NSMutableArray *) connections;
-- (void) setId: (NSString *) id;
+- (void) setID: (NSString *) ID;
 
 @end
 

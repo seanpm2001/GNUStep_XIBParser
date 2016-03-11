@@ -12,14 +12,35 @@
 
 @implementation XIBClipView 
 
+
+- (instancetype) init
+{
+   self = [super init];
+   if(self != nil) {
+      ID = nil;
+      ambiguous = NO;
+      autoresizingMask = nil;
+      backgroundColor = nil;
+      drawsBackground = NO;
+      frame = nil;
+      subviews = nil;
+   }
+   return self;
+}
+
+- (NSString *) ID
+{
+  return _ID;
+}
+
 - (BOOL) ambiguous
 {
   return _ambiguous;
 }
 
-- (NSString *) id
+- (BOOL) drawsBackground
 {
-  return _id;
+  return _drawsBackground;
 }
 
 - (void) setAmbiguous: (BOOL) ambiguous
@@ -27,9 +48,14 @@
   _ambiguous = ambiguous;
 }
 
-- (void) setId: (NSString *) id
+- (void) setDrawsBackground: (BOOL) drawsBackground
 {
-  ASSIGN(_id, id);
+  _drawsBackground = drawsBackground;
+}
+
+- (void) setID: (NSString *) ID
+{
+  ASSIGN(_ID, ID);
 }
 
 - (void) setSubviews: (NSMutableArray *) subviews
@@ -42,4 +68,16 @@
   return _subviews;
 }
 
+- (instancetype) copyWithZone: (NSZone *)zone 
+{
+   XIBClipView* acopy = [[XIBClipView allocWithZone: zone] init];
+
+
+   [acopy setAmbiguous: [self ambiguous]];
+   [acopy setDrawsBackground: [self drawsBackground]];
+   [acopy setID: [self ID]];
+   [acopy setSubviews: [self subviews]];
+
+   return acopy;
+}
 @end

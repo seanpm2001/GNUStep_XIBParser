@@ -10,6 +10,29 @@
 
 @implementation XIBSplitView 
 
+
+- (instancetype) init
+{
+   self = [super init];
+   if(self != nil) {
+      ID = nil;
+      arrangesAllSubviews = NO;
+      dividerStyle = nil;
+      fixedFrame = NO;
+      frame = nil;
+      holdingPriorities = nil;
+      subviews = nil;
+      translatesAutoresizingMaskIntoConstraints = NO;
+      vertical = NO;
+   }
+   return self;
+}
+
+- (NSString *) ID
+{
+  return _ID;
+}
+
 - (BOOL) arrangesAllSubviews
 {
   return _arrangesAllSubviews;
@@ -28,11 +51,6 @@
 - (NSMutableArray *) holdingPriorities
 {
   return _holdingPriorities;
-}
-
-- (NSString *) id
-{
-  return _id;
 }
 
 - (void) setArrangesAllSubviews: (BOOL) arrangesAllSubviews
@@ -55,9 +73,9 @@
   ASSIGN(_holdingPriorities, holdingPriorities);
 }
 
-- (void) setId: (NSString *) id
+- (void) setID: (NSString *) ID
 {
-  ASSIGN(_id, id);
+  ASSIGN(_ID, ID);
 }
 
 - (void) setSubviews: (NSMutableArray *) subviews
@@ -90,4 +108,24 @@
   return _vertical;
 }
 
+- (instancetype) copyWithZone: (NSZone *)zone 
+{
+   XIBSplitView* acopy = [[XIBSplitView allocWithZone: zone] init];
+
+
+
+
+   [acopy setArrangesAllSubviews: [self arrangesAllSubviews]];
+   [acopy setDividerStyle: [self dividerStyle]];
+   [acopy setFixedFrame: [self fixedFrame]];
+   [acopy setHoldingPriorities: [self holdingPriorities]];
+   [acopy setID: [self ID]];
+   [acopy setSubviews: [self subviews]];
+   [acopy setTranslatesAutoresizingMaskIntoConstraints: [self translatesAutoresizingMaskIntoConstraints]];
+   [acopy setVertical: [self vertical]];
+
+
+
+   return acopy;
+}
 @end

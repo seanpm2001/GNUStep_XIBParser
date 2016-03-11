@@ -9,6 +9,19 @@
 
 @implementation XIBModifierMask 
 
+
+- (instancetype) init
+{
+   self = [super init];
+   if(self != nil) {
+      command = NO;
+      control = NO;
+      option = NO;
+      shift = NO;
+   }
+   return self;
+}
+
 - (BOOL) command
 {
   return _command;
@@ -49,4 +62,16 @@
   return _shift;
 }
 
+- (instancetype) copyWithZone: (NSZone *)zone 
+{
+   XIBModifierMask* acopy = [[XIBModifierMask allocWithZone: zone] init];
+
+
+   [acopy setCommand: [self command]];
+   [acopy setControl: [self control]];
+   [acopy setOption: [self option]];
+   [acopy setShift: [self shift]];
+
+   return acopy;
+}
 @end

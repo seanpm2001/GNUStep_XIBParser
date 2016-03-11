@@ -10,6 +10,7 @@
   BOOL _closable;
   BOOL _miniaturizable;
   BOOL _resizable;
+  BOOL _texturedBackground;
   BOOL _titled;
   BOOL _utility;
 }
@@ -20,8 +21,10 @@
 - (void) setClosable: (BOOL) closable;
 - (void) setMiniaturizable: (BOOL) miniaturizable;
 - (void) setResizable: (BOOL) resizable;
+- (void) setTexturedBackground: (BOOL) texturedBackground;
 - (void) setTitled: (BOOL) titled;
 - (void) setUtility: (BOOL) utility;
+- (BOOL) texturedBackground;
 - (BOOL) titled;
 - (BOOL) utility;
 

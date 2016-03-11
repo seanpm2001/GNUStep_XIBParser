@@ -14,6 +14,36 @@
 
 @implementation XIBTableView 
 
+
+- (instancetype) init
+{
+   self = [super init];
+   if(self != nil) {
+      ID = nil;
+      allowsExpansionToolTips = NO;
+      autoresizingMask = nil;
+      autosaveColumns = NO;
+      backgroundColor = nil;
+      columnAutoresizingStyle = nil;
+      columnSelection = NO;
+      frame = nil;
+      gridColor = nil;
+      headerView = nil;
+      intercellSpacing = nil;
+      multipleSelection = NO;
+      rowSizeStyle = nil;
+      tableColumns = nil;
+      verticalHuggingPriority = nil;
+      viewBased = NO;
+   }
+   return self;
+}
+
+- (NSString *) ID
+{
+  return _ID;
+}
+
 - (BOOL) allowsExpansionToolTips
 {
   return _allowsExpansionToolTips;
@@ -37,11 +67,6 @@
 - (NSString *) headerView
 {
   return _headerView;
-}
-
-- (NSString *) id
-{
-  return _id;
 }
 
 - (BOOL) multipleSelection
@@ -79,9 +104,9 @@
   ASSIGN(_headerView, headerView);
 }
 
-- (void) setId: (NSString *) id
+- (void) setID: (NSString *) ID
 {
-  ASSIGN(_id, id);
+  ASSIGN(_ID, ID);
 }
 
 - (void) setMultipleSelection: (BOOL) multipleSelection
@@ -124,4 +149,30 @@
   return _viewBased;
 }
 
+- (instancetype) copyWithZone: (NSZone *)zone 
+{
+   XIBTableView* acopy = [[XIBTableView allocWithZone: zone] init];
+
+
+
+
+
+
+
+   [acopy setAllowsExpansionToolTips: [self allowsExpansionToolTips]];
+   [acopy setAutosaveColumns: [self autosaveColumns]];
+   [acopy setColumnAutoresizingStyle: [self columnAutoresizingStyle]];
+   [acopy setColumnSelection: [self columnSelection]];
+   [acopy setHeaderView: [self headerView]];
+   [acopy setID: [self ID]];
+   [acopy setMultipleSelection: [self multipleSelection]];
+   [acopy setRowSizeStyle: [self rowSizeStyle]];
+   [acopy setTableColumns: [self tableColumns]];
+   [acopy setVerticalHuggingPriority: [self verticalHuggingPriority]];
+   [acopy setViewBased: [self viewBased]];
+
+
+
+   return acopy;
+}
 @end

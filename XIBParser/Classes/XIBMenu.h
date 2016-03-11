@@ -7,15 +7,15 @@
 
 @interface XIBMenu : NSObject
 {
-  NSString* _id;
+  NSString* _ID;
   NSMutableArray* _items;
   NSString* _systemMenu;
   NSString* _title;
 }
 
-- (NSString *) id;
+- (NSString *) ID;
 - (NSMutableArray *) items;
-- (void) setId: (NSString *) id;
+- (void) setID: (NSString *) ID;
 - (void) setItems: (NSMutableArray *) items;
 - (void) setSystemMenu: (NSString *) systemMenu;
 - (void) setTitle: (NSString *) title;

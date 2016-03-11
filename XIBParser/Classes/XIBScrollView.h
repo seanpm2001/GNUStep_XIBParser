@@ -12,6 +12,7 @@
 
 @interface XIBScrollView : NSObject
 {
+  NSString* _ID;
   BOOL _autohidesScrollers;
   XIBClipView* _contentView;
   BOOL _fixedFrame;
@@ -21,7 +22,6 @@
   NSString* _horizontalLineScroll;
   NSString* _horizontalPageScroll;
   XIBScroller* _horizontalScroller;
-  NSString* _id;
   BOOL _translatesAutoresizingMaskIntoConstraints;
   BOOL _usesPredominantAxisScrolling;
   NSString* _verticalLineScroll;
@@ -29,18 +29,18 @@
   XIBScroller* _verticalScroller;
 }
 
+- (NSString *) ID;
 - (BOOL) autohidesScrollers;
 - (BOOL) fixedFrame;
 - (BOOL) hasHorizontalScroller;
 - (NSString *) horizontalLineScroll;
 - (NSString *) horizontalPageScroll;
-- (NSString *) id;
 - (void) setAutohidesScrollers: (BOOL) autohidesScrollers;
 - (void) setFixedFrame: (BOOL) fixedFrame;
 - (void) setHasHorizontalScroller: (BOOL) hasHorizontalScroller;
 - (void) setHorizontalLineScroll: (NSString *) horizontalLineScroll;
 - (void) setHorizontalPageScroll: (NSString *) horizontalPageScroll;
-- (void) setId: (NSString *) id;
+- (void) setID: (NSString *) ID;
 - (void) setTranslatesAutoresizingMaskIntoConstraints: (BOOL) translatesAutoresizingMaskIntoConstraints;
 - (void) setUsesPredominantAxisScrolling: (BOOL) usesPredominantAxisScrolling;
 - (void) setVerticalLineScroll: (NSString *) verticalLineScroll;

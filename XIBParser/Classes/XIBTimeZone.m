@@ -9,6 +9,16 @@
 
 @implementation XIBTimeZone 
 
+
+- (instancetype) init
+{
+   self = [super init];
+   if(self != nil) {
+      name = nil;
+   }
+   return self;
+}
+
 - (NSString *) name
 {
   return _name;
@@ -19,4 +29,10 @@
   ASSIGN(_name, name);
 }
 
+- (instancetype) copyWithZone: (NSZone *)zone 
+{
+   XIBTimeZone* acopy = [[XIBTimeZone allocWithZone: zone] init];
+   [acopy setName: [self name]];
+   return acopy;
+}
 @end

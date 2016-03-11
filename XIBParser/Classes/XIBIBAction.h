@@ -7,14 +7,14 @@
 
 @interface XIBIBAction : NSObject
 {
-  NSString* _id;
+  NSString* _ID;
   NSString* _selector;
   NSString* _target;
 }
 
-- (NSString *) id;
+- (NSString *) ID;
 - (NSString *) selector;
-- (void) setId: (NSString *) id;
+- (void) setID: (NSString *) ID;
 - (void) setSelector: (NSString *) selector;
 - (void) setTarget: (NSString *) target;
 - (NSString *) target;

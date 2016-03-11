@@ -10,22 +10,22 @@
 
 @interface XIBPathCell : NSObject
 {
+  NSString* _ID;
   NSString* _alignment;
   XIBColor* _backgroundColor;
   BOOL _editable;
   XIBFont* _font;
-  NSString* _id;
   BOOL _selectable;
   XIBUrl* _url;
 }
 
+- (NSString *) ID;
 - (NSString *) alignment;
 - (BOOL) editable;
-- (NSString *) id;
 - (BOOL) selectable;
 - (void) setAlignment: (NSString *) alignment;
 - (void) setEditable: (BOOL) editable;
-- (void) setId: (NSString *) id;
+- (void) setID: (NSString *) ID;
 - (void) setSelectable: (BOOL) selectable;
 
 @end

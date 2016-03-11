@@ -10,9 +10,9 @@
 
 @interface XIBTableColumn : NSObject
 {
+  NSString* _ID;
   XIBTextFieldCell* _dataCell;
   XIBTableHeaderCell* _headerCell;
-  NSString* _id;
   NSString* _maxWidth;
   NSString* _minWidth;
   NSMutableArray* _prototypeCellViews;
@@ -20,11 +20,11 @@
   NSString* _width;
 }
 
-- (NSString *) id;
+- (NSString *) ID;
 - (NSString *) maxWidth;
 - (NSString *) minWidth;
 - (NSMutableArray *) prototypeCellViews;
-- (void) setId: (NSString *) id;
+- (void) setID: (NSString *) ID;
 - (void) setMaxWidth: (NSString *) maxWidth;
 - (void) setMinWidth: (NSString *) minWidth;
 - (void) setPrototypeCellViews: (NSMutableArray *) prototypeCellViews;

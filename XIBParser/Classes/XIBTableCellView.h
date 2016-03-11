@@ -9,17 +9,20 @@
 
 @interface XIBTableCellView : NSObject
 {
+  NSString* _ID;
   XIBAutoresizingMask* _autoresizingMask;
   NSMutableArray* _connections;
   XIBRect* _frame;
-  NSString* _id;
+  NSString* _identifier;
   NSMutableArray* _subviews;
 }
 
+- (NSString *) ID;
 - (NSMutableArray *) connections;
-- (NSString *) id;
+- (NSString *) identifier;
 - (void) setConnections: (NSMutableArray *) connections;
-- (void) setId: (NSString *) id;
+- (void) setID: (NSString *) ID;
+- (void) setIdentifier: (NSString *) identifier;
 - (void) setSubviews: (NSMutableArray *) subviews;
 - (NSMutableArray *) subviews;
 

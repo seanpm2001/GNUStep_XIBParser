@@ -11,6 +11,28 @@
 
 @implementation XIBTextField 
 
+
+- (instancetype) init
+{
+   self = [super init];
+   if(self != nil) {
+      ID = nil;
+      cell = nil;
+      fixedFrame = NO;
+      frame = nil;
+      horizontalCompressionResistancePriority = nil;
+      horizontalHuggingPriority = nil;
+      translatesAutoresizingMaskIntoConstraints = NO;
+      verticalHuggingPriority = nil;
+   }
+   return self;
+}
+
+- (NSString *) ID
+{
+  return _ID;
+}
+
 - (BOOL) fixedFrame
 {
   return _fixedFrame;
@@ -24,11 +46,6 @@
 - (NSString *) horizontalHuggingPriority
 {
   return _horizontalHuggingPriority;
-}
-
-- (NSString *) id
-{
-  return _id;
 }
 
 - (void) setFixedFrame: (BOOL) fixedFrame
@@ -46,9 +63,9 @@
   ASSIGN(_horizontalHuggingPriority, horizontalHuggingPriority);
 }
 
-- (void) setId: (NSString *) id
+- (void) setID: (NSString *) ID
 {
-  ASSIGN(_id, id);
+  ASSIGN(_ID, ID);
 }
 
 - (void) setTranslatesAutoresizingMaskIntoConstraints: (BOOL) translatesAutoresizingMaskIntoConstraints
@@ -71,4 +88,20 @@
   return _verticalHuggingPriority;
 }
 
+- (instancetype) copyWithZone: (NSZone *)zone 
+{
+   XIBTextField* acopy = [[XIBTextField allocWithZone: zone] init];
+
+
+
+   [acopy setFixedFrame: [self fixedFrame]];
+   [acopy setHorizontalCompressionResistancePriority: [self horizontalCompressionResistancePriority]];
+   [acopy setHorizontalHuggingPriority: [self horizontalHuggingPriority]];
+   [acopy setID: [self ID]];
+   [acopy setTranslatesAutoresizingMaskIntoConstraints: [self translatesAutoresizingMaskIntoConstraints]];
+   [acopy setVerticalHuggingPriority: [self verticalHuggingPriority]];
+
+
+   return acopy;
+}
 @end

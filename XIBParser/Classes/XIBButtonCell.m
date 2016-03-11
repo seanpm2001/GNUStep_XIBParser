@@ -11,6 +11,32 @@
 
 @implementation XIBButtonCell 
 
+
+- (instancetype) init
+{
+   self = [super init];
+   if(self != nil) {
+      ID = nil;
+      alignment = nil;
+      behavior = nil;
+      bezelStyle = nil;
+      borderStyle = nil;
+      font = nil;
+      imagePosition = nil;
+      imageScaling = nil;
+      inset = nil;
+      state = nil;
+      title = nil;
+      type = nil;
+   }
+   return self;
+}
+
+- (NSString *) ID
+{
+  return _ID;
+}
+
 - (NSString *) alignment
 {
   return _alignment;
@@ -24,11 +50,6 @@
 - (NSString *) borderStyle
 {
   return _borderStyle;
-}
-
-- (NSString *) id
-{
-  return _id;
 }
 
 - (NSString *) imagePosition
@@ -61,9 +82,9 @@
   ASSIGN(_borderStyle, borderStyle);
 }
 
-- (void) setId: (NSString *) id
+- (void) setID: (NSString *) ID
 {
-  ASSIGN(_id, id);
+  ASSIGN(_ID, ID);
 }
 
 - (void) setImagePosition: (NSString *) imagePosition
@@ -111,4 +132,28 @@
   return _type;
 }
 
+- (instancetype) copyWithZone: (NSZone *)zone 
+{
+   XIBButtonCell* acopy = [[XIBButtonCell allocWithZone: zone] init];
+
+
+
+
+
+
+   [acopy setAlignment: [self alignment]];
+   [acopy setBezelStyle: [self bezelStyle]];
+   [acopy setBorderStyle: [self borderStyle]];
+   [acopy setID: [self ID]];
+   [acopy setImagePosition: [self imagePosition]];
+   [acopy setImageScaling: [self imageScaling]];
+   [acopy setInset: [self inset]];
+   [acopy setState: [self state]];
+   [acopy setTitle: [self title]];
+   [acopy setType: [self type]];
+
+
+
+   return acopy;
+}
 @end

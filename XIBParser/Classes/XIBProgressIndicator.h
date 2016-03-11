@@ -8,20 +8,23 @@
 
 @interface XIBProgressIndicator : NSObject
 {
+  NSString* _ID;
   BOOL _fixedFrame;
   XIBRect* _frame;
-  NSString* _id;
+  BOOL _indeterminate;
   NSString* _maxValue;
   NSString* _style;
   BOOL _translatesAutoresizingMaskIntoConstraints;
   BOOL _wantsLayer;
 }
 
+- (NSString *) ID;
 - (BOOL) fixedFrame;
-- (NSString *) id;
+- (BOOL) indeterminate;
 - (NSString *) maxValue;
 - (void) setFixedFrame: (BOOL) fixedFrame;
-- (void) setId: (NSString *) id;
+- (void) setID: (NSString *) ID;
+- (void) setIndeterminate: (BOOL) indeterminate;
 - (void) setMaxValue: (NSString *) maxValue;
 - (void) setStyle: (NSString *) style;
 - (void) setTranslatesAutoresizingMaskIntoConstraints: (BOOL) translatesAutoresizingMaskIntoConstraints;

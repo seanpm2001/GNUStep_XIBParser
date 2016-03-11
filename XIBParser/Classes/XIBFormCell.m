@@ -11,6 +11,33 @@
 
 @implementation XIBFormCell 
 
+
+- (instancetype) init
+{
+   self = [super init];
+   if(self != nil) {
+      ID = nil;
+      alignment = nil;
+      borderStyle = nil;
+      controlSize = nil;
+      editable = NO;
+      font = nil;
+      lineBreakMode = nil;
+      scrollable = NO;
+      selectable = NO;
+      sendsActionOnEndEditing = NO;
+      tag = nil;
+      title = nil;
+      titleFont = nil;
+   }
+   return self;
+}
+
+- (NSString *) ID
+{
+  return _ID;
+}
+
 - (NSString *) alignment
 {
   return _alignment;
@@ -21,14 +48,14 @@
   return _borderStyle;
 }
 
+- (NSString *) controlSize
+{
+  return _controlSize;
+}
+
 - (BOOL) editable
 {
   return _editable;
-}
-
-- (NSString *) id
-{
-  return _id;
 }
 
 - (NSString *) lineBreakMode
@@ -61,14 +88,19 @@
   ASSIGN(_borderStyle, borderStyle);
 }
 
+- (void) setControlSize: (NSString *) controlSize
+{
+  ASSIGN(_controlSize, controlSize);
+}
+
 - (void) setEditable: (BOOL) editable
 {
   _editable = editable;
 }
 
-- (void) setId: (NSString *) id
+- (void) setID: (NSString *) ID
 {
-  ASSIGN(_id, id);
+  ASSIGN(_ID, ID);
 }
 
 - (void) setLineBreakMode: (NSString *) lineBreakMode
@@ -111,4 +143,30 @@
   return _title;
 }
 
+- (instancetype) copyWithZone: (NSZone *)zone 
+{
+   XIBFormCell* acopy = [[XIBFormCell allocWithZone: zone] init];
+
+
+
+
+
+
+
+
+   [acopy setAlignment: [self alignment]];
+   [acopy setBorderStyle: [self borderStyle]];
+   [acopy setControlSize: [self controlSize]];
+   [acopy setEditable: [self editable]];
+   [acopy setID: [self ID]];
+   [acopy setLineBreakMode: [self lineBreakMode]];
+   [acopy setScrollable: [self scrollable]];
+   [acopy setSelectable: [self selectable]];
+   [acopy setSendsActionOnEndEditing: [self sendsActionOnEndEditing]];
+   [acopy setTag: [self tag]];
+   [acopy setTitle: [self title]];
+
+
+   return acopy;
+}
 @end

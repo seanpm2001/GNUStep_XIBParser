@@ -11,14 +11,30 @@
 
 @implementation XIBSearchField 
 
+
+- (instancetype) init
+{
+   self = [super init];
+   if(self != nil) {
+      ID = nil;
+      cell = nil;
+      fixedFrame = NO;
+      frame = nil;
+      translatesAutoresizingMaskIntoConstraints = NO;
+      verticalHuggingPriority = nil;
+      wantsLayer = NO;
+   }
+   return self;
+}
+
+- (NSString *) ID
+{
+  return _ID;
+}
+
 - (BOOL) fixedFrame
 {
   return _fixedFrame;
-}
-
-- (NSString *) id
-{
-  return _id;
 }
 
 - (void) setFixedFrame: (BOOL) fixedFrame
@@ -26,9 +42,9 @@
   _fixedFrame = fixedFrame;
 }
 
-- (void) setId: (NSString *) id
+- (void) setID: (NSString *) ID
 {
-  ASSIGN(_id, id);
+  ASSIGN(_ID, ID);
 }
 
 - (void) setTranslatesAutoresizingMaskIntoConstraints: (BOOL) translatesAutoresizingMaskIntoConstraints
@@ -61,4 +77,18 @@
   return _wantsLayer;
 }
 
+- (instancetype) copyWithZone: (NSZone *)zone 
+{
+   XIBSearchField* acopy = [[XIBSearchField allocWithZone: zone] init];
+
+   [acopy setFixedFrame: [self fixedFrame]];
+   [acopy setID: [self ID]];
+   [acopy setTranslatesAutoresizingMaskIntoConstraints: [self translatesAutoresizingMaskIntoConstraints]];
+   [acopy setVerticalHuggingPriority: [self verticalHuggingPriority]];
+   [acopy setWantsLayer: [self wantsLayer]];
+
+
+
+   return acopy;
+}
 @end

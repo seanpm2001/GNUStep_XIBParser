@@ -12,6 +12,26 @@
 
 @implementation XIBCollectionView 
 
+
+- (instancetype) init
+{
+   self = [super init];
+   if(self != nil) {
+      ID = nil;
+      ambiguous = NO;
+      autoresizingMask = nil;
+      connections = nil;
+      frame = nil;
+      primaryBackgroundColor = nil;
+   }
+   return self;
+}
+
+- (NSString *) ID
+{
+  return _ID;
+}
+
 - (BOOL) ambiguous
 {
   return _ambiguous;
@@ -20,11 +40,6 @@
 - (NSMutableArray *) connections
 {
   return _connections;
-}
-
-- (NSString *) id
-{
-  return _id;
 }
 
 - (void) setAmbiguous: (BOOL) ambiguous
@@ -37,9 +52,19 @@
   ASSIGN(_connections, connections);
 }
 
-- (void) setId: (NSString *) id
+- (void) setID: (NSString *) ID
 {
-  ASSIGN(_id, id);
+  ASSIGN(_ID, ID);
 }
 
+- (instancetype) copyWithZone: (NSZone *)zone 
+{
+   XIBCollectionView* acopy = [[XIBCollectionView allocWithZone: zone] init];
+
+
+   [acopy setAmbiguous: [self ambiguous]];
+   [acopy setConnections: [self connections]];
+   [acopy setID: [self ID]];
+   return acopy;
+}
 @end

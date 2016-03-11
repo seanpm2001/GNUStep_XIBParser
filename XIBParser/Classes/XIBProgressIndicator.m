@@ -10,14 +10,36 @@
 
 @implementation XIBProgressIndicator 
 
+
+- (instancetype) init
+{
+   self = [super init];
+   if(self != nil) {
+      ID = nil;
+      fixedFrame = NO;
+      frame = nil;
+      indeterminate = NO;
+      maxValue = nil;
+      style = nil;
+      translatesAutoresizingMaskIntoConstraints = NO;
+      wantsLayer = NO;
+   }
+   return self;
+}
+
+- (NSString *) ID
+{
+  return _ID;
+}
+
 - (BOOL) fixedFrame
 {
   return _fixedFrame;
 }
 
-- (NSString *) id
+- (BOOL) indeterminate
 {
-  return _id;
+  return _indeterminate;
 }
 
 - (NSString *) maxValue
@@ -30,9 +52,14 @@
   _fixedFrame = fixedFrame;
 }
 
-- (void) setId: (NSString *) id
+- (void) setID: (NSString *) ID
 {
-  ASSIGN(_id, id);
+  ASSIGN(_ID, ID);
+}
+
+- (void) setIndeterminate: (BOOL) indeterminate
+{
+  _indeterminate = indeterminate;
 }
 
 - (void) setMaxValue: (NSString *) maxValue
@@ -70,4 +97,22 @@
   return _wantsLayer;
 }
 
+- (instancetype) copyWithZone: (NSZone *)zone 
+{
+   XIBProgressIndicator* acopy = [[XIBProgressIndicator allocWithZone: zone] init];
+
+
+
+   [acopy setFixedFrame: [self fixedFrame]];
+   [acopy setID: [self ID]];
+   [acopy setIndeterminate: [self indeterminate]];
+   [acopy setMaxValue: [self maxValue]];
+   [acopy setStyle: [self style]];
+   [acopy setTranslatesAutoresizingMaskIntoConstraints: [self translatesAutoresizingMaskIntoConstraints]];
+   [acopy setWantsLayer: [self wantsLayer]];
+
+
+
+   return acopy;
+}
 @end

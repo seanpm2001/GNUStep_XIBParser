@@ -11,6 +11,27 @@
 
 @implementation XIBScroller 
 
+
+- (instancetype) init
+{
+   self = [super init];
+   if(self != nil) {
+      ID = nil;
+      autoresizingMask = nil;
+      doubleValue = nil;
+      frame = nil;
+      hidden = NO;
+      horizontal = NO;
+      verticalHuggingPriority = nil;
+   }
+   return self;
+}
+
+- (NSString *) ID
+{
+  return _ID;
+}
+
 - (NSString *) doubleValue
 {
   return _doubleValue;
@@ -24,11 +45,6 @@
 - (BOOL) horizontal
 {
   return _horizontal;
-}
-
-- (NSString *) id
-{
-  return _id;
 }
 
 - (void) setDoubleValue: (NSString *) doubleValue
@@ -46,9 +62,9 @@
   _horizontal = horizontal;
 }
 
-- (void) setId: (NSString *) id
+- (void) setID: (NSString *) ID
 {
-  ASSIGN(_id, id);
+  ASSIGN(_ID, ID);
 }
 
 - (void) setVerticalHuggingPriority: (NSString *) verticalHuggingPriority
@@ -61,4 +77,18 @@
   return _verticalHuggingPriority;
 }
 
+- (instancetype) copyWithZone: (NSZone *)zone 
+{
+   XIBScroller* acopy = [[XIBScroller allocWithZone: zone] init];
+
+
+
+   [acopy setDoubleValue: [self doubleValue]];
+   [acopy setHidden: [self hidden]];
+   [acopy setHorizontal: [self horizontal]];
+   [acopy setID: [self ID]];
+   [acopy setVerticalHuggingPriority: [self verticalHuggingPriority]];
+
+   return acopy;
+}
 @end

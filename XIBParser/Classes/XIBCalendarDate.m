@@ -10,6 +10,18 @@
 
 @implementation XIBCalendarDate 
 
+
+- (instancetype) init
+{
+   self = [super init];
+   if(self != nil) {
+      calendarFormat = nil;
+      timeIntervalSinceReferenceDate = nil;
+      timeZone = nil;
+   }
+   return self;
+}
+
 - (NSString *) calendarFormat
 {
   return _calendarFormat;
@@ -30,4 +42,12 @@
   return _timeIntervalSinceReferenceDate;
 }
 
+- (instancetype) copyWithZone: (NSZone *)zone 
+{
+   XIBCalendarDate* acopy = [[XIBCalendarDate allocWithZone: zone] init];
+   [acopy setCalendarFormat: [self calendarFormat]];
+   [acopy setTimeIntervalSinceReferenceDate: [self timeIntervalSinceReferenceDate]];
+
+   return acopy;
+}
 @end

@@ -309,6 +309,7 @@
 		145DC4861C603D0C007659AF /* XIBParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBParser.m; path = Classes/XIBParser.m; sourceTree = "<group>"; };
 		145DC4891C607625007659AF /* NSString+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Extensions.h"; path = "Extensions/NSString+Extensions.h"; sourceTree = "<group>"; };
 		145DC48A1C607625007659AF /* NSString+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Extensions.m"; path = "Extensions/NSString+Extensions.m"; sourceTree = "<group>"; };
+		149DBD9E1C7AE1FB009971EC /* XIBClasses.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = XIBClasses.h; path = Classes/XIBClasses.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -574,6 +575,7 @@
 				145DC4831C5FBDEB007659AF /* XIBCommon.h */,
 				145DC4851C603D0C007659AF /* XIBParser.h */,
 				145DC4861C603D0C007659AF /* XIBParser.m */,
+				149DBD9E1C7AE1FB009971EC /* XIBClasses.h */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -1027,6 +1029,7 @@
 				145DC3791C5F3C73007659AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		145DC37A1C5F3C73007659AF /* Build configuration list for PBXNativeTarget "XIBParserTests" */ = {
 			isa = XCConfigurationList;
@@ -1035,6 +1038,7 @@
 				145DC37C1C5F3C73007659AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		145DC37D1C5F3C73007659AF /* Build configuration list for PBXNativeTarget "XIBParserUITests" */ = {
 			isa = XCConfigurationList;
@@ -1043,6 +1047,7 @@
 				145DC37F1C5F3C73007659AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

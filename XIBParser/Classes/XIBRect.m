@@ -9,6 +9,19 @@
 
 @implementation XIBRect 
 
+
+- (instancetype) init
+{
+   self = [super init];
+   if(self != nil) {
+      height = nil;
+      width = nil;
+      x = nil;
+      y = nil;
+   }
+   return self;
+}
+
 - (NSString *) height
 {
   return _height;
@@ -49,4 +62,16 @@
   return _y;
 }
 
+- (instancetype) copyWithZone: (NSZone *)zone 
+{
+   XIBRect* acopy = [[XIBRect allocWithZone: zone] init];
+   [acopy setHeight: [self height]];
+   [acopy setWidth: [self width]];
+   [acopy setX: [self x]];
+   [acopy setY: [self y]];
+
+
+
+   return acopy;
+}
 @end

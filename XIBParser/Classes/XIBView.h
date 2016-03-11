@@ -9,21 +9,21 @@
 
 @interface XIBView : NSObject
 {
+  NSString* _ID;
   BOOL _ambiguous;
   XIBAutoresizingMask* _autoresizingMask;
   BOOL _fixedFrame;
   XIBRect* _frame;
-  NSString* _id;
   NSMutableArray* _subviews;
   BOOL _translatesAutoresizingMaskIntoConstraints;
 }
 
+- (NSString *) ID;
 - (BOOL) ambiguous;
 - (BOOL) fixedFrame;
-- (NSString *) id;
 - (void) setAmbiguous: (BOOL) ambiguous;
 - (void) setFixedFrame: (BOOL) fixedFrame;
-- (void) setId: (NSString *) id;
+- (void) setID: (NSString *) ID;
 - (void) setSubviews: (NSMutableArray *) subviews;
 - (void) setTranslatesAutoresizingMaskIntoConstraints: (BOOL) translatesAutoresizingMaskIntoConstraints;
 - (NSMutableArray *) subviews;

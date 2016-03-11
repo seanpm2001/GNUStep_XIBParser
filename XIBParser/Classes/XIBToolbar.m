@@ -9,6 +9,27 @@
 
 @implementation XIBToolbar 
 
+
+- (instancetype) init
+{
+   self = [super init];
+   if(self != nil) {
+      ID = nil;
+      allowedToolbarItems = nil;
+      autosavesConfiguration = NO;
+      defaultToolbarItems = nil;
+      displayMode = nil;
+      implicitIdentifier = nil;
+      sizeMode = nil;
+   }
+   return self;
+}
+
+- (NSString *) ID
+{
+  return _ID;
+}
+
 - (NSMutableArray *) allowedToolbarItems
 {
   return _allowedToolbarItems;
@@ -27,11 +48,6 @@
 - (NSString *) displayMode
 {
   return _displayMode;
-}
-
-- (NSString *) id
-{
-  return _id;
 }
 
 - (NSString *) implicitIdentifier
@@ -59,9 +75,9 @@
   ASSIGN(_displayMode, displayMode);
 }
 
-- (void) setId: (NSString *) id
+- (void) setID: (NSString *) ID
 {
-  ASSIGN(_id, id);
+  ASSIGN(_ID, ID);
 }
 
 - (void) setImplicitIdentifier: (NSString *) implicitIdentifier
@@ -79,4 +95,22 @@
   return _sizeMode;
 }
 
+- (instancetype) copyWithZone: (NSZone *)zone 
+{
+   XIBToolbar* acopy = [[XIBToolbar allocWithZone: zone] init];
+
+
+
+
+
+   [acopy setAllowedToolbarItems: [self allowedToolbarItems]];
+   [acopy setAutosavesConfiguration: [self autosavesConfiguration]];
+   [acopy setDefaultToolbarItems: [self defaultToolbarItems]];
+   [acopy setDisplayMode: [self displayMode]];
+   [acopy setID: [self ID]];
+   [acopy setImplicitIdentifier: [self implicitIdentifier]];
+   [acopy setSizeMode: [self sizeMode]];
+
+   return acopy;
+}
 @end

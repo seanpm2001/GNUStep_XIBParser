@@ -9,18 +9,18 @@
 
 @interface XIBTabView : NSObject
 {
+  NSString* _ID;
   BOOL _fixedFrame;
   XIBFont* _font;
   XIBRect* _frame;
-  NSString* _id;
   NSMutableArray* _tabViewItems;
   BOOL _translatesAutoresizingMaskIntoConstraints;
 }
 
+- (NSString *) ID;
 - (BOOL) fixedFrame;
-- (NSString *) id;
 - (void) setFixedFrame: (BOOL) fixedFrame;
-- (void) setId: (NSString *) id;
+- (void) setID: (NSString *) ID;
 - (void) setTabViewItems: (NSMutableArray *) tabViewItems;
 - (void) setTranslatesAutoresizingMaskIntoConstraints: (BOOL) translatesAutoresizingMaskIntoConstraints;
 - (NSMutableArray *) tabViewItems;

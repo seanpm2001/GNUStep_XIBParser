@@ -8,6 +8,7 @@
 
 @interface XIBBrowser : NSObject
 {
+  NSString* _ID;
   BOOL _allowsEmptySelection;
   BOOL _allowsExpansionToolTips;
   BOOL _allowsTypeSelect;
@@ -17,7 +18,6 @@
   BOOL _fixedFrame;
   XIBRect* _frame;
   BOOL _hasHorizontalScroller;
-  NSString* _id;
   NSString* _minColumnWidth;
   BOOL _separatesColumns;
   BOOL _titled;
@@ -25,6 +25,7 @@
   NSString* _verticalHuggingPriority;
 }
 
+- (NSString *) ID;
 - (BOOL) allowsEmptySelection;
 - (BOOL) allowsExpansionToolTips;
 - (BOOL) allowsTypeSelect;
@@ -33,7 +34,6 @@
 - (BOOL) enabled;
 - (BOOL) fixedFrame;
 - (BOOL) hasHorizontalScroller;
-- (NSString *) id;
 - (NSString *) minColumnWidth;
 - (BOOL) separatesColumns;
 - (void) setAllowsEmptySelection: (BOOL) allowsEmptySelection;
@@ -44,7 +44,7 @@
 - (void) setEnabled: (BOOL) enabled;
 - (void) setFixedFrame: (BOOL) fixedFrame;
 - (void) setHasHorizontalScroller: (BOOL) hasHorizontalScroller;
-- (void) setId: (NSString *) id;
+- (void) setID: (NSString *) ID;
 - (void) setMinColumnWidth: (NSString *) minColumnWidth;
 - (void) setSeparatesColumns: (BOOL) separatesColumns;
 - (void) setTitled: (BOOL) titled;

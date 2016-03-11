@@ -9,6 +9,17 @@
 
 @implementation XIBFont 
 
+
+- (instancetype) init
+{
+   self = [super init];
+   if(self != nil) {
+      metaFont = nil;
+      size = nil;
+   }
+   return self;
+}
+
 - (NSString *) metaFont
 {
   return _metaFont;
@@ -19,4 +30,22 @@
   ASSIGN(_metaFont, metaFont);
 }
 
+- (void) setSize: (NSString *) size
+{
+  ASSIGN(_size, size);
+}
+
+- (NSString *) size
+{
+  return _size;
+}
+
+- (instancetype) copyWithZone: (NSZone *)zone 
+{
+   XIBFont* acopy = [[XIBFont allocWithZone: zone] init];
+   [acopy setMetaFont: [self metaFont]];
+   [acopy setSize: [self size]];
+
+   return acopy;
+}
 @end

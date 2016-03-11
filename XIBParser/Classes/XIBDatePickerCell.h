@@ -11,21 +11,21 @@
 
 @interface XIBDatePickerCell : NSObject
 {
+  NSString* _ID;
   NSString* _alignment;
   XIBColor* _backgroundColor;
   NSString* _borderStyle;
   XIBCalendarDate* _date;
   XIBFont* _font;
-  NSString* _id;
   XIBColor* _textColor;
 }
 
+- (NSString *) ID;
 - (NSString *) alignment;
 - (NSString *) borderStyle;
-- (NSString *) id;
 - (void) setAlignment: (NSString *) alignment;
 - (void) setBorderStyle: (NSString *) borderStyle;
-- (void) setId: (NSString *) id;
+- (void) setID: (NSString *) ID;
 
 @end
 

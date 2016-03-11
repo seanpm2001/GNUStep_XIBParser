@@ -15,6 +15,40 @@
 
 @implementation XIBTextView 
 
+
+- (instancetype) init
+{
+   self = [super init];
+   if(self != nil) {
+      ID = nil;
+      allowsNonContiguousLayout = NO;
+      allowsUndo = NO;
+      ambiguous = NO;
+      autoresizingMask = nil;
+      backgroundColor = nil;
+      continuousSpellChecking = NO;
+      dashSubstitution = NO;
+      findStyle = nil;
+      frame = nil;
+      importsGraphics = NO;
+      insertionPointColor = nil;
+      maxSize = nil;
+      minSize = nil;
+      quoteSubstitution = NO;
+      smartInsertDelete = NO;
+      spellingCorrection = NO;
+      usesFontPanel = NO;
+      usesRuler = NO;
+      verticallyResizable = NO;
+   }
+   return self;
+}
+
+- (NSString *) ID
+{
+  return _ID;
+}
+
 - (BOOL) allowsNonContiguousLayout
 {
   return _allowsNonContiguousLayout;
@@ -43,11 +77,6 @@
 - (NSString *) findStyle
 {
   return _findStyle;
-}
-
-- (NSString *) id
-{
-  return _id;
 }
 
 - (BOOL) importsGraphics
@@ -90,9 +119,9 @@
   ASSIGN(_findStyle, findStyle);
 }
 
-- (void) setId: (NSString *) id
+- (void) setID: (NSString *) ID
 {
-  ASSIGN(_id, id);
+  ASSIGN(_ID, ID);
 }
 
 - (void) setImportsGraphics: (BOOL) importsGraphics
@@ -155,4 +184,36 @@
   return _verticallyResizable;
 }
 
+- (instancetype) copyWithZone: (NSZone *)zone 
+{
+   XIBTextView* acopy = [[XIBTextView allocWithZone: zone] init];
+
+
+
+
+
+
+
+
+   [acopy setAllowsNonContiguousLayout: [self allowsNonContiguousLayout]];
+   [acopy setAllowsUndo: [self allowsUndo]];
+   [acopy setAmbiguous: [self ambiguous]];
+   [acopy setContinuousSpellChecking: [self continuousSpellChecking]];
+   [acopy setDashSubstitution: [self dashSubstitution]];
+   [acopy setFindStyle: [self findStyle]];
+   [acopy setID: [self ID]];
+   [acopy setImportsGraphics: [self importsGraphics]];
+   [acopy setQuoteSubstitution: [self quoteSubstitution]];
+   [acopy setSmartInsertDelete: [self smartInsertDelete]];
+   [acopy setSpellingCorrection: [self spellingCorrection]];
+   [acopy setUsesFontPanel: [self usesFontPanel]];
+   [acopy setUsesRuler: [self usesRuler]];
+   [acopy setVerticallyResizable: [self verticallyResizable]];
+
+
+
+
+
+   return acopy;
+}
 @end

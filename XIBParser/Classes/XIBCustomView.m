@@ -7,18 +7,35 @@
 #endif
 
 #import "XIBAutoresizingMask.h"
+#import "XIBPoint.h"
 #import "XIBRect.h"
 
 @implementation XIBCustomView 
 
+
+- (instancetype) init
+{
+   self = [super init];
+   if(self != nil) {
+      ID = nil;
+      autoresizingMask = nil;
+      canvasLocation = nil;
+      fixedFrame = NO;
+      frame = nil;
+      translatesAutoresizingMaskIntoConstraints = NO;
+      userLabel = nil;
+   }
+   return self;
+}
+
+- (NSString *) ID
+{
+  return _ID;
+}
+
 - (BOOL) fixedFrame
 {
   return _fixedFrame;
-}
-
-- (NSString *) id
-{
-  return _id;
 }
 
 - (void) setFixedFrame: (BOOL) fixedFrame
@@ -26,9 +43,41 @@
   _fixedFrame = fixedFrame;
 }
 
-- (void) setId: (NSString *) id
+- (void) setID: (NSString *) ID
 {
-  ASSIGN(_id, id);
+  ASSIGN(_ID, ID);
 }
 
+- (void) setTranslatesAutoresizingMaskIntoConstraints: (BOOL) translatesAutoresizingMaskIntoConstraints
+{
+  _translatesAutoresizingMaskIntoConstraints = translatesAutoresizingMaskIntoConstraints;
+}
+
+- (void) setUserLabel: (NSString *) userLabel
+{
+  ASSIGN(_userLabel, userLabel);
+}
+
+- (BOOL) translatesAutoresizingMaskIntoConstraints
+{
+  return _translatesAutoresizingMaskIntoConstraints;
+}
+
+- (NSString *) userLabel
+{
+  return _userLabel;
+}
+
+- (instancetype) copyWithZone: (NSZone *)zone 
+{
+   XIBCustomView* acopy = [[XIBCustomView allocWithZone: zone] init];
+
+   [acopy setFixedFrame: [self fixedFrame]];
+   [acopy setID: [self ID]];
+   [acopy setTranslatesAutoresizingMaskIntoConstraints: [self translatesAutoresizingMaskIntoConstraints]];
+   [acopy setUserLabel: [self userLabel]];
+
+
+   return acopy;
+}
 @end

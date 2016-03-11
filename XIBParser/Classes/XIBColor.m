@@ -9,6 +9,23 @@
 
 @implementation XIBColor 
 
+
+- (instancetype) init
+{
+   self = [super init];
+   if(self != nil) {
+      alpha = nil;
+      blue = nil;
+      catalog = nil;
+      colorSpace = nil;
+      green = nil;
+      name = nil;
+      red = nil;
+      white = nil;
+   }
+   return self;
+}
+
 - (NSString *) alpha
 {
   return _alpha;
@@ -89,4 +106,24 @@
   return _white;
 }
 
+- (instancetype) copyWithZone: (NSZone *)zone 
+{
+   XIBColor* acopy = [[XIBColor allocWithZone: zone] init];
+
+
+
+
+
+
+   [acopy setAlpha: [self alpha]];
+   [acopy setBlue: [self blue]];
+   [acopy setCatalog: [self catalog]];
+   [acopy setColorSpace: [self colorSpace]];
+   [acopy setGreen: [self green]];
+   [acopy setName: [self name]];
+   [acopy setRed: [self red]];
+   [acopy setWhite: [self white]];
+
+   return acopy;
+}
 @end

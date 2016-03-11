@@ -9,6 +9,17 @@
 
 @implementation XIBTableColumnResizingMask 
 
+
+- (instancetype) init
+{
+   self = [super init];
+   if(self != nil) {
+      resizeWithTable = NO;
+      userResizable = NO;
+   }
+   return self;
+}
+
 - (BOOL) resizeWithTable
 {
   return _resizeWithTable;
@@ -29,4 +40,12 @@
   return _userResizable;
 }
 
+- (instancetype) copyWithZone: (NSZone *)zone 
+{
+   XIBTableColumnResizingMask* acopy = [[XIBTableColumnResizingMask allocWithZone: zone] init];
+   [acopy setResizeWithTable: [self resizeWithTable]];
+   [acopy setUserResizable: [self userResizable]];
+
+   return acopy;
+}
 @end

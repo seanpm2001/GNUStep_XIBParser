@@ -9,6 +9,17 @@
 
 @implementation XIBSize 
 
+
+- (instancetype) init
+{
+   self = [super init];
+   if(self != nil) {
+      height = nil;
+      width = nil;
+   }
+   return self;
+}
+
 - (NSString *) height
 {
   return _height;
@@ -29,4 +40,12 @@
   return _width;
 }
 
+- (instancetype) copyWithZone: (NSZone *)zone 
+{
+   XIBSize* acopy = [[XIBSize allocWithZone: zone] init];
+   [acopy setHeight: [self height]];
+   [acopy setWidth: [self width]];
+
+   return acopy;
+}
 @end

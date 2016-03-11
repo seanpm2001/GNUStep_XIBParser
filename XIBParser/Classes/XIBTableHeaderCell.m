@@ -12,6 +12,20 @@
 
 @implementation XIBTableHeaderCell 
 
+
+- (instancetype) init
+{
+   self = [super init];
+   if(self != nil) {
+      backgroundColor = nil;
+      borderStyle = nil;
+      font = nil;
+      lineBreakMode = nil;
+      textColor = nil;
+   }
+   return self;
+}
+
 - (NSString *) borderStyle
 {
   return _borderStyle;
@@ -32,4 +46,12 @@
   ASSIGN(_lineBreakMode, lineBreakMode);
 }
 
+- (instancetype) copyWithZone: (NSZone *)zone 
+{
+   XIBTableHeaderCell* acopy = [[XIBTableHeaderCell allocWithZone: zone] init];
+
+   [acopy setBorderStyle: [self borderStyle]];
+   [acopy setLineBreakMode: [self lineBreakMode]];
+   return acopy;
+}
 @end

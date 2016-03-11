@@ -5,20 +5,28 @@
 #import <Foundation/Foundation.h>
 
 @class XIBAutoresizingMask;
+@class XIBPoint;
 @class XIBRect;
 
 @interface XIBCustomView : NSObject
 {
+  NSString* _ID;
   XIBAutoresizingMask* _autoresizingMask;
+  XIBPoint* _canvasLocation;
   BOOL _fixedFrame;
   XIBRect* _frame;
-  NSString* _id;
+  BOOL _translatesAutoresizingMaskIntoConstraints;
+  NSString* _userLabel;
 }
 
+- (NSString *) ID;
 - (BOOL) fixedFrame;
-- (NSString *) id;
 - (void) setFixedFrame: (BOOL) fixedFrame;
-- (void) setId: (NSString *) id;
+- (void) setID: (NSString *) ID;
+- (void) setTranslatesAutoresizingMaskIntoConstraints: (BOOL) translatesAutoresizingMaskIntoConstraints;
+- (void) setUserLabel: (NSString *) userLabel;
+- (BOOL) translatesAutoresizingMaskIntoConstraints;
+- (NSString *) userLabel;
 
 @end
 

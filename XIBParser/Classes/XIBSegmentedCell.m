@@ -10,6 +10,27 @@
 
 @implementation XIBSegmentedCell 
 
+
+- (instancetype) init
+{
+   self = [super init];
+   if(self != nil) {
+      ID = nil;
+      alignment = nil;
+      borderStyle = nil;
+      font = nil;
+      segments = nil;
+      style = nil;
+      trackingMode = nil;
+   }
+   return self;
+}
+
+- (NSString *) ID
+{
+  return _ID;
+}
+
 - (NSString *) alignment
 {
   return _alignment;
@@ -18,11 +39,6 @@
 - (NSString *) borderStyle
 {
   return _borderStyle;
-}
-
-- (NSString *) id
-{
-  return _id;
 }
 
 - (NSMutableArray *) segments
@@ -40,9 +56,9 @@
   ASSIGN(_borderStyle, borderStyle);
 }
 
-- (void) setId: (NSString *) id
+- (void) setID: (NSString *) ID
 {
-  ASSIGN(_id, id);
+  ASSIGN(_ID, ID);
 }
 
 - (void) setSegments: (NSMutableArray *) segments
@@ -70,4 +86,20 @@
   return _trackingMode;
 }
 
+- (instancetype) copyWithZone: (NSZone *)zone 
+{
+   XIBSegmentedCell* acopy = [[XIBSegmentedCell allocWithZone: zone] init];
+
+
+
+   [acopy setAlignment: [self alignment]];
+   [acopy setBorderStyle: [self borderStyle]];
+   [acopy setID: [self ID]];
+   [acopy setSegments: [self segments]];
+   [acopy setStyle: [self style]];
+   [acopy setTrackingMode: [self trackingMode]];
+
+
+   return acopy;
+}
 @end

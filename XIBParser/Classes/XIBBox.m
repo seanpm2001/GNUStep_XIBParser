@@ -13,6 +13,29 @@
 
 @implementation XIBBox 
 
+
+- (instancetype) init
+{
+   self = [super init];
+   if(self != nil) {
+      ID = nil;
+      borderColor = nil;
+      borderType = nil;
+      contentView = nil;
+      fillColor = nil;
+      fixedFrame = NO;
+      frame = nil;
+      title = nil;
+      translatesAutoresizingMaskIntoConstraints = NO;
+   }
+   return self;
+}
+
+- (NSString *) ID
+{
+  return _ID;
+}
+
 - (NSString *) borderType
 {
   return _borderType;
@@ -21,11 +44,6 @@
 - (BOOL) fixedFrame
 {
   return _fixedFrame;
-}
-
-- (NSString *) id
-{
-  return _id;
 }
 
 - (void) setBorderType: (NSString *) borderType
@@ -38,9 +56,9 @@
   _fixedFrame = fixedFrame;
 }
 
-- (void) setId: (NSString *) id
+- (void) setID: (NSString *) ID
 {
-  ASSIGN(_id, id);
+  ASSIGN(_ID, ID);
 }
 
 - (void) setTitle: (NSString *) title
@@ -63,4 +81,18 @@
   return _translatesAutoresizingMaskIntoConstraints;
 }
 
+- (instancetype) copyWithZone: (NSZone *)zone 
+{
+   XIBBox* acopy = [[XIBBox allocWithZone: zone] init];
+
+
+   [acopy setBorderType: [self borderType]];
+   [acopy setFixedFrame: [self fixedFrame]];
+   [acopy setID: [self ID]];
+   [acopy setTitle: [self title]];
+   [acopy setTranslatesAutoresizingMaskIntoConstraints: [self translatesAutoresizingMaskIntoConstraints]];
+
+
+   return acopy;
+}
 @end

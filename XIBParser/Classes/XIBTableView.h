@@ -12,6 +12,7 @@
 
 @interface XIBTableView : NSObject
 {
+  NSString* _ID;
   BOOL _allowsExpansionToolTips;
   XIBAutoresizingMask* _autoresizingMask;
   BOOL _autosaveColumns;
@@ -21,7 +22,6 @@
   XIBRect* _frame;
   XIBColor* _gridColor;
   NSString* _headerView;
-  NSString* _id;
   XIBSize* _intercellSpacing;
   BOOL _multipleSelection;
   NSString* _rowSizeStyle;
@@ -30,12 +30,12 @@
   BOOL _viewBased;
 }
 
+- (NSString *) ID;
 - (BOOL) allowsExpansionToolTips;
 - (BOOL) autosaveColumns;
 - (NSString *) columnAutoresizingStyle;
 - (BOOL) columnSelection;
 - (NSString *) headerView;
-- (NSString *) id;
 - (BOOL) multipleSelection;
 - (NSString *) rowSizeStyle;
 - (void) setAllowsExpansionToolTips: (BOOL) allowsExpansionToolTips;
@@ -43,7 +43,7 @@
 - (void) setColumnAutoresizingStyle: (NSString *) columnAutoresizingStyle;
 - (void) setColumnSelection: (BOOL) columnSelection;
 - (void) setHeaderView: (NSString *) headerView;
-- (void) setId: (NSString *) id;
+- (void) setID: (NSString *) ID;
 - (void) setMultipleSelection: (BOOL) multipleSelection;
 - (void) setRowSizeStyle: (NSString *) rowSizeStyle;
 - (void) setTableColumns: (NSMutableArray *) tableColumns;

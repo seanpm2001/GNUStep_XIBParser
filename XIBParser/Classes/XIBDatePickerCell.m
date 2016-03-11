@@ -13,6 +13,27 @@
 
 @implementation XIBDatePickerCell 
 
+
+- (instancetype) init
+{
+   self = [super init];
+   if(self != nil) {
+      ID = nil;
+      alignment = nil;
+      backgroundColor = nil;
+      borderStyle = nil;
+      date = nil;
+      font = nil;
+      textColor = nil;
+   }
+   return self;
+}
+
+- (NSString *) ID
+{
+  return _ID;
+}
+
 - (NSString *) alignment
 {
   return _alignment;
@@ -21,11 +42,6 @@
 - (NSString *) borderStyle
 {
   return _borderStyle;
-}
-
-- (NSString *) id
-{
-  return _id;
 }
 
 - (void) setAlignment: (NSString *) alignment
@@ -38,9 +54,19 @@
   ASSIGN(_borderStyle, borderStyle);
 }
 
-- (void) setId: (NSString *) id
+- (void) setID: (NSString *) ID
 {
-  ASSIGN(_id, id);
+  ASSIGN(_ID, ID);
 }
 
+- (instancetype) copyWithZone: (NSZone *)zone 
+{
+   XIBDatePickerCell* acopy = [[XIBDatePickerCell allocWithZone: zone] init];
+
+
+   [acopy setAlignment: [self alignment]];
+   [acopy setBorderStyle: [self borderStyle]];
+   [acopy setID: [self ID]];
+   return acopy;
+}
 @end

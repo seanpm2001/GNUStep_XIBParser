@@ -7,19 +7,19 @@
 
 @interface XIBStepperCell : NSObject
 {
+  NSString* _ID;
   NSString* _alignment;
   BOOL _continuous;
-  NSString* _id;
   NSString* _maxValue;
 }
 
+- (NSString *) ID;
 - (NSString *) alignment;
 - (BOOL) continuous;
-- (NSString *) id;
 - (NSString *) maxValue;
 - (void) setAlignment: (NSString *) alignment;
 - (void) setContinuous: (BOOL) continuous;
-- (void) setId: (NSString *) id;
+- (void) setID: (NSString *) ID;
 - (void) setMaxValue: (NSString *) maxValue;
 
 @end

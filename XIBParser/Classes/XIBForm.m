@@ -14,6 +14,34 @@
 
 @implementation XIBForm 
 
+
+- (instancetype) init
+{
+   self = [super init];
+   if(self != nil) {
+      ID = nil;
+      allowsEmptySelection = NO;
+      autorecalculatesCellSize = NO;
+      backgroundColor = nil;
+      cellSize = nil;
+      cells = nil;
+      column = nil;
+      fixedFrame = NO;
+      frame = nil;
+      intercellSpacing = nil;
+      mode = nil;
+      prototype = nil;
+      translatesAutoresizingMaskIntoConstraints = NO;
+      verticalHuggingPriority = nil;
+   }
+   return self;
+}
+
+- (NSString *) ID
+{
+  return _ID;
+}
+
 - (BOOL) allowsEmptySelection
 {
   return _allowsEmptySelection;
@@ -37,11 +65,6 @@
 - (BOOL) fixedFrame
 {
   return _fixedFrame;
-}
-
-- (NSString *) id
-{
-  return _id;
 }
 
 - (NSString *) mode
@@ -74,9 +97,9 @@
   _fixedFrame = fixedFrame;
 }
 
-- (void) setId: (NSString *) id
+- (void) setID: (NSString *) ID
 {
-  ASSIGN(_id, id);
+  ASSIGN(_ID, ID);
 }
 
 - (void) setMode: (NSString *) mode
@@ -104,4 +127,26 @@
   return _verticalHuggingPriority;
 }
 
+- (instancetype) copyWithZone: (NSZone *)zone 
+{
+   XIBForm* acopy = [[XIBForm allocWithZone: zone] init];
+
+
+
+
+
+
+   [acopy setAllowsEmptySelection: [self allowsEmptySelection]];
+   [acopy setAutorecalculatesCellSize: [self autorecalculatesCellSize]];
+   [acopy setCells: [self cells]];
+   [acopy setColumn: [self column]];
+   [acopy setFixedFrame: [self fixedFrame]];
+   [acopy setID: [self ID]];
+   [acopy setMode: [self mode]];
+   [acopy setTranslatesAutoresizingMaskIntoConstraints: [self translatesAutoresizingMaskIntoConstraints]];
+   [acopy setVerticalHuggingPriority: [self verticalHuggingPriority]];
+
+
+   return acopy;
+}
 @end

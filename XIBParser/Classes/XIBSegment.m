@@ -10,6 +10,19 @@
 
 @implementation XIBSegment 
 
+
+- (instancetype) init
+{
+   self = [super init];
+   if(self != nil) {
+      label = nil;
+      selected = NO;
+      tag = nil;
+      width = nil;
+   }
+   return self;
+}
+
 - (BOOL) selected
 {
   return _selected;
@@ -40,4 +53,14 @@
   return _width;
 }
 
+- (instancetype) copyWithZone: (NSZone *)zone 
+{
+   XIBSegment* acopy = [[XIBSegment allocWithZone: zone] init];
+   [acopy setSelected: [self selected]];
+   [acopy setTag: [self tag]];
+   [acopy setWidth: [self width]];
+
+
+   return acopy;
+}
 @end

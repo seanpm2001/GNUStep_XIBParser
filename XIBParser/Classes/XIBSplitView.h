@@ -8,27 +8,27 @@
 
 @interface XIBSplitView : NSObject
 {
+  NSString* _ID;
   BOOL _arrangesAllSubviews;
   NSString* _dividerStyle;
   BOOL _fixedFrame;
   XIBRect* _frame;
   NSMutableArray* _holdingPriorities;
-  NSString* _id;
   NSMutableArray* _subviews;
   BOOL _translatesAutoresizingMaskIntoConstraints;
   BOOL _vertical;
 }
 
+- (NSString *) ID;
 - (BOOL) arrangesAllSubviews;
 - (NSString *) dividerStyle;
 - (BOOL) fixedFrame;
 - (NSMutableArray *) holdingPriorities;
-- (NSString *) id;
 - (void) setArrangesAllSubviews: (BOOL) arrangesAllSubviews;
 - (void) setDividerStyle: (NSString *) dividerStyle;
 - (void) setFixedFrame: (BOOL) fixedFrame;
 - (void) setHoldingPriorities: (NSMutableArray *) holdingPriorities;
-- (void) setId: (NSString *) id;
+- (void) setID: (NSString *) ID;
 - (void) setSubviews: (NSMutableArray *) subviews;
 - (void) setTranslatesAutoresizingMaskIntoConstraints: (BOOL) translatesAutoresizingMaskIntoConstraints;
 - (void) setVertical: (BOOL) vertical;

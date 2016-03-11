@@ -9,6 +9,17 @@
 
 @implementation XIBPoint 
 
+
+- (instancetype) init
+{
+   self = [super init];
+   if(self != nil) {
+      x = nil;
+      y = nil;
+   }
+   return self;
+}
+
 - (void) setX: (NSString *) x
 {
   ASSIGN(_x, x);
@@ -29,4 +40,12 @@
   return _y;
 }
 
+- (instancetype) copyWithZone: (NSZone *)zone 
+{
+   XIBPoint* acopy = [[XIBPoint allocWithZone: zone] init];   [acopy setX: [self x]];
+   [acopy setY: [self y]];
+
+
+   return acopy;
+}
 @end
