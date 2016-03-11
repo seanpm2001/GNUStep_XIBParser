@@ -9,17 +9,17 @@
 
 @interface XIBWebView : NSObject
 {
+  NSString* _ID;
   BOOL _fixedFrame;
   XIBRect* _frame;
-  NSString* _id;
   XIBWebPreferences* _preferences;
   BOOL _translatesAutoresizingMaskIntoConstraints;
 }
 
+- (NSString *) ID;
 - (BOOL) fixedFrame;
-- (NSString *) id;
 - (void) setFixedFrame: (BOOL) fixedFrame;
-- (void) setId: (NSString *) id;
+- (void) setID: (NSString *) ID;
 - (void) setTranslatesAutoresizingMaskIntoConstraints: (BOOL) translatesAutoresizingMaskIntoConstraints;
 - (BOOL) translatesAutoresizingMaskIntoConstraints;
 

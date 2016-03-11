@@ -10,6 +10,19 @@
 
 @implementation XIBWebPreferences 
 
+
+- (instancetype) init
+{
+   self = [super init];
+   if(self != nil) {
+      defaultFixedFontSize = nil;
+      defaultFontSize = nil;
+      identifier = nil;
+      minimumFontSize = nil;
+   }
+   return self;
+}
+
 - (NSString *) defaultFixedFontSize
 {
   return _defaultFixedFontSize;
@@ -40,4 +53,14 @@
   ASSIGN(_minimumFontSize, minimumFontSize);
 }
 
+- (instancetype) copyWithZone: (NSZone *)zone 
+{
+   XIBWebPreferences* acopy = [[XIBWebPreferences allocWithZone: zone] init];
+
+
+   [acopy setDefaultFixedFontSize: [self defaultFixedFontSize]];
+   [acopy setDefaultFontSize: [self defaultFontSize]];
+   [acopy setMinimumFontSize: [self minimumFontSize]];
+   return acopy;
+}
 @end

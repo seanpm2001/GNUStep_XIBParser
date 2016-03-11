@@ -11,14 +11,28 @@
 
 @implementation XIBWebView 
 
+
+- (instancetype) init
+{
+   self = [super init];
+   if(self != nil) {
+      ID = nil;
+      fixedFrame = NO;
+      frame = nil;
+      preferences = nil;
+      translatesAutoresizingMaskIntoConstraints = NO;
+   }
+   return self;
+}
+
+- (NSString *) ID
+{
+  return _ID;
+}
+
 - (BOOL) fixedFrame
 {
   return _fixedFrame;
-}
-
-- (NSString *) id
-{
-  return _id;
 }
 
 - (void) setFixedFrame: (BOOL) fixedFrame
@@ -26,9 +40,9 @@
   _fixedFrame = fixedFrame;
 }
 
-- (void) setId: (NSString *) id
+- (void) setID: (NSString *) ID
 {
-  ASSIGN(_id, id);
+  ASSIGN(_ID, ID);
 }
 
 - (void) setTranslatesAutoresizingMaskIntoConstraints: (BOOL) translatesAutoresizingMaskIntoConstraints
@@ -41,4 +55,14 @@
   return _translatesAutoresizingMaskIntoConstraints;
 }
 
+- (instancetype) copyWithZone: (NSZone *)zone 
+{
+   XIBWebView* acopy = [[XIBWebView allocWithZone: zone] init];
+
+   [acopy setFixedFrame: [self fixedFrame]];
+   [acopy setID: [self ID]];
+   [acopy setTranslatesAutoresizingMaskIntoConstraints: [self translatesAutoresizingMaskIntoConstraints]];
+
+   return acopy;
+}
 @end
