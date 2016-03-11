@@ -16,11 +16,11 @@
 {
    self = [super init];
    if(self != nil) {
-      ID = nil;
-      connections = nil;
-      contentSize = nil;
-      maxContentSize = nil;
-      trailingOffset = nil;
+      _ID = nil;
+      _connections = nil;
+      _contentSize = nil;
+      _maxContentSize = nil;
+      _trailingOffset = nil;
    }
    return self;
 }

@@ -14,10 +14,10 @@
 {
    self = [super init];
    if(self != nil) {
-      height = nil;
-      width = nil;
-      x = nil;
-      y = nil;
+      _height = nil;
+      _width = nil;
+      _x = nil;
+      _y = nil;
    }
    return self;
 }

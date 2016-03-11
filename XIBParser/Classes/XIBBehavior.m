@@ -14,14 +14,14 @@
 {
    self = [super init];
    if(self != nil) {
-      changeBackground = NO;
-      changeContents = NO;
-      changeGray = NO;
-      doesNotDimImage = NO;
-      lightByBackground = NO;
-      lightByContents = NO;
-      lightByGray = NO;
-      pushIn = NO;
+      _changeBackground = NO;
+      _changeContents = NO;
+      _changeGray = NO;
+      _doesNotDimImage = NO;
+      _lightByBackground = NO;
+      _lightByContents = NO;
+      _lightByGray = NO;
+      _pushIn = NO;
    }
    return self;
 }

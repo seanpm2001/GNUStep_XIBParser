@@ -18,20 +18,20 @@
 {
    self = [super init];
    if(self != nil) {
-      ID = nil;
-      backgroundColor = nil;
-      borderStyle = nil;
-      drawsBackground = NO;
-      editable = NO;
-      font = nil;
-      formatter = nil;
-      lineBreakMode = nil;
-      scrollable = NO;
-      selectable = NO;
-      sendsActionOnEndEditing = NO;
-      state = nil;
-      textColor = nil;
-      title = nil;
+      _ID = nil;
+      _backgroundColor = nil;
+      _borderStyle = nil;
+      _drawsBackground = NO;
+      _editable = NO;
+      _font = nil;
+      _formatter = nil;
+      _lineBreakMode = nil;
+      _scrollable = NO;
+      _selectable = NO;
+      _sendsActionOnEndEditing = NO;
+      _state = nil;
+      _textColor = nil;
+      _title = nil;
    }
    return self;
 }

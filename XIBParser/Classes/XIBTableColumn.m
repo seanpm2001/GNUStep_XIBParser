@@ -17,14 +17,14 @@
 {
    self = [super init];
    if(self != nil) {
-      ID = nil;
-      dataCell = nil;
-      headerCell = nil;
-      maxWidth = nil;
-      minWidth = nil;
-      prototypeCellViews = nil;
-      resizingMask = nil;
-      width = nil;
+      _ID = nil;
+      _dataCell = nil;
+      _headerCell = nil;
+      _maxWidth = nil;
+      _minWidth = nil;
+      _prototypeCellViews = nil;
+      _resizingMask = nil;
+      _width = nil;
    }
    return self;
 }

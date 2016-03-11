@@ -15,10 +15,10 @@
 {
    self = [super init];
    if(self != nil) {
-      ID = nil;
-      identifier = nil;
-      label = nil;
-      view = nil;
+      _ID = nil;
+      _identifier = nil;
+      _label = nil;
+      _view = nil;
    }
    return self;
 }

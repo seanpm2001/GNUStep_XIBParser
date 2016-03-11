@@ -14,9 +14,9 @@
 {
    self = [super init];
    if(self != nil) {
-      flexibleMaxY = NO;
-      heightSizable = NO;
-      widthSizable = NO;
+      _flexibleMaxY = NO;
+      _heightSizable = NO;
+      _widthSizable = NO;
    }
    return self;
 }

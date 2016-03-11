@@ -16,13 +16,13 @@
 {
    self = [super init];
    if(self != nil) {
-      ID = nil;
-      ambiguous = NO;
-      autoresizingMask = nil;
-      fixedFrame = NO;
-      frame = nil;
-      subviews = nil;
-      translatesAutoresizingMaskIntoConstraints = NO;
+      _ID = nil;
+      _ambiguous = NO;
+      _autoresizingMask = nil;
+      _fixedFrame = NO;
+      _frame = nil;
+      _subviews = nil;
+      _translatesAutoresizingMaskIntoConstraints = NO;
    }
    return self;
 }

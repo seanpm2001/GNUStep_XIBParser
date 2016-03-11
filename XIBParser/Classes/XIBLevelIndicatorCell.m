@@ -14,12 +14,12 @@
 {
    self = [super init];
    if(self != nil) {
-      ID = nil;
-      alignment = nil;
-      criticalValue = nil;
-      doubleValue = nil;
-      maxValue = nil;
-      warningValue = nil;
+      _ID = nil;
+      _alignment = nil;
+      _criticalValue = nil;
+      _doubleValue = nil;
+      _maxValue = nil;
+      _warningValue = nil;
    }
    return self;
 }

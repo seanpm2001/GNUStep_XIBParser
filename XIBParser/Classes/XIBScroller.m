@@ -16,13 +16,13 @@
 {
    self = [super init];
    if(self != nil) {
-      ID = nil;
-      autoresizingMask = nil;
-      doubleValue = nil;
-      frame = nil;
-      hidden = NO;
-      horizontal = NO;
-      verticalHuggingPriority = nil;
+      _ID = nil;
+      _autoresizingMask = nil;
+      _doubleValue = nil;
+      _frame = nil;
+      _hidden = NO;
+      _horizontal = NO;
+      _verticalHuggingPriority = nil;
    }
    return self;
 }

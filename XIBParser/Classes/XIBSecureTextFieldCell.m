@@ -17,20 +17,20 @@
 {
    self = [super init];
    if(self != nil) {
-      ID = nil;
-      allowedInputSourceLocales = nil;
-      backgroundColor = nil;
-      borderStyle = nil;
-      drawsBackground = NO;
-      editable = NO;
-      font = nil;
-      lineBreakMode = nil;
-      scrollable = NO;
-      selectable = NO;
-      sendsActionOnEndEditing = NO;
-      string = nil;
-      textColor = nil;
-      usesSingleLineMode = NO;
+      _ID = nil;
+      _allowedInputSourceLocales = nil;
+      _backgroundColor = nil;
+      _borderStyle = nil;
+      _drawsBackground = NO;
+      _editable = NO;
+      _font = nil;
+      _lineBreakMode = nil;
+      _scrollable = NO;
+      _selectable = NO;
+      _sendsActionOnEndEditing = NO;
+      _string = nil;
+      _textColor = nil;
+      _usesSingleLineMode = NO;
    }
    return self;
 }

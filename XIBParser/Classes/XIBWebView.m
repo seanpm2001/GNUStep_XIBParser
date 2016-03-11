@@ -16,11 +16,11 @@
 {
    self = [super init];
    if(self != nil) {
-      ID = nil;
-      fixedFrame = NO;
-      frame = nil;
-      preferences = nil;
-      translatesAutoresizingMaskIntoConstraints = NO;
+      _ID = nil;
+      _fixedFrame = NO;
+      _frame = nil;
+      _preferences = nil;
+      _translatesAutoresizingMaskIntoConstraints = NO;
    }
    return self;
 }

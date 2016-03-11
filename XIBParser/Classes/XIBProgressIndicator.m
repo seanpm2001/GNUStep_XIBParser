@@ -15,14 +15,14 @@
 {
    self = [super init];
    if(self != nil) {
-      ID = nil;
-      fixedFrame = NO;
-      frame = nil;
-      indeterminate = NO;
-      maxValue = nil;
-      style = nil;
-      translatesAutoresizingMaskIntoConstraints = NO;
-      wantsLayer = NO;
+      _ID = nil;
+      _fixedFrame = NO;
+      _frame = nil;
+      _indeterminate = NO;
+      _maxValue = nil;
+      _style = nil;
+      _translatesAutoresizingMaskIntoConstraints = NO;
+      _wantsLayer = NO;
    }
    return self;
 }

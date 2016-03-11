@@ -17,13 +17,13 @@
 {
    self = [super init];
    if(self != nil) {
-      ID = nil;
-      alignment = nil;
-      backgroundColor = nil;
-      editable = NO;
-      font = nil;
-      selectable = NO;
-      url = nil;
+      _ID = nil;
+      _alignment = nil;
+      _backgroundColor = nil;
+      _editable = NO;
+      _font = nil;
+      _selectable = NO;
+      _url = nil;
    }
    return self;
 }

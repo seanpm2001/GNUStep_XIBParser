@@ -14,8 +14,8 @@
 {
    self = [super init];
    if(self != nil) {
-      ID = nil;
-      connections = nil;
+      _ID = nil;
+      _connections = nil;
    }
    return self;
 }

@@ -14,8 +14,8 @@
 {
    self = [super init];
    if(self != nil) {
-      ID = nil;
-      objectClassName = nil;
+      _ID = nil;
+      _objectClassName = nil;
    }
    return self;
 }

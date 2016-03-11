@@ -16,12 +16,12 @@
 {
    self = [super init];
    if(self != nil) {
-      ID = nil;
-      autoresizingMask = nil;
-      connections = nil;
-      frame = nil;
-      identifier = nil;
-      subviews = nil;
+      _ID = nil;
+      _autoresizingMask = nil;
+      _connections = nil;
+      _frame = nil;
+      _identifier = nil;
+      _subviews = nil;
    }
    return self;
 }

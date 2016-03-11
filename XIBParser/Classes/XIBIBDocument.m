@@ -14,17 +14,17 @@
 {
    self = [super init];
    if(self != nil) {
-      customObjectInstantitationMethod = nil;
-      dependencies = nil;
-      objects = nil;
-      propertyAccessControl = nil;
-      resources = nil;
-      systemVersion = nil;
-      targetRuntime = nil;
-      toolsVersion = nil;
-      type = nil;
-      useAutolayout = NO;
-      version = nil;
+      _customObjectInstantitationMethod = nil;
+      _dependencies = nil;
+      _objects = nil;
+      _propertyAccessControl = nil;
+      _resources = nil;
+      _systemVersion = nil;
+      _targetRuntime = nil;
+      _toolsVersion = nil;
+      _type = nil;
+      _useAutolayout = NO;
+      _version = nil;
    }
    return self;
 }

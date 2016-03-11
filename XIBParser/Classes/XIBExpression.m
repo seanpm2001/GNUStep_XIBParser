@@ -15,8 +15,8 @@
 {
    self = [super init];
    if(self != nil) {
-      keyPath = nil;
-      type = nil;
+      _keyPath = nil;
+      _type = nil;
    }
    return self;
 }

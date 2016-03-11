@@ -15,16 +15,16 @@
 {
    self = [super init];
    if(self != nil) {
-      ID = nil;
-      alignment = nil;
-      detachesHiddenViews = NO;
-      distribution = nil;
-      fixedFrame = NO;
-      frame = nil;
-      horizontalStackHuggingPriority = nil;
-      orientation = nil;
-      translatesAutoresizingMaskIntoConstraints = NO;
-      verticalStackHuggingPriority = nil;
+      _ID = nil;
+      _alignment = nil;
+      _detachesHiddenViews = NO;
+      _distribution = nil;
+      _fixedFrame = NO;
+      _frame = nil;
+      _horizontalStackHuggingPriority = nil;
+      _orientation = nil;
+      _translatesAutoresizingMaskIntoConstraints = NO;
+      _verticalStackHuggingPriority = nil;
    }
    return self;
 }

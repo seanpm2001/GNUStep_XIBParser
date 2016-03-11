@@ -14,7 +14,7 @@
 {
    self = [super init];
    if(self != nil) {
-      ID = nil;
+      _ID = nil;
    }
    return self;
 }

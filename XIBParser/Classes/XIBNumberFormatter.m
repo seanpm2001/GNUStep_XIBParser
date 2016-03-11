@@ -14,12 +14,12 @@
 {
    self = [super init];
    if(self != nil) {
-      ID = nil;
-      formatterBehavior = nil;
-      maximumFractionDigits = nil;
-      maximumIntegerDigits = nil;
-      minimumIntegerDigits = nil;
-      numberStyle = nil;
+      _ID = nil;
+      _formatterBehavior = nil;
+      _maximumFractionDigits = nil;
+      _maximumIntegerDigits = nil;
+      _minimumIntegerDigits = nil;
+      _numberStyle = nil;
    }
    return self;
 }

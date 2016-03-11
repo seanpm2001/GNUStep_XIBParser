@@ -14,8 +14,8 @@
 {
    self = [super init];
    if(self != nil) {
-      identifier = nil;
-      version = nil;
+      _identifier = nil;
+      _version = nil;
    }
    return self;
 }

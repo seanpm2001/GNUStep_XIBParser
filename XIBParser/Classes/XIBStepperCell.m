@@ -14,10 +14,10 @@
 {
    self = [super init];
    if(self != nil) {
-      ID = nil;
-      alignment = nil;
-      continuous = NO;
-      maxValue = nil;
+      _ID = nil;
+      _alignment = nil;
+      _continuous = NO;
+      _maxValue = nil;
    }
    return self;
 }

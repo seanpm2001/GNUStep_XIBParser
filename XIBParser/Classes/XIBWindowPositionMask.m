@@ -14,10 +14,10 @@
 {
    self = [super init];
    if(self != nil) {
-      bottomStrut = NO;
-      leftStrut = NO;
-      rightStrut = NO;
-      topStrut = NO;
+      _bottomStrut = NO;
+      _leftStrut = NO;
+      _rightStrut = NO;
+      _topStrut = NO;
    }
    return self;
 }

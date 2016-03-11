@@ -16,18 +16,18 @@
 {
    self = [super init];
    if(self != nil) {
-      ID = nil;
-      alignment = nil;
-      behavior = nil;
-      bezelStyle = nil;
-      borderStyle = nil;
-      font = nil;
-      imagePosition = nil;
-      imageScaling = nil;
-      inset = nil;
-      state = nil;
-      title = nil;
-      type = nil;
+      _ID = nil;
+      _alignment = nil;
+      _behavior = nil;
+      _bezelStyle = nil;
+      _borderStyle = nil;
+      _font = nil;
+      _imagePosition = nil;
+      _imageScaling = nil;
+      _inset = nil;
+      _state = nil;
+      _title = nil;
+      _type = nil;
    }
    return self;
 }

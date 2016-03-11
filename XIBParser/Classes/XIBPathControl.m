@@ -16,13 +16,13 @@
 {
    self = [super init];
    if(self != nil) {
-      ID = nil;
-      allowsExpansionToolTips = NO;
-      cell = nil;
-      fixedFrame = NO;
-      frame = nil;
-      translatesAutoresizingMaskIntoConstraints = NO;
-      verticalHuggingPriority = nil;
+      _ID = nil;
+      _allowsExpansionToolTips = NO;
+      _cell = nil;
+      _fixedFrame = NO;
+      _frame = nil;
+      _translatesAutoresizingMaskIntoConstraints = NO;
+      _verticalHuggingPriority = nil;
    }
    return self;
 }

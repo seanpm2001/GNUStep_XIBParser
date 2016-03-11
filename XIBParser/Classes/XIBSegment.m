@@ -15,10 +15,10 @@
 {
    self = [super init];
    if(self != nil) {
-      label = nil;
-      selected = NO;
-      tag = nil;
-      width = nil;
+      _label = nil;
+      _selected = NO;
+      _tag = nil;
+      _width = nil;
    }
    return self;
 }

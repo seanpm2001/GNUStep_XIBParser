@@ -14,12 +14,12 @@
 {
    self = [super init];
    if(self != nil) {
-      closable = NO;
-      miniaturizable = NO;
-      resizable = NO;
-      texturedBackground = NO;
-      titled = NO;
-      utility = NO;
+      _closable = NO;
+      _miniaturizable = NO;
+      _resizable = NO;
+      _texturedBackground = NO;
+      _titled = NO;
+      _utility = NO;
    }
    return self;
 }

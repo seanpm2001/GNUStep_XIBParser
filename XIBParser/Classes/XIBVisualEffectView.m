@@ -15,13 +15,13 @@
 {
    self = [super init];
    if(self != nil) {
-      ID = nil;
-      appearanceType = nil;
-      blendingMode = nil;
-      fixedFrame = NO;
-      frame = nil;
-      state = nil;
-      translatesAutoresizingMaskIntoConstraints = NO;
+      _ID = nil;
+      _appearanceType = nil;
+      _blendingMode = nil;
+      _fixedFrame = NO;
+      _frame = nil;
+      _state = nil;
+      _translatesAutoresizingMaskIntoConstraints = NO;
    }
    return self;
 }

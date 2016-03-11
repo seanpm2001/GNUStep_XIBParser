@@ -15,12 +15,12 @@
 {
    self = [super init];
    if(self != nil) {
-      ID = nil;
-      allowOffline = NO;
-      fixedFrame = NO;
-      frame = nil;
-      translatesAutoresizingMaskIntoConstraints = NO;
-      useAuxiliaryDepthBufferStencil = NO;
+      _ID = nil;
+      _allowOffline = NO;
+      _fixedFrame = NO;
+      _frame = nil;
+      _translatesAutoresizingMaskIntoConstraints = NO;
+      _useAuxiliaryDepthBufferStencil = NO;
    }
    return self;
 }

@@ -19,20 +19,20 @@
 {
    self = [super init];
    if(self != nil) {
-      ID = nil;
-      allowsEmptySelection = NO;
-      autorecalculatesCellSize = NO;
-      backgroundColor = nil;
-      cellSize = nil;
-      cells = nil;
-      column = nil;
-      fixedFrame = NO;
-      frame = nil;
-      intercellSpacing = nil;
-      mode = nil;
-      prototype = nil;
-      translatesAutoresizingMaskIntoConstraints = NO;
-      verticalHuggingPriority = nil;
+      _ID = nil;
+      _allowsEmptySelection = NO;
+      _autorecalculatesCellSize = NO;
+      _backgroundColor = nil;
+      _cellSize = nil;
+      _cells = nil;
+      _column = nil;
+      _fixedFrame = NO;
+      _frame = nil;
+      _intercellSpacing = nil;
+      _mode = nil;
+      _prototype = nil;
+      _translatesAutoresizingMaskIntoConstraints = NO;
+      _verticalHuggingPriority = nil;
    }
    return self;
 }

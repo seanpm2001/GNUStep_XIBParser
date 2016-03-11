@@ -17,17 +17,17 @@
 {
    self = [super init];
    if(self != nil) {
-      ID = nil;
-      connections = nil;
-      enabled = NO;
-      isSeparatorItem = NO;
-      keyEquivalent = nil;
-      keyEquivalentModifierMask = nil;
-      representedObject = nil;
-      state = nil;
-      submenu = nil;
-      tag = nil;
-      title = nil;
+      _ID = nil;
+      _connections = nil;
+      _enabled = NO;
+      _isSeparatorItem = NO;
+      _keyEquivalent = nil;
+      _keyEquivalentModifierMask = nil;
+      _representedObject = nil;
+      _state = nil;
+      _submenu = nil;
+      _tag = nil;
+      _title = nil;
    }
    return self;
 }

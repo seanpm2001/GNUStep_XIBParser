@@ -14,12 +14,12 @@
 {
    self = [super init];
    if(self != nil) {
-      ID = nil;
-      alignment = nil;
-      image = nil;
-      imageFrameStyle = nil;
-      imageScaling = nil;
-      refusesFirstResponder = NO;
+      _ID = nil;
+      _alignment = nil;
+      _image = nil;
+      _imageFrameStyle = nil;
+      _imageScaling = nil;
+      _refusesFirstResponder = NO;
    }
    return self;
 }

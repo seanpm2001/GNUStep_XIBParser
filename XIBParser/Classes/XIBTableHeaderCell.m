@@ -17,11 +17,11 @@
 {
    self = [super init];
    if(self != nil) {
-      backgroundColor = nil;
-      borderStyle = nil;
-      font = nil;
-      lineBreakMode = nil;
-      textColor = nil;
+      _backgroundColor = nil;
+      _borderStyle = nil;
+      _font = nil;
+      _lineBreakMode = nil;
+      _textColor = nil;
    }
    return self;
 }

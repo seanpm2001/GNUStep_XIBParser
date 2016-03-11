@@ -14,9 +14,9 @@
 {
    self = [super init];
    if(self != nil) {
-      ID = nil;
-      implicitItemIdentifier = nil;
-      reference = nil;
+      _ID = nil;
+      _implicitItemIdentifier = nil;
+      _reference = nil;
    }
    return self;
 }

@@ -19,22 +19,22 @@
 {
    self = [super init];
    if(self != nil) {
-      ID = nil;
-      allowsExpansionToolTips = NO;
-      autoresizingMask = nil;
-      autosaveColumns = NO;
-      backgroundColor = nil;
-      columnAutoresizingStyle = nil;
-      columnSelection = NO;
-      frame = nil;
-      gridColor = nil;
-      headerView = nil;
-      intercellSpacing = nil;
-      multipleSelection = NO;
-      rowSizeStyle = nil;
-      tableColumns = nil;
-      verticalHuggingPriority = nil;
-      viewBased = NO;
+      _ID = nil;
+      _allowsExpansionToolTips = NO;
+      _autoresizingMask = nil;
+      _autosaveColumns = NO;
+      _backgroundColor = nil;
+      _columnAutoresizingStyle = nil;
+      _columnSelection = NO;
+      _frame = nil;
+      _gridColor = nil;
+      _headerView = nil;
+      _intercellSpacing = nil;
+      _multipleSelection = NO;
+      _rowSizeStyle = nil;
+      _tableColumns = nil;
+      _verticalHuggingPriority = nil;
+      _viewBased = NO;
    }
    return self;
 }

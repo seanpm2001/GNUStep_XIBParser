@@ -21,24 +21,24 @@
 {
    self = [super init];
    if(self != nil) {
-      ID = nil;
-      allowsToolTipsWhenApplicationIsInactive = NO;
-      animationBehavior = nil;
-      autorecalculatesKeyViewLoop = NO;
-      canvasLocation = nil;
-      contentRect = nil;
-      contentView = nil;
-      customClass = nil;
-      frameAutosaveName = nil;
-      hidesOnDeactivate = NO;
-      initialPositionMask = nil;
-      oneShot = NO;
-      releasedWhenClosed = NO;
-      screenRect = nil;
-      showsToolbarButton = NO;
-      styleMask = nil;
-      title = nil;
-      toolbar = nil;
+      _ID = nil;
+      _allowsToolTipsWhenApplicationIsInactive = NO;
+      _animationBehavior = nil;
+      _autorecalculatesKeyViewLoop = NO;
+      _canvasLocation = nil;
+      _contentRect = nil;
+      _contentView = nil;
+      _customClass = nil;
+      _frameAutosaveName = nil;
+      _hidesOnDeactivate = NO;
+      _initialPositionMask = nil;
+      _oneShot = NO;
+      _releasedWhenClosed = NO;
+      _screenRect = nil;
+      _showsToolbarButton = NO;
+      _styleMask = nil;
+      _title = nil;
+      _toolbar = nil;
    }
    return self;
 }

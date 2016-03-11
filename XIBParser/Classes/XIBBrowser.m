@@ -15,21 +15,21 @@
 {
    self = [super init];
    if(self != nil) {
-      ID = nil;
-      allowsEmptySelection = NO;
-      allowsExpansionToolTips = NO;
-      allowsTypeSelect = NO;
-      columnResizingType = nil;
-      defaultColumnWidth = nil;
-      enabled = NO;
-      fixedFrame = NO;
-      frame = nil;
-      hasHorizontalScroller = NO;
-      minColumnWidth = nil;
-      separatesColumns = NO;
-      titled = NO;
-      translatesAutoresizingMaskIntoConstraints = NO;
-      verticalHuggingPriority = nil;
+      _ID = nil;
+      _allowsEmptySelection = NO;
+      _allowsExpansionToolTips = NO;
+      _allowsTypeSelect = NO;
+      _columnResizingType = nil;
+      _defaultColumnWidth = nil;
+      _enabled = NO;
+      _fixedFrame = NO;
+      _frame = nil;
+      _hasHorizontalScroller = NO;
+      _minColumnWidth = nil;
+      _separatesColumns = NO;
+      _titled = NO;
+      _translatesAutoresizingMaskIntoConstraints = NO;
+      _verticalHuggingPriority = nil;
    }
    return self;
 }

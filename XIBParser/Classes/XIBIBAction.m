@@ -14,9 +14,9 @@
 {
    self = [super init];
    if(self != nil) {
-      ID = nil;
-      selector = nil;
-      target = nil;
+      _ID = nil;
+      _selector = nil;
+      _target = nil;
    }
    return self;
 }

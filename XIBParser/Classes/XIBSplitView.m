@@ -15,15 +15,15 @@
 {
    self = [super init];
    if(self != nil) {
-      ID = nil;
-      arrangesAllSubviews = NO;
-      dividerStyle = nil;
-      fixedFrame = NO;
-      frame = nil;
-      holdingPriorities = nil;
-      subviews = nil;
-      translatesAutoresizingMaskIntoConstraints = NO;
-      vertical = NO;
+      _ID = nil;
+      _arrangesAllSubviews = NO;
+      _dividerStyle = nil;
+      _fixedFrame = NO;
+      _frame = nil;
+      _holdingPriorities = nil;
+      _subviews = nil;
+      _translatesAutoresizingMaskIntoConstraints = NO;
+      _vertical = NO;
    }
    return self;
 }

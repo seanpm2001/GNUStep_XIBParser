@@ -18,15 +18,15 @@
 {
    self = [super init];
    if(self != nil) {
-      ID = nil;
-      borderColor = nil;
-      borderType = nil;
-      contentView = nil;
-      fillColor = nil;
-      fixedFrame = NO;
-      frame = nil;
-      title = nil;
-      translatesAutoresizingMaskIntoConstraints = NO;
+      _ID = nil;
+      _borderColor = nil;
+      _borderType = nil;
+      _contentView = nil;
+      _fillColor = nil;
+      _fixedFrame = NO;
+      _frame = nil;
+      _title = nil;
+      _translatesAutoresizingMaskIntoConstraints = NO;
    }
    return self;
 }

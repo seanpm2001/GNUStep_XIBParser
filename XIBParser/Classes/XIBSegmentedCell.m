@@ -15,13 +15,13 @@
 {
    self = [super init];
    if(self != nil) {
-      ID = nil;
-      alignment = nil;
-      borderStyle = nil;
-      font = nil;
-      segments = nil;
-      style = nil;
-      trackingMode = nil;
+      _ID = nil;
+      _alignment = nil;
+      _borderStyle = nil;
+      _font = nil;
+      _segments = nil;
+      _style = nil;
+      _trackingMode = nil;
    }
    return self;
 }

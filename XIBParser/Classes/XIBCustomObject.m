@@ -14,10 +14,10 @@
 {
    self = [super init];
    if(self != nil) {
-      ID = nil;
-      connections = nil;
-      customClass = nil;
-      userLabel = nil;
+      _ID = nil;
+      _connections = nil;
+      _customClass = nil;
+      _userLabel = nil;
    }
    return self;
 }

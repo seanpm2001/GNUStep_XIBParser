@@ -18,13 +18,13 @@
 {
    self = [super init];
    if(self != nil) {
-      ID = nil;
-      alignment = nil;
-      backgroundColor = nil;
-      borderStyle = nil;
-      date = nil;
-      font = nil;
-      textColor = nil;
+      _ID = nil;
+      _alignment = nil;
+      _backgroundColor = nil;
+      _borderStyle = nil;
+      _date = nil;
+      _font = nil;
+      _textColor = nil;
    }
    return self;
 }

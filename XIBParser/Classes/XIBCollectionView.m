@@ -17,12 +17,12 @@
 {
    self = [super init];
    if(self != nil) {
-      ID = nil;
-      ambiguous = NO;
-      autoresizingMask = nil;
-      connections = nil;
-      frame = nil;
-      primaryBackgroundColor = nil;
+      _ID = nil;
+      _ambiguous = NO;
+      _autoresizingMask = nil;
+      _connections = nil;
+      _frame = nil;
+      _primaryBackgroundColor = nil;
    }
    return self;
 }

@@ -14,8 +14,8 @@
 {
    self = [super init];
    if(self != nil) {
-      metaFont = nil;
-      size = nil;
+      _metaFont = nil;
+      _size = nil;
    }
    return self;
 }

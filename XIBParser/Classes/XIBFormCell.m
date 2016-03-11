@@ -16,19 +16,19 @@
 {
    self = [super init];
    if(self != nil) {
-      ID = nil;
-      alignment = nil;
-      borderStyle = nil;
-      controlSize = nil;
-      editable = NO;
-      font = nil;
-      lineBreakMode = nil;
-      scrollable = NO;
-      selectable = NO;
-      sendsActionOnEndEditing = NO;
-      tag = nil;
-      title = nil;
-      titleFont = nil;
+      _ID = nil;
+      _alignment = nil;
+      _borderStyle = nil;
+      _controlSize = nil;
+      _editable = NO;
+      _font = nil;
+      _lineBreakMode = nil;
+      _scrollable = NO;
+      _selectable = NO;
+      _sendsActionOnEndEditing = NO;
+      _tag = nil;
+      _title = nil;
+      _titleFont = nil;
    }
    return self;
 }

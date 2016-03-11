@@ -14,7 +14,7 @@
 {
    self = [super init];
    if(self != nil) {
-      string = nil;
+      _string = nil;
    }
    return self;
 }

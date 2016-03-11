@@ -14,13 +14,13 @@
 {
    self = [super init];
    if(self != nil) {
-      ID = nil;
-      allowedToolbarItems = nil;
-      autosavesConfiguration = NO;
-      defaultToolbarItems = nil;
-      displayMode = nil;
-      implicitIdentifier = nil;
-      sizeMode = nil;
+      _ID = nil;
+      _allowedToolbarItems = nil;
+      _autosavesConfiguration = NO;
+      _defaultToolbarItems = nil;
+      _displayMode = nil;
+      _implicitIdentifier = nil;
+      _sizeMode = nil;
    }
    return self;
 }

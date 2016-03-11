@@ -14,15 +14,15 @@
 {
    self = [super init];
    if(self != nil) {
-      ID = nil;
-      alignment = nil;
-      allowsTickMarkValuesOnly = NO;
-      controlSize = nil;
-      doubleValue = nil;
-      maxValue = nil;
-      sliderType = nil;
-      state = nil;
-      tickMarkPosition = nil;
+      _ID = nil;
+      _alignment = nil;
+      _allowsTickMarkValuesOnly = NO;
+      _controlSize = nil;
+      _doubleValue = nil;
+      _maxValue = nil;
+      _sliderType = nil;
+      _state = nil;
+      _tickMarkPosition = nil;
    }
    return self;
 }

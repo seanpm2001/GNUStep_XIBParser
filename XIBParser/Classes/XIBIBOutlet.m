@@ -14,9 +14,9 @@
 {
    self = [super init];
    if(self != nil) {
-      ID = nil;
-      destination = nil;
-      property = nil;
+      _ID = nil;
+      _destination = nil;
+      _property = nil;
    }
    return self;
 }

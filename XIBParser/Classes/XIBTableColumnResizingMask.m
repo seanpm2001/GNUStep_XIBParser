@@ -14,8 +14,8 @@
 {
    self = [super init];
    if(self != nil) {
-      resizeWithTable = NO;
-      userResizable = NO;
+      _resizeWithTable = NO;
+      _userResizable = NO;
    }
    return self;
 }

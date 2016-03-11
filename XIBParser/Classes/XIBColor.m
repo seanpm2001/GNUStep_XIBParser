@@ -14,14 +14,14 @@
 {
    self = [super init];
    if(self != nil) {
-      alpha = nil;
-      blue = nil;
-      catalog = nil;
-      colorSpace = nil;
-      green = nil;
-      name = nil;
-      red = nil;
-      white = nil;
+      _alpha = nil;
+      _blue = nil;
+      _catalog = nil;
+      _colorSpace = nil;
+      _green = nil;
+      _name = nil;
+      _red = nil;
+      _white = nil;
    }
    return self;
 }

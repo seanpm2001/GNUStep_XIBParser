@@ -14,10 +14,10 @@
 {
    self = [super init];
    if(self != nil) {
-      command = NO;
-      control = NO;
-      option = NO;
-      shift = NO;
+      _command = NO;
+      _control = NO;
+      _option = NO;
+      _shift = NO;
    }
    return self;
 }

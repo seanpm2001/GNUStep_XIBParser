@@ -17,13 +17,13 @@
 {
    self = [super init];
    if(self != nil) {
-      ID = nil;
-      autoresizingMask = nil;
-      canvasLocation = nil;
-      fixedFrame = NO;
-      frame = nil;
-      translatesAutoresizingMaskIntoConstraints = NO;
-      userLabel = nil;
+      _ID = nil;
+      _autoresizingMask = nil;
+      _canvasLocation = nil;
+      _fixedFrame = NO;
+      _frame = nil;
+      _translatesAutoresizingMaskIntoConstraints = NO;
+      _userLabel = nil;
    }
    return self;
 }

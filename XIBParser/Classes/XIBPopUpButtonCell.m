@@ -17,20 +17,20 @@
 {
    self = [super init];
    if(self != nil) {
-      ID = nil;
-      alignment = nil;
-      behavior = nil;
-      bezelStyle = nil;
-      borderStyle = nil;
-      font = nil;
-      imageScaling = nil;
-      inset = nil;
-      lineBreakMode = nil;
-      menu = nil;
-      selectedItem = nil;
-      state = nil;
-      title = nil;
-      type = nil;
+      _ID = nil;
+      _alignment = nil;
+      _behavior = nil;
+      _bezelStyle = nil;
+      _borderStyle = nil;
+      _font = nil;
+      _imageScaling = nil;
+      _inset = nil;
+      _lineBreakMode = nil;
+      _menu = nil;
+      _selectedItem = nil;
+      _state = nil;
+      _title = nil;
+      _type = nil;
    }
    return self;
 }

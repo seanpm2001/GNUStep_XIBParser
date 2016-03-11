@@ -15,10 +15,10 @@
 {
    self = [super init];
    if(self != nil) {
-      defaultFixedFontSize = nil;
-      defaultFontSize = nil;
-      identifier = nil;
-      minimumFontSize = nil;
+      _defaultFixedFontSize = nil;
+      _defaultFontSize = nil;
+      _identifier = nil;
+      _minimumFontSize = nil;
    }
    return self;
 }

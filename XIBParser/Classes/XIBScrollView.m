@@ -19,21 +19,21 @@
 {
    self = [super init];
    if(self != nil) {
-      ID = nil;
-      autohidesScrollers = NO;
-      contentView = nil;
-      fixedFrame = NO;
-      frame = nil;
-      hasHorizontalScroller = NO;
-      headerView = nil;
-      horizontalLineScroll = nil;
-      horizontalPageScroll = nil;
-      horizontalScroller = nil;
-      translatesAutoresizingMaskIntoConstraints = NO;
-      usesPredominantAxisScrolling = NO;
-      verticalLineScroll = nil;
-      verticalPageScroll = nil;
-      verticalScroller = nil;
+      _ID = nil;
+      _autohidesScrollers = NO;
+      _contentView = nil;
+      _fixedFrame = NO;
+      _frame = nil;
+      _hasHorizontalScroller = NO;
+      _headerView = nil;
+      _horizontalLineScroll = nil;
+      _horizontalPageScroll = nil;
+      _horizontalScroller = nil;
+      _translatesAutoresizingMaskIntoConstraints = NO;
+      _usesPredominantAxisScrolling = NO;
+      _verticalLineScroll = nil;
+      _verticalPageScroll = nil;
+      _verticalScroller = nil;
    }
    return self;
 }

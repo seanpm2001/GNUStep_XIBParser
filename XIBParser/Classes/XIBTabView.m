@@ -16,12 +16,12 @@
 {
    self = [super init];
    if(self != nil) {
-      ID = nil;
-      fixedFrame = NO;
-      font = nil;
-      frame = nil;
-      tabViewItems = nil;
-      translatesAutoresizingMaskIntoConstraints = NO;
+      _ID = nil;
+      _fixedFrame = NO;
+      _font = nil;
+      _frame = nil;
+      _tabViewItems = nil;
+      _translatesAutoresizingMaskIntoConstraints = NO;
    }
    return self;
 }

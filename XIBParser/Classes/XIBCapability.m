@@ -14,9 +14,9 @@
 {
    self = [super init];
    if(self != nil) {
-      minSystemVersion = nil;
-      minToolsVersion = nil;
-      name = nil;
+      _minSystemVersion = nil;
+      _minToolsVersion = nil;
+      _name = nil;
    }
    return self;
 }

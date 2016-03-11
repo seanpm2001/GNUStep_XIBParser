@@ -16,9 +16,9 @@
 {
    self = [super init];
    if(self != nil) {
-      ID = nil;
-      autoresizingMask = nil;
-      frame = nil;
+      _ID = nil;
+      _autoresizingMask = nil;
+      _frame = nil;
    }
    return self;
 }

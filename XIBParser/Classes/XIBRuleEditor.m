@@ -16,13 +16,13 @@
 {
    self = [super init];
    if(self != nil) {
-      ID = nil;
-      ambiguous = NO;
-      autoresizingMask = nil;
-      canRemoveAllRows = NO;
-      frame = nil;
-      nestingMode = nil;
-      rowHeight = nil;
+      _ID = nil;
+      _ambiguous = NO;
+      _autoresizingMask = nil;
+      _canRemoveAllRows = NO;
+      _frame = nil;
+      _nestingMode = nil;
+      _rowHeight = nil;
    }
    return self;
 }

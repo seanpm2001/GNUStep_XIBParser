@@ -17,13 +17,13 @@
 {
    self = [super init];
    if(self != nil) {
-      ID = nil;
-      ambiguous = NO;
-      autoresizingMask = nil;
-      backgroundColor = nil;
-      drawsBackground = NO;
-      frame = nil;
-      subviews = nil;
+      _ID = nil;
+      _ambiguous = NO;
+      _autoresizingMask = nil;
+      _backgroundColor = nil;
+      _drawsBackground = NO;
+      _frame = nil;
+      _subviews = nil;
    }
    return self;
 }

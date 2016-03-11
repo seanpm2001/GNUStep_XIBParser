@@ -14,10 +14,10 @@
 {
    self = [super init];
    if(self != nil) {
-      ID = nil;
-      items = nil;
-      systemMenu = nil;
-      title = nil;
+      _ID = nil;
+      _items = nil;
+      _systemMenu = nil;
+      _title = nil;
    }
    return self;
 }

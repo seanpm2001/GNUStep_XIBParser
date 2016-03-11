@@ -16,11 +16,11 @@
 {
    self = [super init];
    if(self != nil) {
-      ID = nil;
-      leftExpressionObject = nil;
-      popUpMenus = nil;
-      rightExpressionObject = nil;
-      rowType = nil;
+      _ID = nil;
+      _leftExpressionObject = nil;
+      _popUpMenus = nil;
+      _rightExpressionObject = nil;
+      _rowType = nil;
    }
    return self;
 }

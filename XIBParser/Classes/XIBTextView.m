@@ -20,26 +20,26 @@
 {
    self = [super init];
    if(self != nil) {
-      ID = nil;
-      allowsNonContiguousLayout = NO;
-      allowsUndo = NO;
-      ambiguous = NO;
-      autoresizingMask = nil;
-      backgroundColor = nil;
-      continuousSpellChecking = NO;
-      dashSubstitution = NO;
-      findStyle = nil;
-      frame = nil;
-      importsGraphics = NO;
-      insertionPointColor = nil;
-      maxSize = nil;
-      minSize = nil;
-      quoteSubstitution = NO;
-      smartInsertDelete = NO;
-      spellingCorrection = NO;
-      usesFontPanel = NO;
-      usesRuler = NO;
-      verticallyResizable = NO;
+      _ID = nil;
+      _allowsNonContiguousLayout = NO;
+      _allowsUndo = NO;
+      _ambiguous = NO;
+      _autoresizingMask = nil;
+      _backgroundColor = nil;
+      _continuousSpellChecking = NO;
+      _dashSubstitution = NO;
+      _findStyle = nil;
+      _frame = nil;
+      _importsGraphics = NO;
+      _insertionPointColor = nil;
+      _maxSize = nil;
+      _minSize = nil;
+      _quoteSubstitution = NO;
+      _smartInsertDelete = NO;
+      _spellingCorrection = NO;
+      _usesFontPanel = NO;
+      _usesRuler = NO;
+      _verticallyResizable = NO;
    }
    return self;
 }

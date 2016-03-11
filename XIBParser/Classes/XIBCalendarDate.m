@@ -15,9 +15,9 @@
 {
    self = [super init];
    if(self != nil) {
-      calendarFormat = nil;
-      timeIntervalSinceReferenceDate = nil;
-      timeZone = nil;
+      _calendarFormat = nil;
+      _timeIntervalSinceReferenceDate = nil;
+      _timeZone = nil;
    }
    return self;
 }

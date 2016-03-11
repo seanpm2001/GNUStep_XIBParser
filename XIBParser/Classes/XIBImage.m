@@ -14,9 +14,9 @@
 {
    self = [super init];
    if(self != nil) {
-      height = nil;
-      name = nil;
-      width = nil;
+      _height = nil;
+      _name = nil;
+      _width = nil;
    }
    return self;
 }
