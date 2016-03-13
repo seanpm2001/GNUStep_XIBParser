@@ -15,9 +15,9 @@
     NSXMLParser *parser;
     NSMutableArray *stack;
     NSMutableArray *classStack;
-    // NSMutableDictionary *classesToNames;  // hold classes and file contents....
+    NSMutableDictionary *classesToNames;  // hold classes and file contents....
     NSMutableDictionary *classNameMap;    // hold mappings from XIB names to actual classnames
-    NSMapTable *classesToNames;
+    NSMutableArray *objects;
     BOOL inObjects;
 }
 

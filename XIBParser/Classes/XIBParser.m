@@ -63,6 +63,8 @@
             stack = [NSMutableArray arrayWithCapacity:100];
             classesToNames = [NSMutableDictionary dictionaryWithCapacity:100];
             classNameMap = [NSMutableDictionary dictionaryWithCapacity:100];
+            objects = [NSMutableArray arrayWithCapacity:100];
+            
             inObjects = NO;
         }
         else
@@ -77,8 +79,7 @@
 {
     if([parser parse])
     {
-        NSArray *sortedArray = [[classesToNames sortedArrayUsingSelector:@selector(compare:)];
-        return sortedArray;
+        return objects;
     }
     
     return nil;
