@@ -100,6 +100,24 @@
 		145DC4821C5F3DA8007659AF /* XIBWindowStyleMask.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC42D1C5F3DA8007659AF /* XIBWindowStyleMask.m */; };
 		145DC4871C603D0C007659AF /* XIBParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC4861C603D0C007659AF /* XIBParser.m */; };
 		145DC48B1C607625007659AF /* NSString+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 145DC48A1C607625007659AF /* NSString+Extensions.m */; };
+		147833AA1C9675AA00974F6F /* XIBArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 147833871C9675AA00974F6F /* XIBArray.m */; };
+		147833AB1C9675AA00974F6F /* XIBArrayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 147833891C9675AA00974F6F /* XIBArrayController.m */; };
+		147833AC1C9675AA00974F6F /* XIBDictionaryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1478338B1C9675AA00974F6F /* XIBDictionaryController.m */; };
+		147833AD1C9675AA00974F6F /* XIBDrawer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1478338D1C9675AA00974F6F /* XIBDrawer.m */; };
+		147833AE1C9675AA00974F6F /* XIBExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 1478338F1C9675AA00974F6F /* XIBExpression.m */; };
+		147833AF1C9675AA00974F6F /* XIBIBDeployment.m in Sources */ = {isa = PBXBuildFile; fileRef = 147833911C9675AA00974F6F /* XIBIBDeployment.m */; };
+		147833B01C9675AA00974F6F /* XIBImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 147833931C9675AA00974F6F /* XIBImage.m */; };
+		147833B11C9675AA00974F6F /* XIBInteger.m in Sources */ = {isa = PBXBuildFile; fileRef = 147833951C9675AA00974F6F /* XIBInteger.m */; };
+		147833B21C9675AA00974F6F /* XIBManagedObjectContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 147833971C9675AA00974F6F /* XIBManagedObjectContext.m */; };
+		147833B31C9675AA00974F6F /* XIBObjectController.m in Sources */ = {isa = PBXBuildFile; fileRef = 147833991C9675AA00974F6F /* XIBObjectController.m */; };
+		147833B41C9675AA00974F6F /* XIBPredicateEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1478339B1C9675AA00974F6F /* XIBPredicateEditor.m */; };
+		147833B51C9675AA00974F6F /* XIBPredicateEditorRowTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1478339D1C9675AA00974F6F /* XIBPredicateEditorRowTemplate.m */; };
+		147833B61C9675AA00974F6F /* XIBRuleEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1478339F1C9675AA00974F6F /* XIBRuleEditor.m */; };
+		147833B71C9675AA00974F6F /* XIBStackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 147833A11C9675AA00974F6F /* XIBStackView.m */; };
+		147833B81C9675AA00974F6F /* XIBTextFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = 147833A31C9675AA00974F6F /* XIBTextFinder.m */; };
+		147833B91C9675AA00974F6F /* XIBTreeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 147833A51C9675AA00974F6F /* XIBTreeController.m */; };
+		147833BA1C9675AA00974F6F /* XIBUserDefaultsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 147833A71C9675AA00974F6F /* XIBUserDefaultsController.m */; };
+		147833BB1C9675AA00974F6F /* XIBVisualEffectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 147833A91C9675AA00974F6F /* XIBVisualEffectView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -309,6 +327,42 @@
 		145DC4861C603D0C007659AF /* XIBParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBParser.m; path = Classes/XIBParser.m; sourceTree = "<group>"; };
 		145DC4891C607625007659AF /* NSString+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Extensions.h"; path = "Extensions/NSString+Extensions.h"; sourceTree = "<group>"; };
 		145DC48A1C607625007659AF /* NSString+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Extensions.m"; path = "Extensions/NSString+Extensions.m"; sourceTree = "<group>"; };
+		147833861C9675AA00974F6F /* XIBArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBArray.h; path = Classes/XIBArray.h; sourceTree = "<group>"; };
+		147833871C9675AA00974F6F /* XIBArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBArray.m; path = Classes/XIBArray.m; sourceTree = "<group>"; };
+		147833881C9675AA00974F6F /* XIBArrayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBArrayController.h; path = Classes/XIBArrayController.h; sourceTree = "<group>"; };
+		147833891C9675AA00974F6F /* XIBArrayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBArrayController.m; path = Classes/XIBArrayController.m; sourceTree = "<group>"; };
+		1478338A1C9675AA00974F6F /* XIBDictionaryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBDictionaryController.h; path = Classes/XIBDictionaryController.h; sourceTree = "<group>"; };
+		1478338B1C9675AA00974F6F /* XIBDictionaryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBDictionaryController.m; path = Classes/XIBDictionaryController.m; sourceTree = "<group>"; };
+		1478338C1C9675AA00974F6F /* XIBDrawer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBDrawer.h; path = Classes/XIBDrawer.h; sourceTree = "<group>"; };
+		1478338D1C9675AA00974F6F /* XIBDrawer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBDrawer.m; path = Classes/XIBDrawer.m; sourceTree = "<group>"; };
+		1478338E1C9675AA00974F6F /* XIBExpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBExpression.h; path = Classes/XIBExpression.h; sourceTree = "<group>"; };
+		1478338F1C9675AA00974F6F /* XIBExpression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBExpression.m; path = Classes/XIBExpression.m; sourceTree = "<group>"; };
+		147833901C9675AA00974F6F /* XIBIBDeployment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBIBDeployment.h; path = Classes/XIBIBDeployment.h; sourceTree = "<group>"; };
+		147833911C9675AA00974F6F /* XIBIBDeployment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBIBDeployment.m; path = Classes/XIBIBDeployment.m; sourceTree = "<group>"; };
+		147833921C9675AA00974F6F /* XIBImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBImage.h; path = Classes/XIBImage.h; sourceTree = "<group>"; };
+		147833931C9675AA00974F6F /* XIBImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBImage.m; path = Classes/XIBImage.m; sourceTree = "<group>"; };
+		147833941C9675AA00974F6F /* XIBInteger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBInteger.h; path = Classes/XIBInteger.h; sourceTree = "<group>"; };
+		147833951C9675AA00974F6F /* XIBInteger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBInteger.m; path = Classes/XIBInteger.m; sourceTree = "<group>"; };
+		147833961C9675AA00974F6F /* XIBManagedObjectContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBManagedObjectContext.h; path = Classes/XIBManagedObjectContext.h; sourceTree = "<group>"; };
+		147833971C9675AA00974F6F /* XIBManagedObjectContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBManagedObjectContext.m; path = Classes/XIBManagedObjectContext.m; sourceTree = "<group>"; };
+		147833981C9675AA00974F6F /* XIBObjectController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBObjectController.h; path = Classes/XIBObjectController.h; sourceTree = "<group>"; };
+		147833991C9675AA00974F6F /* XIBObjectController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBObjectController.m; path = Classes/XIBObjectController.m; sourceTree = "<group>"; };
+		1478339A1C9675AA00974F6F /* XIBPredicateEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBPredicateEditor.h; path = Classes/XIBPredicateEditor.h; sourceTree = "<group>"; };
+		1478339B1C9675AA00974F6F /* XIBPredicateEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBPredicateEditor.m; path = Classes/XIBPredicateEditor.m; sourceTree = "<group>"; };
+		1478339C1C9675AA00974F6F /* XIBPredicateEditorRowTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBPredicateEditorRowTemplate.h; path = Classes/XIBPredicateEditorRowTemplate.h; sourceTree = "<group>"; };
+		1478339D1C9675AA00974F6F /* XIBPredicateEditorRowTemplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBPredicateEditorRowTemplate.m; path = Classes/XIBPredicateEditorRowTemplate.m; sourceTree = "<group>"; };
+		1478339E1C9675AA00974F6F /* XIBRuleEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBRuleEditor.h; path = Classes/XIBRuleEditor.h; sourceTree = "<group>"; };
+		1478339F1C9675AA00974F6F /* XIBRuleEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBRuleEditor.m; path = Classes/XIBRuleEditor.m; sourceTree = "<group>"; };
+		147833A01C9675AA00974F6F /* XIBStackView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBStackView.h; path = Classes/XIBStackView.h; sourceTree = "<group>"; };
+		147833A11C9675AA00974F6F /* XIBStackView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBStackView.m; path = Classes/XIBStackView.m; sourceTree = "<group>"; };
+		147833A21C9675AA00974F6F /* XIBTextFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBTextFinder.h; path = Classes/XIBTextFinder.h; sourceTree = "<group>"; };
+		147833A31C9675AA00974F6F /* XIBTextFinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBTextFinder.m; path = Classes/XIBTextFinder.m; sourceTree = "<group>"; };
+		147833A41C9675AA00974F6F /* XIBTreeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBTreeController.h; path = Classes/XIBTreeController.h; sourceTree = "<group>"; };
+		147833A51C9675AA00974F6F /* XIBTreeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBTreeController.m; path = Classes/XIBTreeController.m; sourceTree = "<group>"; };
+		147833A61C9675AA00974F6F /* XIBUserDefaultsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBUserDefaultsController.h; path = Classes/XIBUserDefaultsController.h; sourceTree = "<group>"; };
+		147833A71C9675AA00974F6F /* XIBUserDefaultsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBUserDefaultsController.m; path = Classes/XIBUserDefaultsController.m; sourceTree = "<group>"; };
+		147833A81C9675AA00974F6F /* XIBVisualEffectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIBVisualEffectView.h; path = Classes/XIBVisualEffectView.h; sourceTree = "<group>"; };
+		147833A91C9675AA00974F6F /* XIBVisualEffectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIBVisualEffectView.m; path = Classes/XIBVisualEffectView.m; sourceTree = "<group>"; };
 		149DBD9E1C7AE1FB009971EC /* XIBClasses.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = XIBClasses.h; path = Classes/XIBClasses.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -401,6 +455,42 @@
 		145DC3831C5F3D98007659AF /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				147833861C9675AA00974F6F /* XIBArray.h */,
+				147833871C9675AA00974F6F /* XIBArray.m */,
+				147833881C9675AA00974F6F /* XIBArrayController.h */,
+				147833891C9675AA00974F6F /* XIBArrayController.m */,
+				1478338A1C9675AA00974F6F /* XIBDictionaryController.h */,
+				1478338B1C9675AA00974F6F /* XIBDictionaryController.m */,
+				1478338C1C9675AA00974F6F /* XIBDrawer.h */,
+				1478338D1C9675AA00974F6F /* XIBDrawer.m */,
+				1478338E1C9675AA00974F6F /* XIBExpression.h */,
+				1478338F1C9675AA00974F6F /* XIBExpression.m */,
+				147833901C9675AA00974F6F /* XIBIBDeployment.h */,
+				147833911C9675AA00974F6F /* XIBIBDeployment.m */,
+				147833921C9675AA00974F6F /* XIBImage.h */,
+				147833931C9675AA00974F6F /* XIBImage.m */,
+				147833941C9675AA00974F6F /* XIBInteger.h */,
+				147833951C9675AA00974F6F /* XIBInteger.m */,
+				147833961C9675AA00974F6F /* XIBManagedObjectContext.h */,
+				147833971C9675AA00974F6F /* XIBManagedObjectContext.m */,
+				147833981C9675AA00974F6F /* XIBObjectController.h */,
+				147833991C9675AA00974F6F /* XIBObjectController.m */,
+				1478339A1C9675AA00974F6F /* XIBPredicateEditor.h */,
+				1478339B1C9675AA00974F6F /* XIBPredicateEditor.m */,
+				1478339C1C9675AA00974F6F /* XIBPredicateEditorRowTemplate.h */,
+				1478339D1C9675AA00974F6F /* XIBPredicateEditorRowTemplate.m */,
+				1478339E1C9675AA00974F6F /* XIBRuleEditor.h */,
+				1478339F1C9675AA00974F6F /* XIBRuleEditor.m */,
+				147833A01C9675AA00974F6F /* XIBStackView.h */,
+				147833A11C9675AA00974F6F /* XIBStackView.m */,
+				147833A21C9675AA00974F6F /* XIBTextFinder.h */,
+				147833A31C9675AA00974F6F /* XIBTextFinder.m */,
+				147833A41C9675AA00974F6F /* XIBTreeController.h */,
+				147833A51C9675AA00974F6F /* XIBTreeController.m */,
+				147833A61C9675AA00974F6F /* XIBUserDefaultsController.h */,
+				147833A71C9675AA00974F6F /* XIBUserDefaultsController.m */,
+				147833A81C9675AA00974F6F /* XIBVisualEffectView.h */,
+				147833A91C9675AA00974F6F /* XIBVisualEffectView.m */,
 				145DC4841C5FC3C6007659AF /* GNUstep.h */,
 				145DC3841C5F3DA7007659AF /* XIBAutoresizingMask.h */,
 				145DC3851C5F3DA7007659AF /* XIBAutoresizingMask.m */,
@@ -720,6 +810,7 @@
 			files = (
 				145DC46B1C5F3DA8007659AF /* XIBString.m in Sources */,
 				145DC4821C5F3DA8007659AF /* XIBWindowStyleMask.m in Sources */,
+				147833AB1C9675AA00974F6F /* XIBArrayController.m in Sources */,
 				145DC4491C5F3DA8007659AF /* XIBImageView.m in Sources */,
 				145DC4801C5F3DA8007659AF /* XIBWindow.m in Sources */,
 				145DC44D1C5F3DA8007659AF /* XIBMenuItem.m in Sources */,
@@ -738,33 +829,46 @@
 				145DC4611C5F3DA8007659AF /* XIBSecureTextFieldCell.m in Sources */,
 				145DC47B1C5F3DA8007659AF /* XIBToolbarItem.m in Sources */,
 				145DC4361C5F3DA8007659AF /* XIBClipView.m in Sources */,
+				147833B71C9675AA00974F6F /* XIBStackView.m in Sources */,
+				147833AC1C9675AA00974F6F /* XIBDictionaryController.m in Sources */,
 				145DC44B1C5F3DA8007659AF /* XIBLevelIndicatorCell.m in Sources */,
 				145DC43E1C5F3DA8007659AF /* XIBCustomView.m in Sources */,
+				147833AF1C9675AA00974F6F /* XIBIBDeployment.m in Sources */,
 				145DC46F1C5F3DA8007659AF /* XIBTableHeaderCell.m in Sources */,
 				145DC45A1C5F3DA8007659AF /* XIBRect.m in Sources */,
 				145DC4331C5F3DA8007659AF /* XIBButtonCell.m in Sources */,
+				147833B11C9675AA00974F6F /* XIBInteger.m in Sources */,
 				145DC4761C5F3DA8007659AF /* XIBTextView.m in Sources */,
 				145DC4741C5F3DA8007659AF /* XIBTextField.m in Sources */,
 				145DC4461C5F3DA8007659AF /* XIBIBOutlet.m in Sources */,
 				145DC4671C5F3DA8007659AF /* XIBSliderCell.m in Sources */,
 				145DC3551C5F3C73007659AF /* AppDelegate.m in Sources */,
+				147833B31C9675AA00974F6F /* XIBObjectController.m in Sources */,
 				145DC4721C5F3DA8007659AF /* XIBTabView.m in Sources */,
 				145DC48B1C607625007659AF /* NSString+Extensions.m in Sources */,
+				147833BA1C9675AA00974F6F /* XIBUserDefaultsController.m in Sources */,
+				147833B21C9675AA00974F6F /* XIBManagedObjectContext.m in Sources */,
+				147833B61C9675AA00974F6F /* XIBRuleEditor.m in Sources */,
+				147833AD1C9675AA00974F6F /* XIBDrawer.m in Sources */,
 				145DC4631C5F3DA8007659AF /* XIBSegmentedCell.m in Sources */,
 				145DC4521C5F3DA8007659AF /* XIBOutlineView.m in Sources */,
+				147833B91C9675AA00974F6F /* XIBTreeController.m in Sources */,
 				145DC4771C5F3DA8007659AF /* XIBTimeZone.m in Sources */,
 				145DC4421C5F3DA8007659AF /* XIBForm.m in Sources */,
 				145DC4571C5F3DA8007659AF /* XIBPopUpButtonCell.m in Sources */,
+				147833AA1C9675AA00974F6F /* XIBArray.m in Sources */,
 				145DC4591C5F3DA8007659AF /* XIBReal.m in Sources */,
 				145DC4731C5F3DA8007659AF /* XIBTabViewItem.m in Sources */,
 				145DC4871C603D0C007659AF /* XIBParser.m in Sources */,
 				145DC46A1C5F3DA8007659AF /* XIBStepperCell.m in Sources */,
 				145DC4691C5F3DA8007659AF /* XIBStepper.m in Sources */,
+				147833B41C9675AA00974F6F /* XIBPredicateEditor.m in Sources */,
 				145DC47C1C5F3DA8007659AF /* XIBUrl.m in Sources */,
 				145DC4441C5F3DA8007659AF /* XIBIBAction.m in Sources */,
 				145DC47D1C5F3DA8007659AF /* XIBView.m in Sources */,
 				145DC43F1C5F3DA8007659AF /* XIBDatePicker.m in Sources */,
 				145DC4341C5F3DA8007659AF /* XIBCalendarDate.m in Sources */,
+				147833B81C9675AA00974F6F /* XIBTextFinder.m in Sources */,
 				145DC4541C5F3DA8007659AF /* XIBPathControl.m in Sources */,
 				145DC4781C5F3DA8007659AF /* XIBTokenField.m in Sources */,
 				145DC4321C5F3DA8007659AF /* XIBButton.m in Sources */,
@@ -774,6 +878,7 @@
 				145DC45C1C5F3DA8007659AF /* XIBScroller.m in Sources */,
 				145DC4751C5F3DA8007659AF /* XIBTextFieldCell.m in Sources */,
 				145DC4311C5F3DA8007659AF /* XIBBrowser.m in Sources */,
+				147833B51C9675AA00974F6F /* XIBPredicateEditorRowTemplate.m in Sources */,
 				145DC4411C5F3DA8007659AF /* XIBFont.m in Sources */,
 				145DC4391C5F3DA8007659AF /* XIBColor.m in Sources */,
 				145DC4381C5F3DA8007659AF /* XIBCollectionViewItem.m in Sources */,
@@ -788,6 +893,8 @@
 				145DC4531C5F3DA8007659AF /* XIBPathCell.m in Sources */,
 				145DC4601C5F3DA8007659AF /* XIBSecureTextField.m in Sources */,
 				145DC45D1C5F3DA8007659AF /* XIBScrollView.m in Sources */,
+				147833B01C9675AA00974F6F /* XIBImage.m in Sources */,
+				147833BB1C9675AA00974F6F /* XIBVisualEffectView.m in Sources */,
 				145DC4711C5F3DA8007659AF /* XIBTableView.m in Sources */,
 				145DC4621C5F3DA8007659AF /* XIBSegment.m in Sources */,
 				145DC44C1C5F3DA8007659AF /* XIBMenu.m in Sources */,
@@ -799,6 +906,7 @@
 				145DC4471C5F3DA8007659AF /* XIBIBPlugIn.m in Sources */,
 				145DC44E1C5F3DA8007659AF /* XIBModifierMask.m in Sources */,
 				145DC47F1C5F3DA8007659AF /* XIBWebView.m in Sources */,
+				147833AE1C9675AA00974F6F /* XIBExpression.m in Sources */,
 				145DC46D1C5F3DA8007659AF /* XIBTableColumn.m in Sources */,
 				145DC4681C5F3DA8007659AF /* XIBSplitView.m in Sources */,
 				145DC46C1C5F3DA8007659AF /* XIBTableCellView.m in Sources */,
