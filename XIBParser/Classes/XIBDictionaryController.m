@@ -7,7 +7,7 @@
 #endif
 
 
-@implementation XIBDictionaryController 
+@implementation XIBDictionaryController
 
 
 - (instancetype) init
